@@ -12,6 +12,12 @@ rstack 提供的 Skill 是通用的。也可以在此基础上创建和维护项
 
 Skill 分类、触发方式、个人适配及项目适配随具体收录项逐步确定。
 
+## Skills
+
+英文 Skill 位于 [`skills/`](./skills/)，中文 Skill 位于 [`skills-zh/`](./skills-zh/)。
+
+- [writing-for-agents](./skills-zh/writing-for-agents/SKILL.md)：编写 Agent 使用的文档，来自 [matt](https://github.com/mattpocock/skills)。
+
 ## 开发
 
 使用 Node.js 22.12 或更新版本，以及 [package.json](./package.json) 声明的 pnpm 版本。
@@ -37,3 +43,5 @@ Agent 使用的仓库约定见 [AGENTS.md](./AGENTS.md)。
 ## 许可
 
 [MIT License](./LICENSE)。
+
+第三方 Skill 保留各自目录中的原有许可及署名。

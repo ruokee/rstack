@@ -12,6 +12,12 @@ Each addition records its source, purpose, and reason for inclusion. Upstream Sk
 
 Skill categories, invocation choices, and personal or project adaptation are developed alongside the selected Skills.
 
+## Skills
+
+English Skills are in [`skills/`](./skills/), and Chinese Skills are in [`skills-zh/`](./skills-zh/).
+
+- [writing-for-agents](./skills/writing-for-agents/SKILL.md): Write documents for agents. From [matt](https://github.com/mattpocock/skills).
+
 ## Development
 
 Use Node.js 22.12 or later and the pnpm version declared in [package.json](./package.json).
@@ -37,3 +43,5 @@ I learned from and reused material from [pstack](https://github.com/cursor/plugi
 ## License
 
 [MIT License](./LICENSE).
+
+Third-party Skills retain the original licenses and attribution included in their directories.
