@@ -1,0 +1,27 @@
+{
+  "name": "rstack",
+  "packageManager": "pnpm@10.29.1",
+  "private": true,
+  "scripts": {
+    "docs:format": "prettier --write --log-level warn --ignore-unknown \"**/*.md\"",
+    "docs:lint": "prettier --check --log-level warn --ignore-unknown \"**/*.md\"",
+    "hooks:install": "simple-git-hooks",
+    "check": "prettier --check --log-level warn --ignore-unknown ."
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.2.2",
+    "@commitlint/config-conventional": "^21.2.2",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.9.6",
+    "prettier-plugin-markdown-table-layout": "github:ruokee/prettier-plugin-markdown-table-layout#v0.1.1",
+    "prettier-plugin-zhfmt": "^0.1.1",
+    "simple-git-hooks": "^2.14.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec lint-staged",
+    "commit-msg": "pnpm exec commitlint --edit \"$1\""
+  },
+  "lint-staged": {
+    "*": "prettier --write --log-level warn --ignore-unknown"
+  }
+}

@@ -1,0 +1,14 @@
+# Node.js
+node_modules/
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local work
+.omp/
+.worktrees/
+tmp/
+.DS_Store
