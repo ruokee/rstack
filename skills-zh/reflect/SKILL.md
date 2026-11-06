@@ -2,6 +2,8 @@
 name: reflect
 description: 复盘工作过程，提炼可复用经验及具体改进建议。
 disable-model-invocation: true
+metadata:
+  version: "1.0.0"
 ---
 
 # Reflect

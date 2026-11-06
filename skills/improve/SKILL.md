@@ -2,6 +2,8 @@
 name: improve
 description: Improve an existing artifact through evidence-based iterations against an agreed goal.
 disable-model-invocation: true
+metadata:
+  version: "1.0.0"
 ---
 
 # Improve

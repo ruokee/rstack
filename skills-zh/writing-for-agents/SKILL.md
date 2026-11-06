@@ -1,6 +1,8 @@
 ---
 name: writing-for-agents
 description: 为 Agent 编写文档。创建或编辑 Skill，或者修改 AGENTS.md、CLAUDE.md 时使用。
+metadata:
+  version: "1.0.0"
 ---
 
 本文适用于 Agent 阅读的各种文档，包括 Skill、`AGENTS.md`、`CLAUDE.md`，以及通过引用加载的文档。它们的封装形式不同，写作方法相同。目标是让 Agent 每次遵循相同的过程，从而使行为可预测。每次输出可以不同。

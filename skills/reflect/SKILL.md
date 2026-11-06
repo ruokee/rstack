@@ -2,6 +2,8 @@
 name: reflect
 description: Review a work session for durable lessons and concrete improvements.
 disable-model-invocation: true
+metadata:
+  version: "1.0.0"
 ---
 
 # Reflect

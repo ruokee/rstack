@@ -2,6 +2,8 @@
 name: improve
 description: 围绕约定目标迭代改进已有成果，以前后对照决定保留。
 disable-model-invocation: true
+metadata:
+  version: "1.0.0"
 ---
 
 # Improve
