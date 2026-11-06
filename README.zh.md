@@ -18,6 +18,7 @@ Skill 分类、触发方式、个人适配及项目适配随具体收录项逐�
 
 - [writing-for-agents](./skills-zh/writing-for-agents/SKILL.md)：编写 Agent 使用的文档，来自 [matt](https://github.com/mattpocock/skills)。
 - [wellsaid](./skills-zh/wellsaid/SKILL.md)：自然、直接地表达，受 [Lauren Tan 的 unslop](https://github.com/cursor/plugins/blob/main/pstack/skills/unslop/SKILL.md) 启发。
+- [reflect](./skills-zh/reflect/SKILL.md)：复盘工作过程，提出改进建议，来自 Lauren Tan 和 Matt Pocock。
 
 ## 开发
 

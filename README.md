@@ -18,6 +18,7 @@ English Skills are in [`skills/`](./skills/), and Chinese Skills are in [`skills
 
 - [writing-for-agents](./skills/writing-for-agents/SKILL.md): Write documents for agents. From [matt](https://github.com/mattpocock/skills).
 - [wellsaid](./skills/wellsaid/SKILL.md): Write clear, natural text. Inspired by [Lauren Tan's unslop](https://github.com/cursor/plugins/blob/main/pstack/skills/unslop/SKILL.md).
+- [reflect](./skills/reflect/SKILL.md): Review work sessions and propose improvements. From Lauren Tan and Matt Pocock.
 
 ## Development
 
