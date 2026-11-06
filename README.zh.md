@@ -17,6 +17,7 @@ Skill 分类、触发方式、个人适配及项目适配随具体收录项逐�
 英文 Skill 位于 [`skills/`](./skills/)，中文 Skill 位于 [`skills-zh/`](./skills-zh/)。
 
 - [writing-for-agents](./skills-zh/writing-for-agents/SKILL.md)：编写 Agent 使用的文档，来自 [matt](https://github.com/mattpocock/skills)。
+- [wellsaid](./skills-zh/wellsaid/SKILL.md)：自然、直接地表达，受 [Lauren Tan 的 unslop](https://github.com/cursor/plugins/blob/main/pstack/skills/unslop/SKILL.md) 启发。
 
 ## 开发
 
