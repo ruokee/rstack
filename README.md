@@ -23,6 +23,7 @@ English Skills are in [`skills/`](./skills/), and Chinese Skills are in [`skills
 - [research](./skills/research/SKILL.md): Gather and assess evidence to answer research questions with traceable findings. Follow claims to primary sources and distinguish facts, inferences, and unresolved disagreements. For durable delivery, preserve source material and open questions so another session can continue the work.
 - [improve](./skills/improve/SKILL.md): Improve existing work through evidence-based iterations against an agreed goal. Establish a baseline, comparison method, and properties to preserve, then compare candidates and decide whether to keep, revert, or leave each result inconclusive. Apply the process to code, documents, or agent-facing guidance.
 - [teach](./skills/teach/SKILL.md): Explain concepts, mechanisms, and methods. Build on what the learner already knows, adapt explanations to feedback, and offer practice when requested. Default to teaching in the conversation; prepare durable learning materials for an explicit need.
+- [diagnose](./skills/diagnose/SKILL.md): Investigate problems and anomalies through evidence, competing explanations, and discriminating checks. Handle repeatable, intermittent, historical, and workflow problems, state the strength of causal conclusions, and carry findings into an authorized repair. Read software-specific methods when the problem requires them.
 
 ## Development
 
