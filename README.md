@@ -16,12 +16,12 @@ Skill categories, invocation choices, and personal or project adaptation are dev
 
 English Skills are in [`skills/`](./skills/), and Chinese Skills are in [`skills-zh/`](./skills-zh/).
 
-- [writing-for-agents](./skills/writing-for-agents/SKILL.md): Write documents for agents. From [matt](https://github.com/mattpocock/skills).
-- [wellsaid](./skills/wellsaid/SKILL.md): Write clear, natural text. Inspired by [Lauren Tan's unslop](https://github.com/cursor/plugins/blob/main/pstack/skills/unslop/SKILL.md).
-- [reflect](./skills/reflect/SKILL.md): Review work sessions and propose improvements. From Lauren Tan and Matt Pocock.
-- [thinking-method](./skills/thinking-method/SKILL.md): An original rstack Skill for reusable analysis, grouping seven thinking methods behind one model-invoked entry.
-- [research](./skills/research/SKILL.md): Gather and assess evidence, preserve original sources, and deliver findings that another session can continue. Inspired by [Matt's research](https://github.com/mattpocock/skills/blob/main/skills/engineering/research/SKILL.md).
-- [improve](./skills/improve/SKILL.md): Improve existing work through evidence-based iterations. From Lauren Tan's hillclimb.
+- [writing-for-agents](./skills/writing-for-agents/SKILL.md): Write documents that agents use, including Skills, `AGENTS.md`, and `CLAUDE.md`. Organize steps and reference material, make reading conditions explicit, and define checkable completion criteria.
+- [wellsaid](./skills/wellsaid/SKILL.md): Write clear, natural text for replies, documents, code comments, and collaboration messages. Remove stock phrasing, filler, and defensive language. Preserve facts, meaning, and the author's voice while adapting the text to its readers and purpose.
+- [reflect](./skills/reflect/SKILL.md): Review work sessions for reusable lessons and concrete improvements. Examine the record through judgment, tooling, and divergent lenses, then check findings against the evidence, their scope, and existing guidance. Apply the changes the user selects.
+- [thinking-method](./skills/thinking-method/SKILL.md): Choose a thinking method for the question at hand through a model-invoked entry. Select or combine seven methods as needed: how, why, analogy, discussion, modeling, first-principle reasoning, and metacognition.
+- [research](./skills/research/SKILL.md): Gather and assess evidence to answer research questions with traceable findings. Follow claims to primary sources and distinguish facts, inferences, and unresolved disagreements. For durable delivery, preserve source material and open questions so another session can continue the work.
+- [improve](./skills/improve/SKILL.md): Improve existing work through evidence-based iterations against an agreed goal. Establish a baseline, comparison method, and properties to preserve, then compare candidates and decide whether to keep, revert, or leave each result inconclusive. Apply the process to code, documents, or agent-facing guidance.
 
 ## Development
 
@@ -41,12 +41,12 @@ pnpm hooks:install
 
 Repository instructions for Agents are in [AGENTS.md](./AGENTS.md).
 
-## Acknowledgments
-
-I learned from and reused material from [pstack](https://github.com/cursor/plugins/tree/main/pstack) and [matt's skills](https://github.com/mattpocock/skills).
-
 ## License
 
 [MIT License](./LICENSE).
 
 Third-party Skills retain the original licenses and attribution included in their directories.
+
+## Acknowledgments
+
+I learned from and reused material from [pstack](https://github.com/cursor/plugins/tree/main/pstack) and [matt's skills](https://github.com/mattpocock/skills).
