@@ -21,6 +21,7 @@ English Skills are in [`skills/`](./skills/), and Chinese Skills are in [`skills
 - [reflect](./skills/reflect/SKILL.md): Review work sessions and propose improvements. From Lauren Tan and Matt Pocock.
 - [thinking-method](./skills/thinking-method/SKILL.md): An original rstack Skill for reusable analysis, grouping seven thinking methods behind one model-invoked entry.
 - [research](./skills/research/SKILL.md): Gather and assess evidence, preserve original sources, and deliver findings that another session can continue. Inspired by [Matt's research](https://github.com/mattpocock/skills/blob/main/skills/engineering/research/SKILL.md).
+- [improve](./skills/improve/SKILL.md): Improve existing work through evidence-based iterations. From Lauren Tan's hillclimb.
 
 ## Development
 

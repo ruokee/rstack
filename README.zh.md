@@ -21,6 +21,7 @@ Skill 分类、触发方式、个人适配及项目适配随具体收录项逐�
 - [reflect](./skills-zh/reflect/SKILL.md)：复盘工作过程，提出改进建议，来自 Lauren Tan 和 Matt Pocock。
 - [thinking-method](./skills-zh/thinking-method/SKILL.md)：rstack 原创的通用分析技能，将七种思考方法整合为一个可由模型按需触发的入口。
 - [research](./skills-zh/research/SKILL.md)：搜集和核对证据，保存原始资料，形成可跨会话接续的研究结果。参考 [Matt research](https://github.com/mattpocock/skills/blob/main/skills/engineering/research/SKILL.md)。
+- [improve](./skills-zh/improve/SKILL.md)：通过前后对照迭代改进已有成果，来自 Lauren Tan 的 hillclimb。
 
 ## 开发
 
