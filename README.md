@@ -25,6 +25,7 @@ English Skills are in [`skills/`](./skills/), and Chinese Skills are in [`skills
 - [teach](./skills/teach/SKILL.md): Explain concepts, mechanisms, and methods. Build on what the learner already knows, adapt explanations to feedback, and offer practice when requested. Default to teaching in the conversation; prepare durable learning materials for an explicit need.
 - [diagnose](./skills/diagnose/SKILL.md): Investigate problems and anomalies through evidence, competing explanations, and discriminating checks. Handle repeatable, intermittent, historical, and workflow problems, state the strength of causal conclusions, and carry findings into an authorized repair. Read software-specific methods when the problem requires them.
 - [technical-writing](./skills/technical-writing/SKILL.md): Write, revise, or review technical documents for human readers, including READMEs, guides, references, and proposals. Organize content around readers' tasks, check technical facts and examples, and preserve conditions and implementation status.
+- [code-design](./skills/code-design/SKILL.md): Design types, interfaces, modules, dependencies, and state ownership from real caller usage. Improve existing structures and revisit assumptions exposed during implementation.
 
 ## Development
 
