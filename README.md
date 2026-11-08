@@ -28,6 +28,7 @@ English Skills are in [`skills/`](./skills/), and Chinese Skills are in [`skills
 - [diagnose](./skills/diagnose/SKILL.md): Investigate problems and anomalies through evidence, competing explanations, and discriminating checks. Handle repeatable, intermittent, historical, and workflow problems, state the strength of causal conclusions, and carry findings into an authorized repair. Read software-specific methods when the problem requires them.
 - [technical-writing](./skills/technical-writing/SKILL.md): Write, revise, or review technical documents for human readers, including READMEs, guides, references, and proposals. Organize content around readers' tasks, check technical facts and examples, and preserve conditions and implementation status.
 - [code-design](./skills/code-design/SKILL.md): Design types, interfaces, modules, dependencies, and state ownership from real caller usage. Improve existing structures and revisit assumptions exposed during implementation.
+- [code-quality](./skills/code-quality/SKILL.md): Check code, tests, and code designs, and review or configure lint and type-checking settings. Judge correctness, structure, tests, and refactoring risks against contracts and counterevidence. Report locations, effects, and repair directions, reading design references as needed.
 
 ## Development
 
