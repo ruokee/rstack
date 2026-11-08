@@ -12,11 +12,13 @@ Each addition records its source, purpose, and reason for inclusion. Upstream Sk
 
 Skill categories, invocation choices, and personal or project adaptation are developed alongside the selected Skills.
 
+All included Skills allow model discovery by default. Mention the task intent, Skill names, or trigger terms in an ordinary request so the agent can select and read the guidance it needs. Manual-only invocation can be chosen as an exception based on actual use.
+
 ## Skills
 
 English Skills are in [`skills/`](./skills/), and Chinese Skills are in [`skills-zh/`](./skills-zh/).
 
-- [writing-for-agents](./skills/writing-for-agents/SKILL.md): Write documents that agents use, including Skills, `AGENTS.md`, and `CLAUDE.md`. Organize steps and reference material, make reading conditions explicit, and define checkable completion criteria.
+- [writing-for-agents](./skills/writing-for-agents/SKILL.md): Write content for agents, including Skills, `AGENTS.md`, prompts, tool/MCP descriptions, and subagent instructions. Organize steps and reference material, write precise skill triggers, make reading conditions explicit, and define checkable completion criteria.
 - [wellsaid](./skills/wellsaid/SKILL.md): Write clear, natural text for replies, documents, code comments, and collaboration messages. Remove stock phrasing, filler, and defensive language. Preserve facts, meaning, and the author's voice while adapting the text to its readers and purpose.
 - [reflect](./skills/reflect/SKILL.md): Review work sessions for reusable lessons and concrete improvements. Examine the record through judgment, tooling, and divergent lenses, then check findings against the evidence, their scope, and existing guidance. Apply the changes the user selects.
 - [thinking-method](./skills/thinking-method/SKILL.md): Choose a thinking method for the question at hand. Select or combine seven methods as needed: how, why, analogy, discussion, modeling, first-principle reasoning, and metacognition.

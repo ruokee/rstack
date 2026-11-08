@@ -1,7 +1,6 @@
 ---
 name: teach
-description: Explain the concept, mechanism, or method behind the current question, building on what you already know.
-disable-model-invocation: true
+description: Use when the user wants to understand a concept, mechanism, or method, or remains confused by an explanation.
 metadata:
   version: "1.0.0"
 ---

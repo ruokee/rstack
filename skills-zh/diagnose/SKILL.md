@@ -1,6 +1,6 @@
 ---
 name: diagnose
-description: 诊断需要调查原因的问题及异常。适用于技术或非技术场景中的故障、退化、意外结果及互相矛盾的观察。
+description: 遇到故障、退化、意外结果或相互矛盾的观察，需要调查原因时使用。
 metadata:
   version: "1.0.0"
 ---

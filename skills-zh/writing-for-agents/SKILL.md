@@ -1,17 +1,19 @@
 ---
 name: writing-for-agents
-description: 为 Agent 编写文档。创建或编辑 Skill，或者修改 AGENTS.md、CLAUDE.md 时使用。
+description: 创建或编辑 Skill、AGENTS.md、Prompt、Tool/MCP 描述、subagent 指令等面向 Agent 的内容时使用。
 metadata:
   version: "1.0.0"
 ---
 
-本文适用于 Agent 阅读的各种文档，包括 Skill、`AGENTS.md`、`CLAUDE.md`，以及通过引用加载的文档。它们的封装形式不同，写作方法相同。目标是让 Agent 每次遵循相同的过程，从而使行为可预测。每次输出可以不同。
+本文适用于 Agent 阅读的各种内容，包括 Skill、`AGENTS.md`、Prompt、Tool/MCP 描述、subagent 指令，以及通过引用加载的文档。它们的封装形式不同，写作方法相同。目标是让 Agent 每次遵循相同的过程，从而使行为可预测。每次输出可以不同。
 
-编写 Skill 时，读取 [Skill 机制](./SKILL-MECHANICS.md)，了解 frontmatter、调用方式及路由 Skill。
+编写 Skill 时，读取 [Skill 机制](./SKILL-MECHANICS.md)，了解 frontmatter、description 触发条件、调用方式及路由 Skill。
 
 ## 上下文指针
 
 上下文指针是 Agent 当前上下文中的一条引用，它指向上下文之外的材料，并说明何时读取。Skill 的 description，以及 `AGENTS.md` 中指向另一份文档的一行说明，都属于上下文指针。Agent 何时读取目标、能否稳定触发，取决于指针的措辞。如果必读材料被放在含糊的指针之后，就会造成执行差异。先明确指针的触发条件。只有这样仍然无效时，才把材料移入正文。
+
+Skill 的 `description` 是最主要的 Trigger。按[触发描述](./SKILL-MECHANICS.md#触发描述)编写加载条件。
 
 指针承担两项职责：说明材料是什么，列出应当触发读取的不同情况。每种情况都是文档处理的一条分支，不同执行过程可能进入不同分支。常驻指针中的每个词都会在每轮对话中占用上下文，因此要比正文更精简：
 

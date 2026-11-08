@@ -1,7 +1,6 @@
 ---
 name: code-design
 description: 设计新代码或改进既有代码结构时使用。
-disable-model-invocation: true
 metadata:
   version: "1.0.0"
 ---

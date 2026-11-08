@@ -1,7 +1,6 @@
 ---
 name: improve
-description: Improve an existing artifact through evidence-based iterations against an agreed goal.
-disable-model-invocation: true
+description: Use when iteratively improving an existing artifact against a clear goal through before-and-after comparison.
 metadata:
   version: "1.0.0"
 ---

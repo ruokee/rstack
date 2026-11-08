@@ -1,6 +1,6 @@
 ---
 name: thinking-method
-description: Load when the current task calls for or the user mentions how, why, analogy, discussion, modeling, first-principle reasoning, or metacognition.
+description: Use when answering how or why questions about mechanisms or reasons, drawing analogies, discussing open questions, modeling concepts, reasoning from first principles, or using metacognition.
 metadata:
   version: "1.0.0"
 ---

@@ -1,6 +1,6 @@
 ---
 name: diagnose
-description: Diagnose problems and anomalies when their cause needs investigation. Use for failures, regressions, unexpected outcomes, or conflicting observations across technical and non-technical contexts.
+description: Use when investigating the causes of failures, regressions, unexpected outcomes, or conflicting observations.
 metadata:
   version: "1.0.0"
 ---

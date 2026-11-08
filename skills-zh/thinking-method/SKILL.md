@@ -1,6 +1,6 @@
 ---
 name: thinking-method
-description: 当前任务需要或用户提及 how 机制分析、why 缘由追溯、类比、discuss 开放讨论、modeling 概念建模、first-principle 第一性原理思考或元认知时加载。
+description: 需要回答 how 或 why 这类机制或缘由问题、类比、开放讨论、概念建模、第一性原理思考或元认知时使用。
 metadata:
   version: "1.0.0"
 ---

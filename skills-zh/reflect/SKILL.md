@@ -1,7 +1,6 @@
 ---
 name: reflect
-description: 复盘工作过程，提炼可复用经验及具体改进建议。
-disable-model-invocation: true
+description: 需要复盘工作会话、提炼可复用经验或查找反复出现的工作方式问题时使用。
 metadata:
   version: "1.0.0"
 ---

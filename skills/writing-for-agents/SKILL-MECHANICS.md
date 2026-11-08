@@ -2,6 +2,24 @@
 
 The skill-specific branch of [`writing-for-agents`](./SKILL.md): frontmatter, invocation choices, and router skills. The general writing guidance is in `SKILL.md`.
 
+## Description
+
+Write `description` as the primary trigger for loading the skill. Describe when the agent should read it. Keep explanations of the skill's capabilities, process, and results in repository documentation such as a README.
+
+- Start with a short, accurate trigger sentence covering the main task intent.
+- Add keywords or a representative example only when they distinguish a real use case. Keep distinct branches and prune synonymous phrases and long example lists.
+- Make the intended scope clear enough to separate nearby skills. Prefer positive conditions; use a brief exclusion when a likely confusion needs it.
+- Keep the wording concise because discovery descriptions occupy context before the skill is needed. Aim for useful matches and fewer unintended loads, then refine from actual use.
+
+Apply this trigger standard to model-discoverable skills. Human-facing display fields can describe the skill's purpose.
+
+### Common mistake
+
+A common mistake is to write `description` as a summary of what the skill is or does. A trigger condition tells the agent when to read it.
+
+- Capability summary: `Provides methods for analyzing anomalies and finding causes.`
+- Trigger condition: `Use when investigating the cause of an anomaly, regression, or mismatch with expectations.`
+
 ## Invocation
 
 For hosts that support `disable-model-invocation`, two common configurations trade the two loads:

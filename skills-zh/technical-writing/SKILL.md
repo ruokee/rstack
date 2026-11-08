@@ -1,7 +1,6 @@
 ---
 name: technical-writing
-description: 围绕读者任务编写、修订或审阅面向人的技术文档，组织内容结构，核对关键技术细节。
-disable-model-invocation: true
+description: 编写、修订或审阅面向人的技术文档时使用，例如 README、指南、参考文档或方案。
 metadata:
   version: "1.0.0"
 ---

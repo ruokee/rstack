@@ -1,7 +1,6 @@
 ---
 name: reflect
-description: Review a work session for durable lessons and concrete improvements.
-disable-model-invocation: true
+description: Use when reviewing work sessions to identify reusable lessons or recurring workflow problems.
 metadata:
   version: "1.0.0"
 ---

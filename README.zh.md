@@ -12,11 +12,13 @@ rstack 提供的 Skill 是通用的。也可以在此基础上创建和维护项
 
 Skill 分类、触发方式、个人适配及项目适配随具体收录项逐步确定。
 
+所有已收录 Skill 默认允许 Agent 发现。在普通请求中说明任务意图、提及 Skill 名称或触发词，由 Agent 选择并读取所需指导。根据实际使用情况，将手工触发选作例外。
+
 ## Skills
 
 英文 Skill 位于 [`skills/`](./skills/)，中文 Skill 位于 [`skills-zh/`](./skills-zh/)。
 
-- [writing-for-agents](./skills-zh/writing-for-agents/SKILL.md)：编写 Agent 使用的文档，适用于 Skill、`AGENTS.md` 和 `CLAUDE.md` 等指引。组织执行步骤和参考资料，明确读取条件，定义可检查的完成标准。
+- [writing-for-agents](./skills-zh/writing-for-agents/SKILL.md)：编写面向 Agent 的内容，适用于 Skill、`AGENTS.md`、Prompt、Tool/MCP 描述、subagent 指令等。组织执行步骤和参考资料，编写准确的技能触发条件，明确读取条件，定义可检查的完成标准。
 - [wellsaid](./skills-zh/wellsaid/SKILL.md)：自然、直接地表达，适用于回复、文档、代码注释和协作消息。清理套话、冗余和防御性表述。保留事实、原意及作者的声音，让文字贴合读者和使用场景。
 - [reflect](./skills-zh/reflect/SKILL.md)：复盘工作过程，提炼可复用的经验和具体改进建议。从判断、工具使用和发散思考三个视角检查记录，核对发现的证据、适用范围及已有规则。落实用户选定的改动。
 - [thinking-method](./skills-zh/thinking-method/SKILL.md)：为当前问题选择合适的思考方法。覆盖机制解释、原因分析、类比、讨论、建模、第一性原理和元认知七种方法，按问题需要读取或组合。

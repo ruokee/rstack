@@ -1,7 +1,6 @@
 ---
 name: technical-writing
-description: Write, revise, or review human-facing technical documents around readers' tasks, with clear structure and checked technical details.
-disable-model-invocation: true
+description: Use when writing, revising, or reviewing human-facing technical documents such as READMEs, guides, references, or proposals.
 metadata:
   version: "1.0.0"
 ---

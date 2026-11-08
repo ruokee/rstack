@@ -1,7 +1,6 @@
 ---
 name: teach
-description: 围绕当前问题，结合已有认识讲清概念、机制或方法。
-disable-model-invocation: true
+description: 用户希望理解概念、机制或方法，或对已有解释仍有困惑时使用。
 metadata:
   version: "1.0.0"
 ---
