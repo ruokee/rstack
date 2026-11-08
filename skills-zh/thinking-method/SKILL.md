@@ -1,8 +1,8 @@
 ---
 name: thinking-method
-description: 需要回答 how 或 why 这类机制或缘由问题、类比、开放讨论、概念建模、第一性原理思考或元认知时使用。
+description: 需要回答 how 或 why 这类机制或缘由问题、类比、开放讨论、概念建模、第一性原理思考、提出假设或元认知时使用。
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # 思考方法
@@ -17,6 +17,7 @@ metadata:
 - **Discuss**：围绕开放问题形成共同理解，读取[讨论](./references/discuss.md)。
 - **Modeling**：澄清概念、关系、状态或约束，读取[抽象建模](./references/modeling.md)。
 - **First-principle**：检查沿用的假设，从有依据的前提出发推导方案，读取[第一性原理思维](./references/first-principle.md)。
+- **Hypothesis**：写清前提、提出解释或探索假想条件，读取[假设](./references/hypothesis.md)。
 - **Metacognition**：依据理解偏差或工作无效的证据调整方法，读取[元认知](./references/metacognition.md)。
 
 根据用户意图和实际困难选择方法。仅引用某个术语不构成使用该方法的请求。先使用当前需要的方法，出现具体缺口时再读取其他分支。简单问题可以用简短回答完成。

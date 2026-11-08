@@ -21,7 +21,7 @@ Skill 分类、触发方式、个人适配及项目适配随具体收录项逐�
 - [writing-for-agents](./skills-zh/writing-for-agents/SKILL.md)：编写面向 Agent 的内容，适用于 Skill、`AGENTS.md`、Prompt、Tool/MCP 描述、subagent 指令等。组织执行步骤和参考资料，编写准确的技能触发条件，明确读取条件，定义可检查的完成标准。
 - [wellsaid](./skills-zh/wellsaid/SKILL.md)：自然、直接地表达，适用于回复、文档、代码注释和协作消息。清理套话、冗余和防御性表述。保留事实、原意及作者的声音，让文字贴合读者和使用场景。
 - [reflect](./skills-zh/reflect/SKILL.md)：复盘工作过程，提炼可复用的经验和具体改进建议。从判断、工具使用和发散思考三个视角检查记录，核对发现的证据、适用范围及已有规则。落实用户选定的改动。
-- [thinking-method](./skills-zh/thinking-method/SKILL.md)：为当前问题选择合适的思考方法。覆盖机制解释、原因分析、类比、讨论、建模、第一性原理和元认知七种方法，按问题需要读取或组合。
+- [thinking-method](./skills-zh/thinking-method/SKILL.md)：为当前问题选择或组合机制解释、原因分析、类比、讨论、建模、第一性原理、假设和元认知八种方法。将重要假设写入当前活动的文档，用于计划、复盘、诊断或情境推演。
 - [research](./skills-zh/research/SKILL.md)：搜集和核对证据，围绕研究问题形成有出处的结论。追溯一手来源，区分事实、推断和待解分歧。需要保存成果时，将原始资料和待解问题一并整理，便于后续会话接续。
 - [improve](./skills-zh/improve/SKILL.md)：围绕约定目标，通过前后对照迭代改进已有成果。先确定基线、评价方法和必须保持的属性，再逐轮比较候选改动，作出保留、撤回或待定的判断。适用于代码、文档和 Agent 指引等对象。
 - [teach](./skills-zh/teach/SKILL.md)：讲解概念、机制和方法。从学习者已有的认识出发，根据反馈调整讲法，按需安排练习。默认在会话中教学，持久学习材料按明确需要安排。

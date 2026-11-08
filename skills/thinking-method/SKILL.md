@@ -1,8 +1,8 @@
 ---
 name: thinking-method
-description: Use when answering how or why questions about mechanisms or reasons, drawing analogies, discussing open questions, modeling concepts, reasoning from first principles, or using metacognition.
+description: Use when answering how or why questions about mechanisms or reasons, drawing analogies, discussing open questions, modeling concepts, reasoning from first principles, forming hypotheses, or using metacognition.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Thinking method
@@ -17,6 +17,7 @@ Choose a thinking method that helps answer the current question. Read the releva
 - **Discuss**: develop a shared understanding of an open question. Read [discuss](./references/discuss.md).
 - **Modeling**: clarify concepts, relationships, states, or constraints. Read [modeling](./references/modeling.md).
 - **First-principle**: examine inherited assumptions and derive an approach from grounded premises. Read [first-principle](./references/first-principle.md).
+- **Hypothesis**: make assumptions explicit, propose explanations, or explore hypothetical conditions. Read [hypothesis](./references/hypothesis.md).
 - **Metacognition**: use evidence of confusion or ineffective work to adjust the current approach. Read [metacognition](./references/metacognition.md).
 
 Select by the user's intent and the actual difficulty. A quoted term alone is not a request to apply its method. Start with the methods needed now; load another branch when a specific gap calls for it. A simple question can need only a short answer.
