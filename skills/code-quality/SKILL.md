@@ -21,7 +21,9 @@ Judge code, tests, and code designs against the project's confirmed contracts, c
 
 Read the reference matching the current question:
 
-- For boundary wrappers translating units, errors, or representations, read both [Structural quality](./structure.md) and [Adapter](../code-design/design-patterns/adapter.md) before judging the translation. In OMP, use `skill://code-design/design-patterns/adapter.md`.
+- Before judging boundary wrappers that translate units, errors, or representations:
+    1. Read [Structural quality](./structure.md) to identify the wrapper's responsibilities.
+    2. Read [Adapter](../code-design/design-patterns/adapter.md) to compare the source and target contracts. In OMP, use `skill://code-design/design-patterns/adapter.md`.
 - For values, errors, state, resources, concurrency, or a design's promised behavior, read [Correctness](./correctness.md).
 - For mixed responsibilities, duplicated rules, coupling, unnecessary indirection, or change cost, read [Structural quality](./structure.md).
 - For assertions, expected results, behavior coverage, or test-first feedback, read [Behavioral tests](./testing/behavior.md).
@@ -35,7 +37,13 @@ Load only references relevant to the judgment. Multiple references can serve one
 
 ## Results
 
-Follow the caller's requested format. For an ordinary review, lead with supported findings. Classify each item as a supported finding, a clarification question, or checked coverage. Once a finding's necessary premises are established, give its location, supported triggering conditions, impact, and smallest sufficient repair direction, with severity and confidence. Severity describes consequences; confidence describes evidence strength. A missing premise becomes a clarification question when its answer is needed for an in-scope judgment; name the missing fact and affected judgment. Record satisfied contracts and contract-excluded inputs under coverage. Repair recommendations address supported findings. Apply this classification and finding standard throughout the report, including its summary and repair recommendations. A zero-finding result states the object, coverage, and checks actually performed.
+Follow the caller's requested format. For an ordinary review, lead with supported findings. Classify each item by its evidence:
+
+- A supported finding establishes its necessary premises and gives the location, supported triggering conditions, impact, and smallest sufficient repair direction. Severity describes the consequences; confidence describes the evidence strength.
+- A clarification question asks for a missing fact whose answer is needed for an in-scope judgment and identifies the affected judgment. Keep every unconfirmed premise explicit in conditional consequences. Resolve those premises before prescribing a repair or assigning severity and confidence.
+- Checked coverage records satisfied contracts and contract-excluded inputs. A zero-finding result states the object, coverage, and checks actually performed.
+
+Apply this classification and finding standard throughout the report, including its summary and repair recommendations.
 
 Tool diagnostics retain their tool attribution and original locations. Group duplicate diagnostics and add the relevant contract or repair tradeoff. A request specifically for lint or type-checker results receives those diagnostics directly.
 
