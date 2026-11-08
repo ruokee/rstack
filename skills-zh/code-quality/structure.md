@@ -36,7 +36,7 @@
 
 ## 薄包装
 
-审查包装的单位、错误或表示转换责任时，先读取[适配器](../code-design/design-patterns/adapter.md)。在 OMP 中使用 `skill://code-design/design-patterns/adapter.md`。审查协调子系统操作的接口时，先读取[外观](../code-design/design-patterns/facade.md)。
+审查协调子系统操作的接口时，先读取[外观](../code-design/design-patterns/facade.md)。
 
 包装可以承担有用的命名、转换、稳定契约、生命周期、替换边界或横切行为。单个实现同样可以承担这些责任。
 

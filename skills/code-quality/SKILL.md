@@ -21,6 +21,7 @@ Judge code, tests, and code designs against the project's confirmed contracts, c
 
 Read the reference matching the current question:
 
+- For boundary wrappers translating units, errors, or representations, read both [Structural quality](./structure.md) and [Adapter](../code-design/design-patterns/adapter.md) before judging the translation. In OMP, use `skill://code-design/design-patterns/adapter.md`.
 - For values, errors, state, resources, concurrency, or a design's promised behavior, read [Correctness](./correctness.md).
 - For mixed responsibilities, duplicated rules, coupling, unnecessary indirection, or change cost, read [Structural quality](./structure.md).
 - For assertions, expected results, behavior coverage, or test-first feedback, read [Behavioral tests](./testing/behavior.md).

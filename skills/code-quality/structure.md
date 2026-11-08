@@ -36,7 +36,7 @@ Protocol adapters, separately deployed consumers, and different storage formats 
 
 ## Thin wrappers
 
-When reviewing a wrapper's translation of units, errors, or representations, first read [Adapter](../code-design/design-patterns/adapter.md). In OMP, use `skill://code-design/design-patterns/adapter.md`. For an interface coordinating subsystem operations, first read [Facade](../code-design/design-patterns/facade.md).
+For an interface coordinating subsystem operations, first read [Facade](../code-design/design-patterns/facade.md).
 
 A wrapper earns its place through a useful name, translation, stable contract, lifecycle, replaceable boundary, or cross-cutting behavior. One implementation can provide any of these responsibilities.
 

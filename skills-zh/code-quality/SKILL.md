@@ -21,6 +21,7 @@ metadata:
 
 按当前问题读取对应参考：
 
+- 边界包装涉及单位、错误或表示转换时，先读取[结构质量](./structure.md)及[适配器](../code-design/design-patterns/adapter.md)，再判断转换责任。在 OMP 中使用 `skill://code-design/design-patterns/adapter.md`。
 - 值、错误、状态、资源、并发或设计承诺的行为，读取[正确性](./correctness.md)。
 - 职责混杂、共同规则重复、耦合、无效间接层或变化成本，读取[结构质量](./structure.md)。
 - 断言、期望值、行为覆盖或测试先行反馈，读取[行为测试](./testing/behavior.md)。
