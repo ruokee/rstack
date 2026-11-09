@@ -34,4 +34,4 @@ A parser, date calculation, conversion, or other error-prone utility can merit d
 
 ## Changes
 
-Before recommending removal, identify any unique behavior, boundary, failure diagnosis, or documented scenario the test contributes. Retain that protection in the proposed result. Test edits follow the current task's authorization. Reliability issues belong to [Test reliability](./reliability.md).
+Before recommending removal, identify any unique behavior, boundary, failure diagnosis, or documented scenario the test contributes. Retain that protection in the proposed result. Reliability issues belong to [Test reliability](./reliability.md).

@@ -18,7 +18,7 @@ For one rule copied into multiple callers, identify an actual disagreement or sy
 
 Strings, numbers, and mappings become a problem when callers repeatedly interpret units, distinguish identities, enforce combinations, or reconstruct legal states. A wrapper is useful when its normal creation and mutation paths actually preserve the required meaning.
 
-Check the language mechanism. Python `NewType` distinguishes uses statically; `TypedDict` describes a static mapping shape. Neither validates arbitrary runtime input. A frozen dataclass restricts normal field assignment. Nested mutable data and unchecked construction retain their own obligations. Rust field privacy can restrict construction to a module, whose constructors and mutations must still enforce the rule. Choose runtime validation according to the project's input contract.
+Check which invalid states the representation excludes and whether its guarantees come from compile-time checks, runtime checks, or usage conventions. Trace invariants through construction, mutation, aliasing, access, and nested mutable data. Judge field-assignment restrictions separately from the mutability of nested data. Choose runtime validation according to the project's input contract.
 
 Use a distinct value type when it prevents a demonstrated unit or identity mix-up, or an enum or record when it makes required combinations explicit. Keep checks at the responsible construction or mutation boundary. Extra types also introduce conversions and interfaces; choose them for the actual rule they enforce.
 
@@ -36,9 +36,9 @@ Protocol adapters, separately deployed consumers, and different storage formats 
 
 ## Thin wrappers
 
-Compare the source and public contracts for accepted values, units, precision, error categories, required cause information, ownership, and observable effects. For a coordinating interface, trace the operations and order it promises, including partial failure and cleanup. These translations and coordination duties can justify a wrapper even with one underlying implementation.
+Compare the source and public contracts for accepted values, units, precision, error categories, required cause information, ownership, and observable effects. For a coordinating interface, trace the operations and order it promises, including partial failure and cleanup.
 
-A wrapper earns its place through a useful name, translation, stable contract, lifecycle, replaceable boundary, or cross-cutting behavior. One implementation can provide any of these responsibilities.
+A useful name, translation, stable contract, lifecycle, replaceable boundary, or cross-cutting behavior can justify a wrapper. These responsibilities remain useful with one underlying implementation.
 
 For a suspected middleman, compare the knowledge required of every caller if it is removed. Report indirection when the wrapper adds navigation and propagation cost without an independent responsibility. Check changes to error mapping, units, ownership, and compatibility before suggesting removal.
 
@@ -52,4 +52,10 @@ Dead-code claims need entry-point, registration, reflection, and dynamic-referen
 
 ## Repair direction
 
-Choose the smallest change that removes the demonstrated cost. State the preserved behavior and affected callers. Transformation risks belong to [Change safety](./change-safety.md). Complete replacement structures can use code-design. The analysis result remains a finding and recommendation under the current task's permissions.
+Choose the smallest change that removes the demonstrated cost. State the preserved behavior and affected callers. Transformation risks belong to [Change safety](./change-safety.md). Complete replacement structures can use code-design.
+
+## Language guidance
+
+For Python projects, see [Python type checking](../tooling/py-type-checking.md).
+
+For Rust projects, see [Rust correctness](./rust-correctness.md).

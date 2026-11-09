@@ -12,30 +12,7 @@ Prefer per-test resources and cleanup that runs after assertion failure. Restora
 
 A fixed sleep assumes work finishes within an unrelated duration. Slow machines and alternate schedules can violate that assumption. Wait for a result, task completion, event, or explicitly defined state. A deadline bounds waiting. It does not establish that the operation completed.
 
-This complete Python 3.11+ example owns its directory and awaits the writer before reading its result:
-
-```python
-import asyncio
-from pathlib import Path
-from tempfile import TemporaryDirectory
-
-
-async def write_report(path):
-    await asyncio.to_thread(path.write_text, "ready\n", encoding="utf-8")
-
-
-async def check_report():
-    with TemporaryDirectory() as directory:
-        path = Path(directory) / "report.txt"
-        async with asyncio.TaskGroup() as tasks:
-            tasks.create_task(write_report(path))
-        assert path.read_text(encoding="utf-8") == "ready\n"
-
-
-asyncio.run(check_report())
-```
-
-Normal TaskGroup exit joins the writer before the assertion and directory cleanup. Task cancellation does not stop an already running `to_thread` function. A cancellation test must separately join or otherwise coordinate the thread before releasing its resources. Preserve a resource's owner until all work using it has ended, including exceptional and cancelled exits. The project's runtime determines how that completion is observed.
+Distinguish a cancellation request, the end of a wait, and the actual end of work. Before releasing a resource, require completion evidence covering all users. Check who still owns the resource and who joins or coordinates remaining work on exceptional and cancelled exits. A runtime may cancel only the waiter while in-flight work continues. Check the guarantees of the project's actual runtime.
 
 ## Determinism
 
@@ -47,4 +24,8 @@ Concurrency tests can use explicit synchronization to force a relevant race. Ran
 
 Use real dependencies when their semantics are required. A fake or mock should preserve the errors, ordering, transactions, cancellation, or concurrency that the tested behavior depends on. Echoing a configured return value checks setup rather than integration. Verify the application's real use of a dependency at the relevant boundary.
 
-For erratic failures, identify the state or interleaving, its observed impact, and a matching repair. A rerun that passes is another observation. It does not replace the explanation of the failure. Quarantine decisions and permanent changes follow the current workflow's authority.
+For erratic failures, identify the state or interleaving, its observed impact, and a matching repair. A rerun that passes is another observation. It does not replace the explanation of the failure.
+
+## Language guidance
+
+For Python projects, see [Python test reliability](./py-reliability.md).

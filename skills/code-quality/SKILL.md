@@ -1,13 +1,13 @@
 ---
 name: code-quality
-description: Use when checking the quality of code, tests, code designs, refactoring candidates, or migration candidates, or reviewing or configuring quality settings such as lint rules and type checking.
+description: Use when checking the quality of code, tests, code designs, refactoring candidates, or migration candidates, or selecting or configuring quality settings such as formatting, lint, custom rules, and type checking.
 metadata:
   version: "1.0.0"
 ---
 
 # Code quality
 
-Judge code, tests, and code designs against the project's confirmed contracts, constraints, and quality goals. Quality tooling needs an explicit account of what it checks and where it applies. The current task supplies scope, permissions, output format, and workflow.
+Judge code, tests, and code designs against the project's confirmed contracts, constraints, and quality goals. Quality tooling needs explicit checking capabilities and effective scope. The current task supplies scope, output format, and workflow.
 
 ## Evidence
 
@@ -19,7 +19,7 @@ Judge code, tests, and code designs against the project's confirmed contracts, c
 
 ## References
 
-Read the reference matching the current question:
+Read the general reference matching the current question, then follow its language guidance for concrete mechanisms and runnable examples:
 
 - For values, errors, state, resources, concurrency, or a design's promised behavior, read [Correctness](./code/correctness.md).
 - For mixed responsibilities, duplicated rules, coupling, unnecessary indirection, change cost, or boundary wrappers that translate units, errors, or representations, read [Structural quality](./code/structure.md). For wrappers, compare responsibilities and source-to-public contract mappings.
@@ -27,7 +27,7 @@ Read the reference matching the current question:
 - For assertions, expected results, behavior coverage, or test-first feedback, read [Behavioral tests](./testing/behavior.md).
 - For timing, order, shared state, external resources, or concurrent tests, read [Test reliability](./testing/reliability.md).
 - For fragile assertions, obscure fixtures, duplicate tests, or low-value coverage, read [Test maintenance](./testing/maintenance.md).
-- For lint rules, file scope, exceptions, or automatic fixes, read [Lint settings](./tooling/lint.md).
+- For formatting, lint rules, custom checks, effective files, exceptions, or automatic fixes, read [Lint settings](./tooling/lint.md).
 - For type-checking scope, strictness, dynamic boundaries, or type escapes, read [Type checking](./tooling/type-checking.md).
 
 Load only references relevant to the judgment. Multiple references can serve one question. If the code-design Skill is available, its design material can provide further guidance. In this Skill, `code-design/…` denotes reference files within code-design.
@@ -42,8 +42,8 @@ Follow the caller's requested format to report code-quality analysis of the curr
 
 Apply this classification and finding standard throughout the report, including its summary and repair recommendations.
 
-Tool diagnostics retain their tool attribution and original locations. Group duplicate diagnostics and add the relevant contract or repair tradeoff. A request specifically for lint or type-checker results receives those diagnostics directly.
+Tool diagnostics retain their tool attribution and original locations. Group duplicate diagnostics and add the relevant contract or repair tradeoff. A request specifically for tool results receives those diagnostics directly.
 
 For tooling requests, explain the target quality problem, selected checks, effective files, strictness, exceptions, diagnostic meaning, and verification. Separate existing defects from proposed constraints.
 
-Review, advice, and modification each follow the current task's authorization. Applying fixes, changing configuration, creating tests, and restructuring code require their corresponding permission. A migration review reports omitted callers and residual paths; the implementation's clean-cutover obligation remains a criterion for that judgment.
+Analysis and advice follow the current task's scope. Applying fixes, writing configuration, creating tests, and restructuring code require their corresponding authorization. The current task determines check cadence, commits, rollback, and deployment.

@@ -12,30 +12,7 @@
 
 固定休眠假设工作会在无关的时长内结束。较慢机器及不同调度可能违反该假设。等待结果、任务完成、事件或明确状态。截止时间约束等待上限。它不能说明操作已经完成。
 
-以下完整 Python 3.11+ 示例拥有自己的目录，等写入任务结束后再读取结果：
-
-```python
-import asyncio
-from pathlib import Path
-from tempfile import TemporaryDirectory
-
-
-async def write_report(path):
-    await asyncio.to_thread(path.write_text, "ready\n", encoding="utf-8")
-
-
-async def check_report():
-    with TemporaryDirectory() as directory:
-        path = Path(directory) / "report.txt"
-        async with asyncio.TaskGroup() as tasks:
-            tasks.create_task(write_report(path))
-        assert path.read_text(encoding="utf-8") == "ready\n"
-
-
-asyncio.run(check_report())
-```
-
-TaskGroup 正常退出时，写入任务在断言及目录清理前结束。任务取消不会停止已经运行的 `to_thread` 函数。取消测试需要单独等待或协调线程，再释放其资源。保留资源所有者，直至全部使用它的工作结束，包含异常及取消退出。依据项目实际运行时观察完成条件。
+区分取消请求、等待结束及工作实际结束。释放资源前，应有覆盖全部使用者的完成证据。核对异常及取消退出时，谁仍拥有资源、谁等待或协调剩余工作。运行时可能只取消等待方，在途工作仍会继续。依据项目实际运行时核对相应保证。
 
 ## 确定性
 
@@ -47,4 +24,8 @@ TaskGroup 正常退出时，写入任务在断言及目录清理前结束。任�
 
 需要真实依赖语义时使用真实依赖。fake 或 mock 应保留被测行为依赖的错误、顺序、事务、取消或并发语义。回显预设返回值检查的是准备逻辑。应用与依赖的真实集成应在相关边界验证。
 
-不稳定失败需要指出状态或交错、观察到的影响及对应修复。重跑通过是另一次观察。它不能代替失败原因。隔离处置及永久修改沿用当前流程权限。
+不稳定失败需要指出状态或交错、观察到的影响及对应修复。重跑通过是另一次观察。它不能代替失败原因。
+
+## 语言指引
+
+Python 项目参考 [Python 测试可靠性](./py-reliability.md)。

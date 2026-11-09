@@ -32,4 +32,4 @@ TDD uses a failing behavior check, a sufficient implementation, and behavior-pre
 
 Difficult setup, excessive dependencies, and awkward calls can reveal design costs. First check whether the setup represents a genuine workflow and whether isolation would hide its semantics. Exploratory work with unsettled rules needs learning before an authoritative expectation can be written.
 
-Test-first and test-after can both protect behavior. Test creation and development cadence belong to the current task. Tests document a contract in proportion to their oracle, assertions, and maintenance discipline.
+Test-first and test-after can both protect behavior. Tests document a contract in proportion to their oracle, assertions, and maintenance discipline.
