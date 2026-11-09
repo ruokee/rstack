@@ -21,23 +21,20 @@ Judge code, tests, and code designs against the project's confirmed contracts, c
 
 Read the reference matching the current question:
 
-- Before judging boundary wrappers that translate units, errors, or representations:
-    1. Read [Structural quality](./structure.md) to identify the wrapper's responsibilities.
-    2. Read [Adapter](../code-design/design-patterns/adapter.md) to compare the source and target contracts. In OMP, use `skill://code-design/design-patterns/adapter.md`.
-- For values, errors, state, resources, concurrency, or a design's promised behavior, read [Correctness](./correctness.md).
-- For mixed responsibilities, duplicated rules, coupling, unnecessary indirection, or change cost, read [Structural quality](./structure.md).
+- For values, errors, state, resources, concurrency, or a design's promised behavior, read [Correctness](./code/correctness.md).
+- For mixed responsibilities, duplicated rules, coupling, unnecessary indirection, change cost, or boundary wrappers that translate units, errors, or representations, read [Structural quality](./code/structure.md). For wrappers, compare responsibilities and source-to-public contract mappings.
+- For a refactoring or migration candidate that changes evaluation, state, ownership, imports, or callers, read [Change safety](./code/change-safety.md).
 - For assertions, expected results, behavior coverage, or test-first feedback, read [Behavioral tests](./testing/behavior.md).
 - For timing, order, shared state, external resources, or concurrent tests, read [Test reliability](./testing/reliability.md).
 - For fragile assertions, obscure fixtures, duplicate tests, or low-value coverage, read [Test maintenance](./testing/maintenance.md).
-- For a refactoring or migration candidate that changes evaluation, state, ownership, imports, or callers, read [Refactoring risk](./refactoring.md).
 - For lint rules, file scope, exceptions, or automatic fixes, read [Lint settings](./tooling/lint.md).
 - For type-checking scope, strictness, dynamic boundaries, or type escapes, read [Type checking](./tooling/type-checking.md).
 
-Load only references relevant to the judgment. Multiple references can serve one question. Design references linked from them are in the same-language `code-design` package. In OMP, take `<path>` from the link target after `code-design/` and read `skill://code-design/<path>`, for example `skill://code-design/approaches/resource-lifecycle.md`. Read the design leaves required by matching conditions in each loaded reference, then continue the current check with its existing output and permissions. A complete replacement design uses the [code-design entry](../code-design/SKILL.md). Report missing resources by path and affected judgment; complete the supported remainder.
+Load only references relevant to the judgment. Multiple references can serve one question. If the code-design Skill is available, its design material can provide further guidance. In this Skill, `code-design/…` denotes reference files within code-design.
 
 ## Results
 
-Follow the caller's requested format. For an ordinary review, lead with supported findings. Classify each item by its evidence:
+Follow the caller's requested format to report code-quality analysis of the current object, including code reviews, repository analysis, and quality-tooling settings. Lead with supported findings when present. Classify each item by its evidence:
 
 - A supported finding establishes its necessary premises and gives the location, supported triggering conditions, impact, and smallest sufficient repair direction. Severity describes the consequences; confidence describes the evidence strength.
 - A clarification question asks for a missing fact whose answer is needed for an in-scope judgment and identifies the affected judgment. Keep every unconfirmed premise explicit in conditional consequences. Resolve those premises before prescribing a repair or assigning severity and confidence.

@@ -28,7 +28,7 @@ Skill 分类、触发方式、个人适配及项目适配随具体收录项逐�
 - [diagnose](./skills-zh/diagnose/SKILL.md)：围绕具体问题及异常取得证据、比较解释、执行有区分力的检查。处理可重复、偶发、历史及流程问题，说明因果结论的证据强度，按授权衔接修复。软件问题按需读取专项方法。
 - [technical-writing](./skills-zh/technical-writing/SKILL.md)：编写、修订或审阅面向人的技术文档，适用于 README、指南、参考资料及提案。围绕读者任务组织内容，核对技术事实及示例，保留适用条件和实现状态。
 - [code-design](./skills-zh/code-design/SKILL.md)：从真实调用用法推导类型、接口、模块、依赖及状态归属，改进既有结构，重新审视实施中暴露的设计假设。
-- [code-quality](./skills-zh/code-quality/SKILL.md)：检查代码、测试及代码设计的质量，审查或配置 lint、类型检查设置。按契约及反证判断正确性、结构、测试和重构风险，说明问题位置、影响及修复方向，按需读取设计参考。
+- [code-quality](./skills-zh/code-quality/SKILL.md)：分析代码、测试及代码设计的质量，审查或配置 lint、类型检查设置。按契约及反证独立判断正确性、结构、测试和变更安全性，说明问题位置、影响及修复方向。code-design 作为深入设计的可选资料。
 
 ## 开发
 

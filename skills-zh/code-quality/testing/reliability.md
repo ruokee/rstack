@@ -35,7 +35,7 @@ async def check_report():
 asyncio.run(check_report())
 ```
 
-TaskGroup 正常退出时，写入任务在断言及目录清理前结束。任务取消不会停止已经运行的 `to_thread` 函数。取消测试需要单独等待或协调线程，再释放其资源。相关归属问题见[资源生命周期](../../code-design/approaches/resource-lifecycle.md)或[异步并发](../../code-design/approaches/async-concurrency.md)。
+TaskGroup 正常退出时，写入任务在断言及目录清理前结束。任务取消不会停止已经运行的 `to_thread` 函数。取消测试需要单独等待或协调线程，再释放其资源。保留资源所有者，直至全部使用它的工作结束，包含异常及取消退出。依据项目实际运行时观察完成条件。
 
 ## 确定性
 

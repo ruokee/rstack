@@ -35,7 +35,7 @@ async def check_report():
 asyncio.run(check_report())
 ```
 
-Normal TaskGroup exit joins the writer before the assertion and directory cleanup. Task cancellation does not stop an already running `to_thread` function. A cancellation test must separately join or otherwise coordinate the thread before releasing its resources. For those ownership questions, read [Resource lifecycle](../../code-design/approaches/resource-lifecycle.md) or [Async concurrency](../../code-design/approaches/async-concurrency.md).
+Normal TaskGroup exit joins the writer before the assertion and directory cleanup. Task cancellation does not stop an already running `to_thread` function. A cancellation test must separately join or otherwise coordinate the thread before releasing its resources. Preserve a resource's owner until all work using it has ended, including exceptional and cancelled exits. The project's runtime determines how that completion is observed.
 
 ## Determinism
 

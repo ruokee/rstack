@@ -10,6 +10,8 @@ For a stated rule that rounds decimal prices to cents with ties away from zero, 
 
 Characterization tests record observed behavior while requirements are recovered. They need an explicit account of what is current behavior and what is intended behavior. Missing domain rules remain questions for the project.
 
+When an expected value copies the production calculation, replace it with a requirement-derived example or independent derivation, including the boundary that exposed the defect. For a demonstrated coverage gap, add an assertion on the relevant public result, state, error, or contractual interaction. Use an integration check when the missing guarantee depends on real collaborator semantics.
+
 ## Observable behavior
 
 Assert returned values, visible state, errors, persisted results, or messages at a real boundary. Internal method names and incidental call order often change while these guarantees remain intact.
