@@ -83,9 +83,3 @@ metadata:
 - 分配模型、上下文、工具、执行及记忆责任：[AI 系统](./software/ai/systems.md)。
 - 评价精确契约及开放输出质量：[AI 评估](./software/ai/evaluation.md)。
 - 选择 API、检索、适配及推理设施：[AI 基础设施](./software/ai/infrastructure.md)。
-
-## 相邻职责
-
-判断对象决定范围。同一进程内的冲突写入口可以需要架构判断。跨仓库的代码接口调整可以仍属于代码设计。
-
-需要深入时，使用 `code-design` 处理类型、接口及内部依赖，`code-quality` 处理具体代码及质量设置，`ddd` 处理领域含义及限界上下文，`diagnose` 追查实际原因，`prototype` 为关键争议提供实验，`thinking-method` 提供通用推理方法。这些是可选参考，按宿主支持的方式取用。本包提供完成其架构判断所需的本地知识。当前工作流程负责协作、核验及交付。

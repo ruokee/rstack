@@ -83,9 +83,3 @@ Read the references needed for the current judgment. These are knowledge topics,
 - Assigning model, context, tool, execution, and memory responsibilities: [Systems](./software/ai/systems.md).
 - Evaluating exact contracts and open-ended quality: [Evaluation](./software/ai/evaluation.md).
 - Choosing APIs, retrieval, adaptation, and inference infrastructure: [Infrastructure](./software/ai/infrastructure.md).
-
-## Adjacent work
-
-The object of the judgment determines its scope. Conflicting writers inside one process can require architecture work. A code-interface change across repositories can remain code design.
-
-For deeper work, use `code-design` for types, interfaces, and internal dependencies; `code-quality` for concrete code and quality settings; `ddd` for domain meaning and bounded contexts; `diagnose` for actual causes; `prototype` for decision-changing experiments; and `thinking-method` for general reasoning. These are optional references reached through the host's supported mechanism. This package supplies the local knowledge needed for its architecture judgments. The current workflow owns coordination, verification, and delivery.

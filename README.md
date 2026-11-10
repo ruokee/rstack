@@ -30,6 +30,7 @@ English Skills are in [`skills/`](./skills/), and Chinese Skills are in [`skills
 - [code-design](./skills/code-design/SKILL.md): Design types, interfaces, modules, dependencies, and state ownership from real caller usage. Improve existing structures and revisit assumptions exposed during implementation.
 - [code-quality](./skills/code-quality/SKILL.md): Analyze code, tests, and code designs, and select or configure formatting, lint, custom rules, and type checking. Independently judge correctness, structure, tests, and change safety against contracts and counterevidence. Report locations, effects, and repair directions.
 - [system-architecture](./skills/system-architecture/SKILL.md): Analyze, design, evaluate, select, and evolve systems built from software, people, processes, facilities, or external organizations. Trace responsibilities, handoffs, resources, state, and failure through concrete scenarios. Use the general core with software references for data, distributed guarantees, migration, technology choices, and AI systems.
+- [ddd](./skills/ddd/SKILL.md): Explore domain knowledge, build a ubiquitous language, choose bounded contexts and strategic priorities, express invariants and domain operations, and evolve models as understanding changes. Use focused references for identity, aggregates, lifecycle, events, implementation, and validation.
 
 ## Development
 
@@ -55,8 +56,12 @@ Repository instructions for Agents are in [AGENTS.md](./AGENTS.md).
 
 Third-party Skills retain the original licenses and attribution included in their directories.
 
+The `ddd` package includes material adapted from Eric Evans under CC BY 4.0. Its [NOTICE](./skills/ddd/NOTICE.md) identifies the sources, adaptations, and applicable licenses.
+
 ## Acknowledgments
 
 I learned from and reused material from [pstack](https://github.com/cursor/plugins/tree/main/pstack) and [matt's skills](https://github.com/mattpocock/skills).
 
 The topic map for `system-architecture` draws on [awesome-architecture](https://github.com/study8677/awesome-architecture/tree/7f43e49b95ad9c255418733738fddab4eb0f6a68). Its MIT attribution is retained in both language packages.
+
+`ddd` draws on Eric Evans's [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf), Matt Pocock's domain-modeling, and Lauren Tan's principle-model-the-domain. Conceptual references include Evans and Fowler's [Specifications](https://martinfowler.com/apsupp/spec.pdf) and Alberto Brandolini's [EventStorming](https://www.eventstorming.com/). Both language packages retain attribution and license details in NOTICE.
