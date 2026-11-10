@@ -32,6 +32,7 @@ Skill 分类、触发方式、个人适配及项目适配随具体收录项逐�
 - [blast-radius](./skills-zh/blast-radius/SKILL.md)：从拟议或已实现的软件改动追踪受影响的消费者、历史数据及运行行为。识别决定结论的前提，取得相称证据，保留已排除路径，确定具体检查及回退条件。
 - [system-architecture](./skills-zh/system-architecture/SKILL.md)：分析、设计、评估、选择及演进由软件、人员、流程、设施或外部组织构成的系统。沿具体情景追踪责任、交接、资源、状态及失效。通用核心配合软件参考，处理数据、分布式保证、迁移、技术选择及 AI 系统。
 - [ddd](./skills-zh/ddd/SKILL.md)：探索领域知识，形成共同语言，选择限界上下文及战略重点，表达不变量和领域操作，随新认识演进模型。专题参考覆盖身份、聚合、生命周期、事件、模型落地及验证。
+- [prototype](./skills-zh/prototype/SKILL.md)：通过低成本、可丢弃原型回答设计选择及可行性问题。在可比条件下比较有实质差异的候选，操作实际界面或运行程序，交接证据、取舍、建议及可运行产物。
 
 ## 开发
 
@@ -68,3 +69,5 @@ Agent 使用的仓库约定见 [AGENTS.md](./AGENTS.md)。
 `ddd` 参考了 Eric Evans 的 [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)、Matt Pocock 的 domain-modeling 及 Lauren Tan 的 principle-model-the-domain。概念依据还包括 Evans 和 Fowler 的 [Specifications](https://martinfowler.com/apsupp/spec.pdf) 及 Alberto Brandolini 的 [EventStorming](https://www.eventstorming.com/)。两个语言包均在 NOTICE 中保留署名和许可详情。
 
 `blast-radius` 的影响调查方法主要改编自 Lauren Tan 的 [Pstack blast-radius](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/blast-radius/SKILL.md)。Matt Pocock 的 [pr](https://github.com/mattpocock/skills/blob/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/pr/SKILL.md) 提供消费者影响及可逆性的补充视角。两个语言包均保留 MIT 条款及署名。
+
+`prototype` 改编自 Lauren Tan 的 [Pstack Prototype playbook](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/poteto-mode/playbooks/prototype.md) 及[设计空间原则](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/principle-exhaust-the-design-space/SKILL.md)。两个语言包均保留 MIT 条款及署名。
