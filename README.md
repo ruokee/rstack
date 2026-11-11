@@ -12,8 +12,6 @@ Each addition records its source, purpose, and reason for inclusion. Upstream Sk
 
 Skill categories, invocation choices, and personal or project adaptation are developed alongside the selected Skills.
 
-All included Skills allow model discovery by default. Mention the task intent, Skill names, or trigger terms in an ordinary request so the agent can select and read the guidance it needs. Manual-only invocation can be chosen as an exception based on actual use.
-
 ## Skills
 
 English Skills are in [`skills/`](./skills/), and Chinese Skills are in [`skills-zh/`](./skills-zh/).
@@ -33,6 +31,7 @@ English Skills are in [`skills/`](./skills/), and Chinese Skills are in [`skills
 - [system-architecture](./skills/system-architecture/SKILL.md): Analyze, design, evaluate, select, and evolve systems built from software, people, processes, facilities, or external organizations. Trace responsibilities, handoffs, resources, state, and failure through concrete scenarios. Use the general core with software references for data, distributed guarantees, migration, technology choices, and AI systems.
 - [ddd](./skills/ddd/SKILL.md): Explore domain knowledge, build a ubiquitous language, choose bounded contexts and strategic priorities, express invariants and domain operations, and evolve models as understanding changes. Use focused references for identity, aggregates, lifecycle, events, implementation, and validation.
 - [prototype](./skills/prototype/SKILL.md): Answer design choices and feasibility questions through low-cost, disposable prototypes. Compare meaningful alternatives under comparable conditions, observe the actual interface or runtime, and hand off evidence, tradeoffs, a recommendation, and a runnable artifact.
+- [statechart](./skills/statechart/SKILL.md): Model stateful behavior, express safety and progress properties, draw reader-facing statecharts, and connect checks to implementation. Use a lightweight walkthrough or the complete TLA+/TLC example according to the question. Invoked on an explicit user request.
 
 ## Development
 
@@ -65,9 +64,3 @@ The `ddd` package includes material adapted from Eric Evans under CC BY 4.0. Its
 I learned from and reused material from [pstack](https://github.com/cursor/plugins/tree/main/pstack) and [matt's skills](https://github.com/mattpocock/skills).
 
 The topic map for `system-architecture` draws on [awesome-architecture](https://github.com/study8677/awesome-architecture/tree/7f43e49b95ad9c255418733738fddab4eb0f6a68). Its MIT attribution is retained in both language packages.
-
-`ddd` draws on Eric Evans's [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf), Matt Pocock's domain-modeling, and Lauren Tan's principle-model-the-domain. Conceptual references include Evans and Fowler's [Specifications](https://martinfowler.com/apsupp/spec.pdf) and Alberto Brandolini's [EventStorming](https://www.eventstorming.com/). Both language packages retain attribution and license details in NOTICE.
-
-`blast-radius` adapts its impact-investigation method from Lauren Tan's [Pstack blast-radius](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/blast-radius/SKILL.md). Matt Pocock's [pr](https://github.com/mattpocock/skills/blob/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/pr/SKILL.md) informs its treatment of consumer impact and reversibility. Both language packages retain the MIT terms and attribution.
-
-`prototype` adapts Lauren Tan's [Pstack Prototype playbook](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/poteto-mode/playbooks/prototype.md) and [design-space principle](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/principle-exhaust-the-design-space/SKILL.md). Both language packages retain the MIT terms and attribution.

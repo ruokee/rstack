@@ -12,8 +12,6 @@ rstack 提供的 Skill 是通用的。也可以在此基础上创建和维护项
 
 Skill 分类、触发方式、个人适配及项目适配随具体收录项逐步确定。
 
-所有已收录 Skill 默认允许 Agent 发现。在普通请求中说明任务意图、提及 Skill 名称或触发词，由 Agent 选择并读取所需指导。根据实际使用情况，将手工触发选作例外。
-
 ## Skills
 
 英文 Skill 位于 [`skills/`](./skills/)，中文 Skill 位于 [`skills-zh/`](./skills-zh/)。
@@ -33,6 +31,7 @@ Skill 分类、触发方式、个人适配及项目适配随具体收录项逐�
 - [system-architecture](./skills-zh/system-architecture/SKILL.md)：分析、设计、评估、选择及演进由软件、人员、流程、设施或外部组织构成的系统。沿具体情景追踪责任、交接、资源、状态及失效。通用核心配合软件参考，处理数据、分布式保证、迁移、技术选择及 AI 系统。
 - [ddd](./skills-zh/ddd/SKILL.md)：探索领域知识，形成共同语言，选择限界上下文及战略重点，表达不变量和领域操作，随新认识演进模型。专题参考覆盖身份、聚合、生命周期、事件、模型落地及验证。
 - [prototype](./skills-zh/prototype/SKILL.md)：通过低成本、可丢弃原型回答设计选择及可行性问题。在可比条件下比较有实质差异的候选，操作实际界面或运行程序，交接证据、取舍、建议及可运行产物。
+- [statechart](./skills-zh/statechart/SKILL.md)：建模状态行为，表达安全性和进展性质，绘制读者视角的状态图，将检查对应到实际实现。按问题选择轻量推演或完整的 TLA+/TLC 示例，由用户显式请求调用。
 
 ## 开发
 
@@ -71,3 +70,14 @@ Agent 使用的仓库约定见 [AGENTS.md](./AGENTS.md)。
 `blast-radius` 的影响调查方法主要改编自 Lauren Tan 的 [Pstack blast-radius](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/blast-radius/SKILL.md)。Matt Pocock 的 [pr](https://github.com/mattpocock/skills/blob/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/pr/SKILL.md) 提供消费者影响及可逆性的补充视角。两个语言包均保留 MIT 条款及署名。
 
 `prototype` 改编自 Lauren Tan 的 [Pstack Prototype playbook](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/poteto-mode/playbooks/prototype.md) 及[设计空间原则](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/principle-exhaust-the-design-space/SKILL.md)。两个语言包均保留 MIT 条款及署名。
+
+`statechart` 改编自 Lauren Tan 的 [Pstack statechart](https://github.com/cursor/plugins/blob/de8ee15dd1194627d21eb5fcd41cb1873208dabb/pstack/skills/statechart/SKILL.md)、[创建形式验证技能](https://github.com/cursor/plugins/blob/de8ee15dd1194627d21eb5fcd41cb1873208dabb/pstack/skills/create-formal-verification-skill/SKILL.md)及[维护形式验证技能](https://github.com/cursor/plugins/blob/de8ee15dd1194627d21eb5fcd41cb1873208dabb/pstack/skills/maintain-formal-verification-skill/SKILL.md)。两个语言包均保留 MIT 条款及署名。概念解释和保存示例为 rstack 编写。
+
+`statechart` 的技术参考：
+
+- [What is a statechart](https://statecharts.dev/what-is-a-statechart.html)，用于层级、并行区域、守卫、历史及延迟转移。
+- Leslie Lamport 的 [Specifying Systems](https://lamport.azurewebsites.net/tla/book.html)，用于状态谓词、动作、时序性质、停顿及公平性。
+- Leslie Lamport 的 [Standalone TLA+ Tools](https://lamport.azurewebsites.net/tla/standalone-tools.html)、[TLC 文档](https://docs.tlapl.us/using%3Atlc%3Astart)及 [v1.7.4 发布](https://github.com/tlaplus/tlaplus/releases/tag/v1.7.4)，用于教程工具及配置。
+- [Mermaid 状态图](https://mermaid.js.org/syntax/stateDiagram.html)，用于图源语法。
+- [Hypothesis 状态式测试](https://hypothesis.readthedocs.io/en/latest/stateful.html)和 [fast-check 模型驱动测试](https://fast-check.dev/docs/advanced/model-based-testing/)，用于实现的状态式检查。
+- [Validating Traces of Distributed Programs Against TLA+ Specifications](https://arxiv.org/abs/2404.16075)，用于抽象及实现轨迹对应。
