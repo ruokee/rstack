@@ -53,14 +53,12 @@ Agent 使用的仓库约定见 [AGENTS.md](./AGENTS.md)。
 
 ## 许可
 
-[MIT License](./LICENSE)。
+rstack 的原创内容采用 [MIT License](./LICENSE)。
 
-第三方 Skill 保留各自目录中的原有许可及署名。
+第三方材料保留各自的许可。[THIRD-PARTY-NOTICES.zh.md](./THIRD-PARTY-NOTICES.zh.md) 区分已确认的表达复用、保守保留及仅概念依据三类情况，集中说明版权主体、适用许可、来源版本及覆盖文件或章节，包含第三方材料的 MIT 完整条款及 `ddd` 两个语言包的 CC BY 4.0 署名。
 
-`ddd` 包含按 CC BY 4.0 改编的 Eric Evans 资料，其 [NOTICE](./skills-zh/ddd/NOTICE.md) 说明来源、改编范围及适用许可。
+采用内容变化时同步更新声明。相关表达及其翻译全部退出版本后删除对应条目，仅部分移除时缩小覆盖范围，文本继续改编来源时保留条目。只剩方法层面的影响时，将该来源移入概念依据。保留来源结构或示例的翻译和重组属于改编。已发布版本保留随其提供的声明。
 
 ## 致谢
 
-我从以下项目中学习和重用了资料：[pstack](https://github.com/cursor/plugins/tree/main/pstack)，[matt's skills](https://github.com/mattpocock/skills)。
-
-`system-architecture` 的主题地图参考了 [awesome-architecture](https://github.com/study8677/awesome-architecture/tree/7f43e49b95ad9c255418733738fddab4eb0f6a68)，两个语言包均保留其 MIT 署名。
+rstack 的 Skill 借鉴了以下项目的资料：[pstack](https://github.com/cursor/plugins/tree/main/pstack)，[matt's skills](https://github.com/mattpocock/skills)。

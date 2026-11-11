@@ -53,14 +53,12 @@ Repository instructions for Agents are in [AGENTS.md](./AGENTS.md).
 
 ## License
 
-[MIT License](./LICENSE).
+Original rstack content is available under the [MIT License](./LICENSE).
 
-Third-party Skills retain the original licenses and attribution included in their directories.
+Third-party material remains under its own license. [THIRD-PARTY-NOTICES.md](./THIRD-PARTY-NOTICES.md) separates confirmed expression reuse from conservative retention and from concept-only references. It lists the copyright holders, license, source versions, and covered files or sections, including the full MIT text for third-party material and the CC BY 4.0 attribution for the `ddd` packages.
 
-The `ddd` package includes material adapted from Eric Evans under CC BY 4.0. Its [NOTICE](./skills/ddd/NOTICE.md) identifies the sources, adaptations, and applicable licenses.
+Update the notices when the adopted content changes. Remove an entry after all adapted expression and its translations have left the repository, narrow its coverage when only part remains, and keep it when text still adapts the source. Move a source to concept references when only method-level influence remains. Translations and reorganizations that retain the source's structure or examples count as adaptation. Historical releases keep the notices they shipped with.
 
 ## Acknowledgments
 
-I learned from and reused material from [pstack](https://github.com/cursor/plugins/tree/main/pstack) and [matt's skills](https://github.com/mattpocock/skills).
-
-The topic map for `system-architecture` draws on [awesome-architecture](https://github.com/study8677/awesome-architecture/tree/7f43e49b95ad9c255418733738fddab4eb0f6a68). Its MIT attribution is retained in both language packages.
+rstack's Skills draw on material from [pstack](https://github.com/cursor/plugins/tree/main/pstack) and [matt's skills](https://github.com/mattpocock/skills).
