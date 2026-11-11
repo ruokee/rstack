@@ -64,20 +64,3 @@ Agent 使用的仓库约定见 [AGENTS.md](./AGENTS.md)。
 我从以下项目中学习和重用了资料：[pstack](https://github.com/cursor/plugins/tree/main/pstack)，[matt's skills](https://github.com/mattpocock/skills)。
 
 `system-architecture` 的主题地图参考了 [awesome-architecture](https://github.com/study8677/awesome-architecture/tree/7f43e49b95ad9c255418733738fddab4eb0f6a68)，两个语言包均保留其 MIT 署名。
-
-`ddd` 参考了 Eric Evans 的 [Domain-Driven Design Reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)、Matt Pocock 的 domain-modeling 及 Lauren Tan 的 principle-model-the-domain。概念依据还包括 Evans 和 Fowler 的 [Specifications](https://martinfowler.com/apsupp/spec.pdf) 及 Alberto Brandolini 的 [EventStorming](https://www.eventstorming.com/)。两个语言包均在 NOTICE 中保留署名和许可详情。
-
-`blast-radius` 的影响调查方法主要改编自 Lauren Tan 的 [Pstack blast-radius](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/blast-radius/SKILL.md)。Matt Pocock 的 [pr](https://github.com/mattpocock/skills/blob/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/pr/SKILL.md) 提供消费者影响及可逆性的补充视角。两个语言包均保留 MIT 条款及署名。
-
-`prototype` 改编自 Lauren Tan 的 [Pstack Prototype playbook](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/poteto-mode/playbooks/prototype.md) 及[设计空间原则](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/principle-exhaust-the-design-space/SKILL.md)。两个语言包均保留 MIT 条款及署名。
-
-`statechart` 改编自 Lauren Tan 的 [Pstack statechart](https://github.com/cursor/plugins/blob/de8ee15dd1194627d21eb5fcd41cb1873208dabb/pstack/skills/statechart/SKILL.md)、[创建形式验证技能](https://github.com/cursor/plugins/blob/de8ee15dd1194627d21eb5fcd41cb1873208dabb/pstack/skills/create-formal-verification-skill/SKILL.md)及[维护形式验证技能](https://github.com/cursor/plugins/blob/de8ee15dd1194627d21eb5fcd41cb1873208dabb/pstack/skills/maintain-formal-verification-skill/SKILL.md)。两个语言包均保留 MIT 条款及署名。概念解释和保存示例为 rstack 编写。
-
-`statechart` 的技术参考：
-
-- [What is a statechart](https://statecharts.dev/what-is-a-statechart.html)，用于层级、并行区域、守卫、历史及延迟转移。
-- Leslie Lamport 的 [Specifying Systems](https://lamport.azurewebsites.net/tla/book.html)，用于状态谓词、动作、时序性质、停顿及公平性。
-- Leslie Lamport 的 [Standalone TLA+ Tools](https://lamport.azurewebsites.net/tla/standalone-tools.html)、[TLC 文档](https://docs.tlapl.us/using%3Atlc%3Astart)及 [v1.7.4 发布](https://github.com/tlaplus/tlaplus/releases/tag/v1.7.4)，用于教程工具及配置。
-- [Mermaid 状态图](https://mermaid.js.org/syntax/stateDiagram.html)，用于图源语法。
-- [Hypothesis 状态式测试](https://hypothesis.readthedocs.io/en/latest/stateful.html)和 [fast-check 模型驱动测试](https://fast-check.dev/docs/advanced/model-based-testing/)，用于实现的状态式检查。
-- [Validating Traces of Distributed Programs Against TLA+ Specifications](https://arxiv.org/abs/2404.16075)，用于抽象及实现轨迹对应。
