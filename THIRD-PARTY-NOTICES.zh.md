@@ -83,6 +83,8 @@ Eric Evans，Domain Language, Inc.，Domain-Driven Design Reference, Definitions
 
 ## 概念依据
 
+- `engineering-principles`：[Pstack 原则集 5bf2b15](https://github.com/cursor/plugins/tree/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills)。
+
 - `improve`：Pstack 的 `skills/poteto-mode/playbooks/hillclimb.md`、prove-it-works、build-the-lever、laziness-protocol、show-me-your-work。
 - `teach`：Pstack 的 `skills/teach/SKILL.md`、`skills/bro/SKILL.md`；Matt Pocock 的 `teach`、`wait-what`。
 - `diagnose`：Matt Pocock 的 `diagnosing-bugs`；Pstack 的 `skills/poteto-mode/playbooks/bug-fix.md`、`runtime-forensics.md`、`trace-forensics.md`。

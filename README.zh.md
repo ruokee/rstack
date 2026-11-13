@@ -27,6 +27,7 @@ Skill 分类、触发方式、个人适配及项目适配随具体收录项逐�
 - [technical-writing](./skills-zh/technical-writing/SKILL.md)：编写、修订或审阅面向人的技术文档，适用于 README、指南、参考资料及提案。围绕读者任务组织内容，核对技术事实及示例，保留适用条件和实现状态。
 - [code-design](./skills-zh/code-design/SKILL.md)：从真实调用用法推导类型、接口、模块、依赖及状态归属，改进既有结构，重新审视实施中暴露的设计假设。
 - [code-quality](./skills-zh/code-quality/SKILL.md)：分析代码、测试及代码设计的质量，选择或配置格式化、lint、自定义规则及类型检查。按契约及反证独立判断正确性、结构、测试和变更安全性，说明问题位置、影响及修复方向。
+- [engineering-principles](./skills-zh/engineering-principles/SKILL.md)：为代码、文档及配置变更选择工程原则，按需读取目的、条件、取舍及例子。
 - [blast-radius](./skills-zh/blast-radius/SKILL.md)：从拟议或已实现的软件改动追踪受影响的消费者、历史数据及运行行为。识别决定结论的前提，取得相称证据，保留已排除路径，确定具体检查及回退条件。
 - [system-architecture](./skills-zh/system-architecture/SKILL.md)：分析、设计、评估、选择及演进由软件、人员、流程、设施或外部组织构成的系统。沿具体情景追踪责任、交接、资源、状态及失效。通用核心配合软件参考，处理数据、分布式保证、迁移、技术选择及 AI 系统。
 - [ddd](./skills-zh/ddd/SKILL.md)：探索领域知识，形成共同语言，选择限界上下文及战略重点，表达不变量和领域操作，随新认识演进模型。专题参考覆盖身份、聚合、生命周期、事件、模型落地及验证。

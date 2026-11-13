@@ -18,6 +18,20 @@ A closed enum with exhaustive matching makes a known set of variants visible and
 
 Choose a function parameter, generic parameter, trait, protocol, registry, or configuration according to the actual variation and language. A plugin protocol is justified by an actual extension obligation. An implementation count is insufficient to establish that obligation. See [YAGNI](./yagni.md).
 
+### Documentation example
+
+A summary might say:
+
+> Provides exception-handling factories in 3 categories: default, openai, and anthropic.
+
+Adding `foo` requires updating both the list and the count. Repeating that sentence across documents makes a local extension require several synchronized edits. A stable overview can instead say:
+
+> Provides exception-handling factories.
+
+Keep the factory list in the mechanism's reference and link to it where readers need details. That reference lists `default`, `openai`, `anthropic`, and the new `foo`; the overview describes their shared responsibility. This keeps a change to the available factories local to their description.
+
+Counts derived from that list introduce another synchronization point when repeated manually. See [DRY](./dry.md). A complete reference needs the available implementations. A protocol specification needs exact limits. Choose the detail each reading task requires.
+
 ## Liskov substitution
 
 Behavioral substitution requires an implementation to satisfy the contract consumers were given. It must accept the promised input domain, preserve invariants and permitted histories, and deliver the promised results and failure behavior. A subtype must not strengthen preconditions or weaken postconditions.

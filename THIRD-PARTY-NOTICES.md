@@ -83,6 +83,8 @@ Adapted material uses CC BY 4.0. Separately copyrightable original additions use
 
 ## Concept references
 
+- `engineering-principles`: [Pstack principles at 5bf2b15](https://github.com/cursor/plugins/tree/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills).
+
 - `improve`: Pstack `skills/poteto-mode/playbooks/hillclimb.md`, prove-it-works, build-the-lever, laziness-protocol, and show-me-your-work.
 - `teach`: Pstack `skills/teach/SKILL.md` and `skills/bro/SKILL.md`; Matt Pocock's `teach` and `wait-what`.
 - `diagnose`: Matt Pocock's `diagnosing-bugs`; Pstack `skills/poteto-mode/playbooks/bug-fix.md`, `runtime-forensics.md`, and `trace-forensics.md`.
