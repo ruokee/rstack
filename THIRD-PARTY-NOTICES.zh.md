@@ -84,6 +84,7 @@ Eric Evans，Domain Language, Inc.，Domain-Driven Design Reference, Definitions
 ## 概念依据
 
 - `engineering-principles`：[Pstack 原则集 5bf2b15](https://github.com/cursor/plugins/tree/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills)。
+- `create-verification`：Pstack 在 5bf2b15 的 [create-verification-skill](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/create-verification-skill/SKILL.md) 及 [maintain-verification-skill](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/maintain-verification-skill/SKILL.md)；[NASA 产品验证](https://www.nasa.gov/reference/5-3-product-verification/)、[PIT](https://pitest.org/)、[Anthropic Agent 评估](https://www.anthropic.com/research/demystifying-evals-for-ai-agents)、[Hypothesis](https://hypothesis.readthedocs.io/en/latest/quickstart.html)、[TLA+ Tools](https://lamport.azurewebsites.net/tla/tools.html)、[Pact](https://docs.pact.io/consumer/contract_tests_not_functional_tests)、[Google SRE canary](https://sre.google/workbook/canarying-releases/)、[Testcontainers](https://testcontainers.com/getting-started/)、[WireMock](https://wiremock.org/docs/simulating-faults/)、[OpenTelemetry 信号](https://opentelemetry.io/docs/concepts/signals/)及 [Playwright 视觉比较](https://playwright.dev/docs/test-snapshots)。
 
 - `improve`：Pstack 的 `skills/poteto-mode/playbooks/hillclimb.md`、prove-it-works、build-the-lever、laziness-protocol、show-me-your-work。
 - `teach`：Pstack 的 `skills/teach/SKILL.md`、`skills/bro/SKILL.md`；Matt Pocock 的 `teach`、`wait-what`。
