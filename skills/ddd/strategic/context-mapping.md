@@ -8,47 +8,31 @@ For each contact, record the models, exchanged information, identity correlation
 
 Upstream influence means one side's model or development decisions constrain the other's success. It can exist alongside data moving both ways. HTTP caller direction, event publication, and business influence answer different questions. Mutual delivery dependence can require cooperation even when technical data flows in only one direction.
 
-## Choose cooperation deliberately
+## Decide whether to integrate
 
-### Partnership
+Compare the useful work an integration enables with the translation and coordination it requires. Include repeated work and manual handoffs in the comparison. Separate Ways keeps the models independent when that tradeoff favors separation. Assign each remaining business obligation to someone who can fulfill it.
 
-Both sides depend on successful delivery by the other. Coordinate important plans, interface evolution, and integration. Shared success requires time for joint decisions and resolving delivery obstacles. Two systems exchanging messages alone establishes insufficient evidence for this relationship.
+An existing mixed area may have no consistent internal model boundary. Mark it as a Big Ball of Mud and describe the contacts that are actually understood. Isolate its effects where useful. Treat a wholesale rewrite as a separate decision requiring justification and permission.
 
-### Shared Kernel
+## Assign responsibility for meaning
 
-The sides explicitly share a limited domain model and its associated implementation or schema, with joint control of changes. Keep its scope intelligible and integrate changes so meanings remain coherent. The cost is close cooperation and coupled evolution. A shared logging or HTTP utility library represents ordinary technical reuse.
+At an integration point, decide which model the consumer will use. Adopting a suitable upstream model is the Conformist choice. It saves translation work and lets upstream decisions shape the consumer's language and evolution. Check the consumer's rules before adoption; a separate model is worthwhile only when its benefits justify maintaining it.
 
-### Customer Supplier
+When the consumer needs its own meanings, place semantic conversion in an Anticorruption Layer. Map identities, units, states, failures, and missing information as well as field names. Maintain the mapping when either side changes. Connection and representation handling belong to transport adaptation. One implementation can perform both responsibilities. Cooperative planning with the upstream can coexist with this translation.
 
-The downstream's requirements enter the upstream's planning through a real negotiation and commitment process. Agree on deliverables, schedule, and acceptance of the contract. The upstream can otherwise succeed independently. Listening to a request makes negotiation possible; an uncommitted feature remains pending.
+For information exchange, agree on field meanings and document them as a Published Language, using an industry standard or a project contract. Each participant maps between that language and its internal model where needed. Budget for schema maintenance and semantic evolution. A shared schema still requires agreement about meaning.
 
-### Conformist
+A provider serving several consumers can maintain a common protocol as an Open-host Service. State the intended consumer scope and evolution contract. Handle exceptional consumer needs through dedicated translation when that preserves the common contract. Publishing an API alone leaves these choices open.
 
-The downstream adopts the upstream model where that model is acceptable. This reduces translation and gives the upstream control over important expressions and evolution. It can be reasonable when maintaining a separate model yields too little value. Check whether adoption preserves the downstream's actual rules.
+Sharing internal domain concepts is a stronger commitment. A Shared Kernel gives both parties control over changes to a small agreed model and its associated code or schema. Keep it understandable and integrate changes together. Accept the resulting coordination and coupled evolution. Shared logging and HTTP utilities are ordinary technical reuse.
 
-### Anticorruption Layer
+## Arrange changes together
 
-The downstream expresses upstream capabilities through its own domain model. Translate meaning, identities, units, states, and failure or missing-information cases. The cost is maintaining a semantic mapping as either model changes. It can coexist with a cooperative upstream relationship.
+Determine whose delivery depends on whom. When each party needs the other to succeed, Partnership calls for joint planning of important changes, interface evolution, and integration. Allocate time to decide together and remove delivery obstacles. Message exchange alone leaves this dependence unspecified.
 
-A transport adapter handles connection and representation details. An anticorruption layer earns its domain role by preserving meaning. One implementation can perform both jobs when their responsibilities remain clear.
+When the upstream can succeed independently, inspect whether downstream needs receive negotiated commitments in its plans. Customer Supplier cooperation needs agreed deliverables, scheduling, and contract acceptance. Willingness to hear requests starts that negotiation. Features awaiting commitment remain pending.
 
-### Open-host Service
-
-The upstream offers an explicit protocol for multiple consumers. Maintain a coherent shared contract and its evolution. One consumer's unusual need may use a dedicated translator to preserve that contract. An API's existence alone leaves openness and intended consumer scope unspecified.
-
-### Published Language
-
-Participants exchange information in an explicitly documented language with shared meaning. Translate to and from internal models as needed. This can be an industry standard or a project-defined contract. Schema maintenance and semantic evolution are its cost. A shared schema still needs agreement about what its fields mean.
-
-### Separate Ways
-
-Keep contexts independent when integration value is lower than its cost. Account for actual duplicate work or manual handoffs. Required obligations still need an owner wherever they are performed.
-
-### Big Ball of Mud
-
-Mark an existing area where models and rules are mixed and internal boundaries are inconsistent. Describe known contact points and isolate its influence where useful. This records the actual terrain. A wholesale rewrite requires its own justification and permission.
-
-Patterns can combine and evolve. Select them by actual collaboration and model decisions. Explain a desired change separately from the current relationship.
+These choices describe different aspects of the relationship and can coexist or evolve. Select them from actual model ownership and cooperation. Keep desired arrangements distinct from current ones.
 
 ## Translate settlement meaning
 

@@ -2,38 +2,26 @@
 
 Large-scale structure supplies a few shared concepts for understanding the roles of parts in a large domain model. Use it when people struggle to explain the whole or coordinate meaningful changes. Keep the structure grounded in actual models.
 
-## Let order evolve
+## Explain dependencies
 
-Evolving Order lets high-level relationships develop with domain understanding. Adopt constraints that help participants understand responsibility and dependencies. Compare the structure against concrete cases as the model changes. Remove or revise a constraint when it distorts the knowledge it is meant to explain.
+Start with a decision people find difficult to place. Identify the knowledge it needs and the responsibilities that supply it. In a constructed example, an execution plan depends on resource capabilities, which operating policies constrain. Responsibility Layers can make these conceptual dependencies visible. Technical presentation, application, domain, and infrastructure layers describe a different division. Let actual dependencies and changes guide the domain structure. Revise a proposed layer when a meaningful concept crosses it.
 
-A small model with clear operations can already be sufficient. For example, a simple address-book context with direct record updates and explicit entry identity needs no overarching knowledge layer or plugin framework. Added structure should answer an actual question about understanding or collaboration.
+A familiar comparison can help participants discuss those roles. With a System Metaphor, test the comparison against concrete cases. Calling reservations a "budget" may explain finite resources and accepted commitments. Examine release, partial use, and expiry too. Money may be a poor analogy for capacity that becomes available again after a time window. Keep the real units and rules explicit, describe the mismatch, and abandon a metaphor that creates more exceptions than understanding.
 
-## Use a system metaphor
+## Locate business variation
 
-A System Metaphor uses a familiar analogy to make roles and interactions easier to discuss. A reservation model may use a "budget" metaphor to explain a finite resource and accepted commitments. Test the analogy against releases, partial use, and expiry.
+Ask who needs to change which rules, roles, or relationships. A Knowledge Level separates configurable policy from the operational objects governed by it. For example, authorized participants can configure which roles approve particular request categories; individual requests and approvals follow that policy. Use this separation when fixed code expresses the required variation poorly. Specify configurable properties, configuration constraints, the version used for each decision, and the effect of a policy change on work already in progress.
 
-Every analogy selects some similarities. State where it stops matching the business. A money budget metaphor may distort a reusable capacity that becomes available after a time window. Retain the model's actual units and rules, and drop the metaphor if it creates more exceptions than understanding.
+Account for the metamodel, interpretation, validation, result explanation, and version management. Small stable rules can stay in named functions. Turning every business object into configurable metadata can obscure the underlying concepts.
 
-## Find responsibility layers
+If variation instead involves substituting implementations across repeated uses, consider whether a mature shared domain model supports a Pluggable Component Framework. Identify stable concepts, variation points, integration duties, and meanings every component must preserve. Give compatibility and evolution an owner. Matching interfaces with conflicting interpretations still require semantic repair. Include governance and coordinated contract changes in the cost, supported by evidence from real uses.
 
-Responsibility Layers organize domain concepts by their conceptual dependencies. Constructed example: execution plans depend on resource capabilities, and those capabilities are constrained by operating policies. The layers explain why a decision needs certain knowledge and what other concepts it may depend on.
+While discovering the domain, work with concrete models. Repeated application can reveal a common core. Designing plugins before meaningful variation is understood commits the model to assumptions that later knowledge may invalidate.
 
-This structure differs from technical presentation, application, domain, and infrastructure layers. Follow real dependency and change patterns to choose domain responsibilities. A forced layer assignment can obscure a concept spanning the proposed strata; revise the organizing idea when that happens.
+## Revisit the organizing rules
 
-## Separate a knowledge level
+Compare the organizing concepts with business cases whenever understanding changes. Keep constraints that clarify responsibilities and dependencies. Revise or remove those that distort the model. This continuing adjustment is Evolving Order.
 
-A Knowledge Level describes configurable rules, roles, or relationships that govern operational objects. The operational level contains actual participants and work. A configurable approval policy might specify which roles can approve particular request categories; individual requests and approvals then follow that policy.
-
-Use this when authorized domain participants need meaningful variation that fixed code represents poorly. Explain what they may configure, the constraints on configurations, the policy version governing each decision, and how existing work behaves after a policy change.
-
-The cost includes a metamodel, interpretation, validation, explanation of results, and version management. A small stable rule can remain a named function. Converting every business object into configurable metadata often makes the underlying concepts harder to understand.
-
-## Extract a component framework
-
-A Pluggable Component Framework lets implementations participate through a mature common abstract model. It suits repeated applications of well-understood domain abstractions with real substitution needs.
-
-State the stable concepts, variation points, integration obligations, and meanings every component must preserve. Name the owner of compatibility and evolution. A shared interface with different interpretations leaves semantic incompatibility unresolved. The framework requires governance, coordinated contract change, and evidence that the abstraction works across its actual uses.
-
-Prefer concrete modeling while the domain is still being discovered. Repeated use can reveal a useful common core. A plugin system planned before meaningful variation is known commits the model to assumptions that later knowledge may overturn.
+A simple address book can already be clear with entry identity and direct record updates. It needs no overall knowledge level or plugin framework. Introduce large-scale structure for a concrete difficulty in understanding or cooperation.
 
 Use [Subdomains](./subdomains.md) to establish modeling priorities and [Evolution](../modeling/evolution.md) to revisit a structure that new knowledge has invalidated.

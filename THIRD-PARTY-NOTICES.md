@@ -14,11 +14,6 @@ Source: [mattpocock/skills@b0618bc](https://github.com/mattpocock/skills/tree/b0
 
 - `writing-for-agents` reuses and translates paragraphs from `skills/productivity/writing-for-agents/SKILL.md` and `SKILL-MECHANICS.md`. Coverage: `writing-for-agents/`.
 
-**Conservative retention**
-
-- `ddd` draws on `skills/engineering/domain-modeling/` for domain exploration. Coverage: `SKILL.md`, `discovery/`, and `modeling/evolution.md`.
-- `code-design` draws on `skills/engineering/codebase-design/` and `skills/engineering/improve-codebase-architecture/` for interface contracts and existing-code improvement. Coverage: `interfaces.md`, `existing-code.md`, and `design-principles/deep-modules.md`.
-
 ### Lauren Tan
 
 Source: [cursor/plugins pstack@5bf2b15](https://github.com/cursor/plugins/tree/5bf2b1544db739998121a306340631963c2ff3de/pstack).
@@ -26,14 +21,6 @@ Source: [cursor/plugins pstack@5bf2b15](https://github.com/cursor/plugins/tree/5
 **Confirmed expression reuse**
 
 - `wellsaid` adapts and translates the AI-tell pattern catalogue and editing process from `skills/unslop/SKILL.md`. Coverage: those parts of `SKILL.md`.
-
-**Conservative retention**
-
-- `ddd` draws on `skills/principle-model-the-domain/SKILL.md` for explicit state representation and organization around domain knowledge. Coverage: `SKILL.md` and `modeling/implementation.md`.
-- `code-design` draws on `skills/architect/` for usage-first design, structure candidates, and design review. Coverage: `interfaces.md`, `existing-code.md`, and `design-principles/deep-modules.md`.
-- `technical-writing` draws on `skills/technical-writing/SKILL.md`. Coverage: `SKILL.md`.
-- `reflect` draws on `skills/reflect/` for review lenses and synthesis criteria. Coverage: `SKILL.md` and `references/`.
-- `prototype` draws on the prototyping process in `skills/poteto-mode/playbooks/prototype.md`. Coverage: `SKILL.md`.
 
 ### MIT License
 
@@ -62,27 +49,15 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-## CC BY 4.0 material
-
-Eric Evans, Domain Language, Inc., Domain-Driven Design Reference, Definitions and Pattern Summaries, version 2015-03. © 2015 Eric Evans.
-
-- [Original PDF](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf).
-- [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/).
-- [Legal code](https://creativecommons.org/licenses/by/4.0/legalcode.en), including the warranties disclaimer and liability limitation in Section 5.
-
-`ddd` summarizes, reorganizes, and adapts the definitions and pattern summaries into English and Chinese. Changes extend object-oriented descriptions to functional models, qualify consistency, declarative guarantees, and event descriptions by their actual mechanisms, and add original explanations and examples.
-
-The adaptation covers `ddd/SKILL.md` and these references in `ddd/`:
-
-- `discovery/`: `knowledge.md`, `language.md`.
-- `strategic/`: `subdomains.md`, `bounded-contexts.md`, `context-mapping.md`, `large-scale-structure.md`.
-- `tactical/`: `identity.md`, `aggregates.md`, `behavior.md`, `lifecycle.md`, `events.md`.
-- `modeling/`: `implementation.md`, `evolution.md`, `validation.md`.
-
-Adapted material uses CC BY 4.0. Separately copyrightable original additions use the [project's MIT License](./LICENSE).
-
 ## Concept references
 
+These sources inform the concepts and methods in independently written rstack material.
+
+- `ddd`: Eric Evans, Domain Language, Inc., _Domain-Driven Design Reference: Definitions and Pattern Summaries_, version 2015-03, for domain modeling concepts. The [original reference](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf), © 2015 Eric Evans, is available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Matt Pocock's [domain-modeling](https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/domain-modeling) informs exploration and language work. Pstack's [principle-model-the-domain](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/principle-model-the-domain/SKILL.md) informs explicit state and organization around domain knowledge.
+- `code-design`: Matt Pocock's [codebase-design](https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/codebase-design) and [improve-codebase-architecture](https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/improve-codebase-architecture), for interface contracts and structural improvement; Pstack's [architect](https://github.com/cursor/plugins/tree/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/architect), for usage-first design and comparing structures; John Ousterhout's _A Philosophy of Software Design_, for module depth and information hiding.
+- `technical-writing`: Pstack's [technical-writing](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/technical-writing/SKILL.md), for reader-oriented organization, precise terminology, and instructions with clear conditions.
+- `reflect`: Pstack's [reflect](https://github.com/cursor/plugins/tree/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/reflect), for independent review lenses and synthesis; Matt Pocock's [retro](https://github.com/mattpocock/skills/blob/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/retro/SKILL.md), for distinguishing mechanically enforceable conditions from judgment.
+- `prototype`: Pstack's [prototype playbook](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/poteto-mode/playbooks/prototype.md), for disposable experiments, comparable alternatives, and observation before a design choice.
 - `use-rstack` and `create-playbook`: Pstack [poteto-mode](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/poteto-mode/SKILL.md) and [figure-it-out](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/figure-it-out/SKILL.md) at 5bf2b15, for method selection, ordinary Markdown playbooks, and arranging activities for a need. The text and organization are independently written for rstack.
 - `use-rstack`: Matt Pocock's [ask-matt](https://github.com/mattpocock/skills/blob/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/ask-matt/SKILL.md) at b0618bc, for organizing Skill navigation by the reader's problem and explaining relationships between capabilities. The navigation is independently written around rstack's Skills.
 - `engineering-principles`: [Pstack principles at 5bf2b15](https://github.com/cursor/plugins/tree/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills).

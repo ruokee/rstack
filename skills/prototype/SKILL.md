@@ -2,7 +2,7 @@
 name: prototype
 description: Use when a design choice or feasibility question needs a disposable prototype to compare alternatives or observe layout, interaction, behavior, or timing.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Prototype
@@ -73,7 +73,7 @@ Proceed when conclusions trace to actual candidates, inputs, operations, and obs
 
 ## 6. Support the choice
 
-Deliver the explored candidates, evidence, tradeoffs, recommendation, applicable conditions, artifact location, and run instructions. Say plainly that the prototype is disposable. Record the decision owner's confirmed choice separately from the agent's recommendation and any pending preference.
+Provide the artifact's location and instructions for running it as a disposable experiment. Explain the recommendation through the candidates explored, their observed results, relevant tradeoffs, and applicable conditions. Keep the decision owner's confirmed choice, the agent's recommendation, and outstanding preferences separately identifiable.
 
 Stop when evidence sufficiently supports the target decision. If the choice remains unresolved, state the remaining question and next observation that could distinguish the candidates. Every additional variant needs a concrete decision purpose.
 

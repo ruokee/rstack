@@ -2,7 +2,7 @@
 name: ddd
 description: 澄清领域概念或业务规则、划分限界上下文、设计或评估领域模型，或随新认识演进模型时使用。
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # 领域驱动设计

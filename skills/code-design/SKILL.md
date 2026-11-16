@@ -2,7 +2,7 @@
 name: code-design
 description: Use when designing new code or improving existing code structure.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Code design

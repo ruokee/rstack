@@ -1,6 +1,6 @@
 # Represent domain events
 
-A domain event represents something that happened and matters to domain participants. Choose facts needed to explain decisions, obligations, or reactions. Events can serve a single bounded context as well as integration across contexts.
+Use a domain event to carry an established business fact to the parts of a model that need it. Select the occurrence and details that explain a decision, obligation, or reaction. Consumers may work inside the originating bounded context or receive the fact through a cross-context contract.
 
 ## Name the fact
 

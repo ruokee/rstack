@@ -76,9 +76,9 @@ Repository instructions for Agents are in [AGENTS.md](./AGENTS.md).
 
 Original rstack content is available under the [MIT License](./LICENSE).
 
-Third-party material remains under its own license. [THIRD-PARTY-NOTICES.md](./THIRD-PARTY-NOTICES.md) separates confirmed expression reuse from conservative retention and from concept-only references. It lists the copyright holders, license, source versions, and covered files or sections, including the full MIT text for third-party material and the CC BY 4.0 attribution for the `ddd` packages.
+Third-party material retains its applicable license. [THIRD-PARTY-NOTICES.md](./THIRD-PARTY-NOTICES.md) distinguishes expression reuse from concept references and records copyright holders, source versions, covered files or sections, and license terms.
 
-Update the notices when the adopted content changes. Remove an entry after all adapted expression and its translations have left the repository, narrow its coverage when only part remains, and keep it when text still adapts the source. Move a source to concept references when only method-level influence remains. Translations and reorganizations that retain the source's structure or examples count as adaptation. Historical releases keep the notices they shipped with.
+Keep the notices consistent with the content being distributed. Reused protected expression needs its applicable attribution, including translations and distinctive source examples or arrangements. Shared methods, technical facts, and terminology can support independent writing with concept references. Narrow or remove a reuse entry after the covered expression and its translations leave that version. Historical releases keep the notices they shipped with.
 
 ## Acknowledgments
 

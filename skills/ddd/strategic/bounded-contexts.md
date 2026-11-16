@@ -1,6 +1,6 @@
 # Define bounded contexts
 
-A bounded context states where a particular model and its language are defined and applicable. Establish it from the purposes, meanings, rules, and relationships people actually use.
+Use a bounded context to keep a model and its vocabulary coherent across an explicit scope. Choose that scope by examining the purposes people serve, the meanings and rules they rely on, and their relationships. State where those interpretations apply.
 
 ## Find the model boundary
 

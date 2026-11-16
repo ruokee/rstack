@@ -8,7 +8,7 @@ Read the repository's own check commands and relevant hook or CI configuration. 
 
 For an existing disconnected or broken check, propose connecting or repairing it. Base a new check on the observed failure and the project's verification requirements, including its existing alternatives.
 
-Mechanical constraints such as banned APIs, import shapes, and file-location rules belong in the cheapest suitable deterministic check. Consider valid changes the proposed check could reject.
+When a rule has a determinate answer from the code or project data, choose the least costly automated check that can decide it reliably. Examine which valid changes the check might reject before recommending enforcement.
 
 ## Development context
 

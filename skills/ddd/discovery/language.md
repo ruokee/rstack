@@ -1,6 +1,6 @@
 # Build a ubiquitous language
 
-A ubiquitous language is the language of a domain model used within a bounded context in conversation, documentation, diagrams, and software. It includes actions, relationships, quantities, and rules as well as nouns. Its value comes from people using the model to explain work and discover misunderstandings.
+Develop terms that participants can use to explain the same business case and distinguish its possible outcomes. This shared model vocabulary forms the bounded context's ubiquitous language. Use it consistently in conversations, documents, diagrams, and software. Include actions, relationships, quantities, and rules alongside nouns, and use disagreements to uncover misunderstandings.
 
 ## Define meaning in context
 

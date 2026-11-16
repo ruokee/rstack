@@ -16,12 +16,11 @@ Identify where requirements are enforced and which callers depend on them. An in
 
 ## Trace dependency responsibility
 
-For each affected dependency, identify its contract owner, lifetime, failure behavior, and replacement cost. Separate policy from mechanics where that reduces change propagation.
+Investigate the responsibility a proposed boundary would carry:
 
-- In-process code can own distinct rules and resources. A shared process is insufficient reason to merge those responsibilities.
-- A remote dependency introduces partial failure, latency, and an independently changing state, even when the same team owns it.
-- A third-party interface may need translation into the caller's concepts. Keep any public protocol details that are intentional parts of the product.
-- A test substitute must model the semantics under examination, especially concurrency, transaction behavior, and cleanup. Cheap setup is useful evidence for a replacement point's value.
+- Who defines the contract? Translate an external interface when the caller needs different concepts. Preserve protocol details that the product intentionally exposes. Separate policy from mechanics where doing so contains change.
+- What must remain coordinated at runtime? Follow resource lifetimes, state owners, and failure outcomes. Responsibilities in one process may still need separate rules and resources. A network boundary brings latency, partial failure, and state that can change independently, including within one team's systems.
+- What evidence supports replacement? Compare setup and maintenance costs, then check the behavior a substitute must reproduce. Concurrency, transactions, and cleanup need the semantics relevant to the scenario. Lower setup cost can justify a replacement point when those semantics hold.
 
 Use [Interfaces](./interfaces.md) to write the proposed caller usage. Explain which existing work moves behind the boundary and who owns it afterward. Consider retaining the current structure, removing indirection, or adding a boundary according to the actual difficulty.
 

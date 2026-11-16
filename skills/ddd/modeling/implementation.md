@@ -22,18 +22,25 @@ Keep the modelers connected to implementation and domain participants. Jointly r
 
 ## Make operations understandable
 
-The following supple-design techniques support a model that people can use and change:
+Select supple-design techniques according to the difficulty in using or changing the model.
 
-- Intention-Revealing Interfaces name the domain purpose and effect, such as confirming cancellation of a quantity. State what the caller can rely on. Return information according to the actual operation contract.
-- Side-Effect-Free Functions isolate calculations or decisions from external effects. Their stated inputs determine their results. Make current time or external facts explicit when the rule depends on them.
-- Assertions express preconditions, postconditions, and invariants in project-appropriate executable checks or documentation. State which write paths and facts they cover.
-- Standalone Classes, or independently understandable values and functions, keep a concept intelligible with few dependencies. Preserve necessary domain relationships when independence would distort meaning.
-- Closure of Operations supports composition when an operation's inputs and result have the same domain type. Adding money values in the same currency can produce another money value. The operation needs explicit currency and rounding rules. An arbitrary operation need not be forced into closure.
-- Declarative Design expresses rules in a form an execution mechanism interprets or enforces. Explain the mechanism and any bypass paths. A declaration's syntax alone establishes no runtime guarantee.
-- Drawing on Established Formalisms borrows a system of concepts such as accounting, interval algebra, or graph constraints. Verify that its assumptions match the business, and preserve the participants' understanding of the mapping.
-- Conceptual Contours follow meaningful relationships and patterns of change. Split or combine concepts where cases and successive changes expose a real distinction. Uniform class size or fine decomposition is a weak substitute for that evidence.
+### Express calculations
 
-Each technique has a cost in concepts and mechanisms. Choose it for an observable benefit in expressing rules or combining operations.
+Identify the facts a calculation needs, including time and external observations. Pass them explicitly to Side-Effect-Free Functions so the inputs determine the result, leaving external effects to their own operations. Where results need further composition, consider Closure of Operations: inputs and results use the same domain type when the operation naturally stays within it. Adding same-currency money values can yield another money value, with currency and rounding rules explicit. Other operations can return different types when the domain requires them.
+
+An existing mathematical or professional model may supply useful operations. Drawing on Established Formalisms includes accounting, interval algebra, and graph constraints. Check the assumptions against business cases and make the mapping understandable to domain participants.
+
+### State guarantees
+
+Name an operation for the domain action and result the caller needs, such as confirming cancellation of a quantity. Intention-Revealing Interfaces make this purpose visible and return the information the actual contract calls for. Express preconditions, postconditions, and invariants through Assertions, using suitable executable checks or documentation. Identify the facts and write paths covered.
+
+When rules are represented declaratively, trace how the system interprets or enforces them and which paths can bypass that mechanism. Declarative Design needs this execution account. Syntax alone establishes no runtime guarantee.
+
+### Choose concept boundaries
+
+Use cases and successive changes to decide which relationships belong together. Conceptual Contours guide splitting or combining concepts along those distinctions. Uniform class sizes and fine-grained decomposition provide little evidence of meaning. Keep concepts independently understandable where practical through Standalone Classes, values, or functions with few dependencies. Retain domain relationships needed to explain the concept.
+
+Compare the benefit in rule expression or operation composition with each technique's added concepts and mechanisms.
 
 ## Match the depth
 

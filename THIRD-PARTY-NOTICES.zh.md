@@ -14,11 +14,6 @@
 
 - `writing-for-agents` 复用并翻译 `skills/productivity/writing-for-agents/SKILL.md` 及 `SKILL-MECHANICS.md` 中的段落。范围：`writing-for-agents/`。
 
-**保守保留**
-
-- `ddd` 借鉴 `skills/engineering/domain-modeling/` 的领域探索方法。范围：`SKILL.md`、`discovery/` 及 `modeling/evolution.md`。
-- `code-design` 借鉴 `skills/engineering/codebase-design/` 及 `skills/engineering/improve-codebase-architecture/` 的接口契约与既有代码改进方法。范围：`interfaces.md`、`existing-code.md` 及 `design-principles/deep-modules.md`。
-
 ### Lauren Tan
 
 来源：[cursor/plugins pstack@5bf2b15](https://github.com/cursor/plugins/tree/5bf2b1544db739998121a306340631963c2ff3de/pstack)。
@@ -26,14 +21,6 @@
 **已确认表达复用**
 
 - `wellsaid` 的 AI 腔模式清单及编辑流程改编并翻译自 `skills/unslop/SKILL.md`。范围：`SKILL.md` 中的对应部分。
-
-**保守保留**
-
-- `ddd` 借鉴 `skills/principle-model-the-domain/SKILL.md` 的显式状态表达及围绕领域知识组织的方法。范围：`SKILL.md` 及 `modeling/implementation.md`。
-- `code-design` 借鉴 `skills/architect/` 的用法先行设计、结构候选及设计检查。范围：`interfaces.md`、`existing-code.md` 及 `design-principles/deep-modules.md`。
-- `technical-writing` 借鉴 `skills/technical-writing/SKILL.md`。范围：`SKILL.md`。
-- `reflect` 借鉴 `skills/reflect/` 的审阅视角及综合判据。范围：`SKILL.md` 及 `references/`。
-- `prototype` 借鉴 `skills/poteto-mode/playbooks/prototype.md` 的原型流程。范围：`SKILL.md`。
 
 ### MIT 许可条款
 
@@ -62,27 +49,15 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-## CC BY 4.0 材料
-
-Eric Evans，Domain Language, Inc.，Domain-Driven Design Reference, Definitions and Pattern Summaries，版本 2015-03。© 2015 Eric Evans。
-
-- [原始 PDF](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)。
-- [知识共享署名 4.0 国际许可](https://creativecommons.org/licenses/by/4.0/)。
-- [法律文本](https://creativecommons.org/licenses/by/4.0/legalcode.en)，包括第 5 节的保证免责声明及责任限制。
-
-`ddd` 对原作定义及模式说明作摘要、重组和英中适配。改动包括将面向对象说明扩展至函数式模型，按实际机制限定一致性、声明式保证及事件描述，补充原创解释和示例。
-
-改编范围为 `ddd/SKILL.md` 及 `ddd/` 下的以下参考：
-
-- `discovery/`：`knowledge.md`、`language.md`。
-- `strategic/`：`subdomains.md`、`bounded-contexts.md`、`context-mapping.md`、`large-scale-structure.md`。
-- `tactical/`：`identity.md`、`aggregates.md`、`behavior.md`、`lifecycle.md`、`events.md`。
-- `modeling/`：`implementation.md`、`evolution.md`、`validation.md`。
-
-改编内容采用 CC BY 4.0。可独立享有版权的原创增补采用[项目 MIT 许可](./LICENSE)。
-
 ## 概念依据
 
+以下来源为 rstack 独立编写的内容提供概念和方法依据。
+
+- `ddd`：Eric Evans，Domain Language, Inc.，_Domain-Driven Design Reference: Definitions and Pattern Summaries_，版本 2015-03，提供领域建模概念。[原始手册](https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)，© 2015 Eric Evans，采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。Matt Pocock 的 [domain-modeling](https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/domain-modeling) 提供探索和语言工作方法。Pstack 的 [principle-model-the-domain](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/principle-model-the-domain/SKILL.md) 提供显式状态及围绕领域知识组织的方法。
+- `code-design`：Matt Pocock 的 [codebase-design](https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/codebase-design) 及 [improve-codebase-architecture](https://github.com/mattpocock/skills/tree/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/improve-codebase-architecture)，用于接口契约及结构改进；Pstack 的 [architect](https://github.com/cursor/plugins/tree/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/architect)，用于用法先行设计及结构比较；John Ousterhout 的 _A Philosophy of Software Design_，用于模块深度及信息隐藏。
+- `technical-writing`：Pstack 的 [technical-writing](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/technical-writing/SKILL.md)，用于按读者需求组织材料、准确用词及说明操作条件。
+- `reflect`：Pstack 的 [reflect](https://github.com/cursor/plugins/tree/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/reflect)，用于独立审阅视角及综合；Matt Pocock 的 [retro](https://github.com/mattpocock/skills/blob/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/retro/SKILL.md)，用于区分可机械约束的条件及判断。
+- `prototype`：Pstack 的 [prototype playbook](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/poteto-mode/playbooks/prototype.md)，用于可丢弃实验、可比候选及设计选择前的观察。
 - `use-rstack` 和 `create-playbook`：Pstack 在 5bf2b15 的 [poteto-mode](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/poteto-mode/SKILL.md) 及 [figure-it-out](https://github.com/cursor/plugins/blob/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills/figure-it-out/SKILL.md)，用于方法选路、普通 Markdown 流程及按需求组织活动的概念。正文和组织为 rstack 独立编写。
 - `use-rstack`：Matt Pocock 在 b0618bc 的 [ask-matt](https://github.com/mattpocock/skills/blob/b0618bc436ad893b3c5e84e55fba86586d34a404/skills/engineering/ask-matt/SKILL.md)，用于按读者问题组织 Skill 导航及说明能力关系的概念。导航依据 rstack 的 Skill 独立编写。
 - `engineering-principles`：[Pstack 原则集 5bf2b15](https://github.com/cursor/plugins/tree/5bf2b1544db739998121a306340631963c2ff3de/pstack/skills)。

@@ -2,7 +2,7 @@
 name: reflect
 description: Use when reviewing work sessions to identify reusable lessons or recurring workflow problems.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Reflect
@@ -79,7 +79,7 @@ For a finding that changes a Skill's body, invocation, or existence, read [Skill
 
 ### 4. Check structural enforcement
 
-For each proposed rule, identify whether a lint rule, script, metadata flag, or runtime check could enforce the observed condition more reliably. Prefer the cheapest suitable mechanism for stable conditions; retain judgment where it is needed. Include valid behavior the mechanism must preserve.
+For each recommendation, determine which conditions a machine can decide and where it could enforce them. Compare existing configuration and automated checks with written guidance, choosing the lowest-cost reliable mechanism. Keep decisions that require judgment with the responsible person or agent. Describe valid behavior that enforcement must continue to allow.
 
 ### 5. Apply selected changes
 

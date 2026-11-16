@@ -1,6 +1,6 @@
 # Interfaces
 
-An interface is the complete knowledge needed to use a module correctly. It includes behavior, errors, ordering, ownership, and observable cost as well as types. A module can be a function, object, package, or coherent group of operations.
+Design an interface around what callers must supply, may observe, and remain responsible for. Its contract includes types, behavior, errors, call order, resource ownership, and observable costs. Apply this view to a function, object, package, or related set of operations. Account for everything callers need to use that boundary correctly.
 
 ## Write the caller first
 
