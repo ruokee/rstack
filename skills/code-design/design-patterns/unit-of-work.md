@@ -10,7 +10,7 @@ Choose one completion owner and a scope that matches the business operation. Par
 
 ## Exercise one transaction
 
-This Python 3.11 example moves stock between two existing bins with capacity ten. The caller supplies positive integer units and exclusive use of an open SQLite connection with `isolation_level=None` and no active transaction. The function owns the transaction, and the caller owns the connection.
+This Python example moves stock between two existing bins with capacity ten. The caller supplies positive integer units and exclusive use of an open SQLite connection with `isolation_level=None` and no active transaction. The function owns the transaction, and the caller owns the connection.
 
 ```python
 import sqlite3

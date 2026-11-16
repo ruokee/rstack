@@ -1,6 +1,6 @@
 # Python change safety
 
-Check evaluation preservation when inlining Python functions. This complete Python 3.11+ example calls `read_value` exactly once and produces twice the value read:
+Check evaluation preservation when inlining Python functions. This complete Python example calls `read_value` exactly once and produces twice the value read:
 
 ```python
 def run():

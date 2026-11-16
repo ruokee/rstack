@@ -14,7 +14,7 @@ Python 项目的静态类型保证、表示不变量及类型检查设置。
 
 ## mypy 示例
 
-以下使用 mypy 检查 Python 3.11+ 的可空值误用。局部契约允许缺失标签时抛出 `ValueError`，存在标签时转为大写。将违规实现保存为可丢弃目录中的 `bad.py`：
+以下使用 mypy 检查可空值误用。局部契约允许缺失标签时抛出 `ValueError`，存在标签时转为大写。将违规实现保存为可丢弃目录中的 `bad.py`：
 
 ```python
 def label(value: str | None) -> str:

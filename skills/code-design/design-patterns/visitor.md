@@ -16,7 +16,7 @@ Choose an unknown-node policy deliberately: reject it, traverse its children, or
 
 ## Collect loaded names
 
-This Python 3.11 example parses one expression and collects identifiers appearing in `Load` context. It performs syntactic collection, so bound names inside a lambda are included too. It does not compute free variables or execute the expression. Parse errors propagate.
+This Python example parses one expression and collects identifiers appearing in `Load` context. It performs syntactic collection, so bound names inside a lambda are included too. It does not compute free variables or execute the expression. Parse errors propagate.
 
 ```python
 import ast

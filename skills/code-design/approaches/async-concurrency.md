@@ -18,7 +18,7 @@ Fixed workers can pull from a finite nonblocking iterator. An asynchronous produ
 
 ## Process with fixed workers
 
-This Python 3.11 example accepts a finite, nonblocking iterable of integers and a positive integer worker count. It creates `workers` tasks, each with at most one active `process` call. The callback completes its item and any owned output before returning. Cancellation of workers belongs to the group or its caller. The callback must not independently cancel its worker.
+This Python example accepts a finite, nonblocking iterable of integers and a positive integer worker count. It creates `workers` tasks, each with at most one active `process` call. The callback completes its item and any owned output before returning. Cancellation of workers belongs to the group or its caller. The callback must not independently cancel its worker.
 
 ```python
 import asyncio

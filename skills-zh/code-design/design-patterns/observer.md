@@ -8,7 +8,7 @@
 
 ## 分发快照
 
-下面的 Python 3.11 实现用于单线程同步回调。每次订阅获得独立令牌，令牌仅属于对应 `Signal`。移除前持续强引用回调。移除未知令牌抛出 `KeyError`。
+下面的 Python 实现用于单线程同步回调。每次订阅获得独立令牌，令牌仅属于对应 `Signal`。移除前持续强引用回调。移除未知令牌抛出 `KeyError`。
 
 ```python
 from collections.abc import Callable

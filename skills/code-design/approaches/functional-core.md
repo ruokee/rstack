@@ -10,7 +10,7 @@ A pure function can have a partial input domain and return an error. Purity desc
 
 ## Compute a fee
 
-This Python 3.11 example charges for calendar days strictly after the due date. Rates and caps are nonnegative integer cents in one agreed currency. Type-correct inputs are supplied by the caller; the function rejects negative monetary parameters. The shell chooses the business calendar's `today` value.
+This Python example charges for calendar days strictly after the due date. Rates and caps are nonnegative integer cents in one agreed currency. Type-correct inputs are supplied by the caller; the function rejects negative monetary parameters. The shell chooses the business calendar's `today` value.
 
 ```python
 from datetime import date

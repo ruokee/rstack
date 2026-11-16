@@ -8,7 +8,7 @@ Specify subscription identity, duplicate subscriptions, removal, callback retent
 
 ## Dispatch a snapshot
 
-This Python 3.11 implementation is for one thread with synchronous callbacks. Each subscription receives a distinct token scoped to its `Signal`. Callbacks are strongly retained until removal. Removing an unknown token raises `KeyError`.
+This Python implementation is for one thread with synchronous callbacks. Each subscription receives a distinct token scoped to its `Signal`. Callbacks are strongly retained until removal. Removing an unknown token raises `KeyError`.
 
 ```python
 from collections.abc import Callable

@@ -1,6 +1,6 @@
 # Python test reliability
 
-Check task completion, thread cancellation, and resource cleanup in Python asyncio tests. This complete Python 3.11+ example owns its directory and awaits the writer before reading its result:
+Check task completion, thread cancellation, and resource cleanup in Python asyncio tests. This complete Python example owns its directory and awaits the writer before reading its result:
 
 ```python
 import asyncio

@@ -1,6 +1,6 @@
 # Python 测试可靠性
 
-检查 Python asyncio 测试的任务完成、线程取消及资源清理。以下完整 Python 3.11+ 示例拥有自己的目录，等写入任务结束后再读取结果：
+检查 Python asyncio 测试的任务完成、线程取消及资源清理。以下完整 Python 示例拥有自己的目录，等写入任务结束后再读取结果：
 
 ```python
 import asyncio

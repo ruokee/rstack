@@ -1,6 +1,6 @@
 # 批量导入案例
 
-本构造案例从操作推导模型，再用该目标修复已有实现。按顺序拼接本页全部 Python 代码块，可组成一个使用 Python 3.11 或以上版本的程序。标明旧代码的部分是可执行的诊断示例。
+本构造案例从操作推导模型，再用该目标修复已有实现。按顺序拼接本页全部 Python 代码块，可组成一个使用 Python 3.12 或以上版本的程序。标明旧代码的部分是可执行的诊断示例。
 
 ## 合同
 
@@ -17,7 +17,7 @@
 ```python
 from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
-from typing import Literal, NewType, TypeAlias, TypedDict, assert_never
+from typing import Literal, NewType, TypedDict, assert_never
 
 BatchId = NewType("BatchId", str)
 SourceId = NewType("SourceId", str)
@@ -50,7 +50,7 @@ class Rejected:
             raise ValueError("a rejection requires a reason")
 
 
-ImportResult: TypeAlias = Imported | Rejected
+type ImportResult = Imported | Rejected
 
 
 @dataclass(frozen=True, kw_only=True)

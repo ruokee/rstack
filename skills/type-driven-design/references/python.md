@@ -1,6 +1,6 @@
 # Python type models
 
-Use this reference for Python representation and guarantee choices. Examples use Python 3.11 or later unless stated otherwise. Follow the project's actual Python floor, dependencies, and checker configuration.
+Use this reference for Python representation and guarantee choices. Follow the project's actual dependencies and checker configuration.
 
 ## Choose by meaning
 
@@ -10,17 +10,17 @@ Python also supports fixed-length heterogeneous tuples, such as `tuple[str, int]
 
 ### Named records
 
-Use `dataclass` for a record with named fields, methods, and ordinary class behavior. Keyword-only fields make construction roles visible. Its generated equality normally compares fields between instances of the identical class. Annotations describe fields to tools. The generated constructor assigns field values. It does not check their annotated types. See the [dataclasses documentation](https://docs.python.org/3.11/library/dataclasses.html).
+Use `dataclass` for a record with named fields, methods, and ordinary class behavior. Keyword-only fields make construction roles visible. Its generated equality normally compares fields between instances of the identical class. Annotations describe fields to tools. The generated constructor assigns field values. It does not check their annotated types. See the [dataclasses documentation](https://docs.python.org/3.12/library/dataclasses.html).
 
-Use `NamedTuple` when named access must coexist with tuple operations. It retains iteration, positional unpacking, and element-wise equality with ordinary tuples. Adding a field affects positional consumers. See [NamedTuple](https://docs.python.org/3.11/library/typing.html#typing.NamedTuple) and the evolution tradeoffs in [PEP 557](https://peps.python.org/pep-0557/#why-not-just-use-namedtuple).
+Use `NamedTuple` when named access must coexist with tuple operations. It retains iteration, positional unpacking, and element-wise equality with ordinary tuples. Adding a field affects positional consumers. See [NamedTuple](https://docs.python.org/3.12/library/typing.html#typing.NamedTuple) and the evolution tradeoffs in [PEP 557](https://peps.python.org/pep-0557/#why-not-just-use-namedtuple).
 
 Use `TypedDict` where callers actually require a dictionary interface with specific string keys and corresponding value types. `dict[str, str | int]` permits either value type at every key; a `TypedDict` can associate each field with its own type. A required key and a nullable value express different facts. `NotRequired` describes a key that may be absent. The runtime value is an ordinary dictionary. Runtime key and value validation belongs to a parser or adapter. See the [TypedDict specification](https://typing.python.org/en/latest/spec/typeddict.html) and the motivation in [PEP 589](https://peps.python.org/pep-0589/#motivation).
 
 ### Identity
 
-A type alias names an existing expression. It remains equivalent to that expression. In Python 3.11, use an assignment, optionally annotated with `TypeAlias`. The `type Name = ...` syntax requires Python 3.12 or later.
+A type alias names an existing type expression and remains statically equivalent to it. Use the `type Name = ...` statement to define aliases, including generic aliases such as `type Items[T] = tuple[T, ...]`.
 
-`NewType` gives checked callers a distinct static subtype. At runtime its call returns the supplied object. It establishes neither a value range nor the existence of a referenced entity. Two same-typed parameters still need role names. See [NewType](https://docs.python.org/3.11/library/typing.html#newtype).
+`NewType` gives checked callers a distinct static subtype. At runtime its call returns the supplied object. It establishes neither a value range nor the existence of a referenced entity. Two same-typed parameters still need role names. See [NewType](https://docs.python.org/3.12/library/typing.html#newtype).
 
 ```python
 from typing import NewType
@@ -46,16 +46,13 @@ Choose missing-value representations by operation. A field update may distinguis
 
 ### Relationships
 
-Use a type parameter when the output must preserve an input's type. This complete Python 3.11 example retains the element type:
+Use a type parameter when the output must preserve an input's type. This complete Python 3.12+ example retains the element type with an inline type parameter:
 
 ```python
 from collections.abc import Sequence
-from typing import TypeVar
-
-T = TypeVar("T")
 
 
-def last_or_none(values: Sequence[T]) -> T | None:
+def last_or_none[T](values: Sequence[T]) -> T | None:
     if not values:
         return None
     return values[-1]
@@ -64,9 +61,9 @@ def last_or_none(values: Sequence[T]) -> T | None:
 print(last_or_none((2, 5)))
 ```
 
-The output is `5`. The checker can infer `int | None` for this call. In Python 3.12 or later, inline type parameters can express the same relationship. Keep a concrete signature when the operation has no useful type relationship.
+The output is `5`. The checker can infer `int | None` for this call. Use inline type parameters for generic functions and classes, such as `class Box[T]:`. Keep a concrete signature when the operation has no useful type relationship.
 
-Use `Protocol` for a consumer's structural capability requirements. Implementations can satisfy it without inheritance. State semantic obligations such as ordering, errors, and resource ownership beside the operation. A read-only property can express read access to a protocol member. `@runtime_checkable` checks attribute presence with limited runtime semantics. It does not verify member signatures. See the [Protocol specification](https://typing.python.org/en/latest/spec/protocol.html) and [runtime checking](https://docs.python.org/3.11/library/typing.html#typing.runtime_checkable).
+Use `Protocol` for a consumer's structural capability requirements. Implementations can satisfy it without inheritance. State semantic obligations such as ordering, errors, and resource ownership beside the operation. A read-only property can express read access to a protocol member. `@runtime_checkable` checks attribute presence with limited runtime semantics. It does not verify member signatures. See the [Protocol specification](https://typing.python.org/en/latest/spec/protocol.html) and [runtime checking](https://docs.python.org/3.12/library/typing.html#typing.runtime_checkable).
 
 ## Establish the properties
 
@@ -115,7 +112,7 @@ Inspect restoration separately. A custom ORM loader or pickle restoration can by
 
 ### Mutation
 
-`frozen=True` blocks ordinary field reassignment. A list or dictionary referenced by a frozen record can still mutate. A tuple prevents changing its element references, while mutable elements retain their own behavior. `Mapping[K, V]` grants read operations through that interface; another alias may still update the underlying dictionary. See [frozen dataclasses](https://docs.python.org/3.11/library/dataclasses.html#frozen-instances) and [collection interfaces](https://docs.python.org/3.11/library/collections.abc.html).
+`frozen=True` blocks ordinary field reassignment. A list or dictionary referenced by a frozen record can still mutate. A tuple prevents changing its element references, while mutable elements retain their own behavior. `Mapping[K, V]` grants read operations through that interface; another alias may still update the underlying dictionary. See [frozen dataclasses](https://docs.python.org/3.12/library/dataclasses.html#frozen-instances) and [collection interfaces](https://docs.python.org/3.12/library/collections.abc.html).
 
 Choose borrowed read access, an immutable value, or a copied snapshot according to the operation's actual needs. State who may modify shared values. Add copying only where snapshot isolation is required. An existence check or concurrency-sensitive rule belongs to the operation that controls those facts.
 

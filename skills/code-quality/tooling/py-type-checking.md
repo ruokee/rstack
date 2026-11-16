@@ -14,7 +14,7 @@ Keep the project's existing mypy, pyright, basedpyright, ty, or other checker, w
 
 ## mypy example
 
-This example uses mypy to check nullable-value misuse in Python 3.11+. Its local contract permits a missing label to raise `ValueError`; a present label is uppercased. Save the violation as `bad.py` in a disposable directory:
+This example uses mypy to check nullable-value misuse. Its local contract permits a missing label to raise `ValueError`; a present label is uppercased. Save the violation as `bad.py` in a disposable directory:
 
 ```python
 def label(value: str | None) -> str:

@@ -10,7 +10,7 @@ Specify whether products share mutable state, configuration, or a resource lifet
 
 ## Assemble paired capabilities
 
-This Python 3.11 example returns paired text operations. Inputs are Unicode strings encodable by the selected codec and byte sequences valid for its decoder. Codec errors propagate. The two factories select UTF-8 and UTF-16 little-endian without a byte-order mark.
+This Python example returns paired text operations. Inputs are Unicode strings encodable by the selected codec and byte sequences valid for its decoder. Codec errors propagate. The two factories select UTF-8 and UTF-16 little-endian without a byte-order mark.
 
 ```python
 from collections.abc import Callable

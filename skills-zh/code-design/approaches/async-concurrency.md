@@ -18,7 +18,7 @@ Python `asyncio` 通常在单个事件循环线程上交错执行任务。Rust f
 
 ## 使用固定 worker
 
-下面的 Python 3.11 示例接收有限的非阻塞整数可迭代对象及正整数 worker 数量。它创建 `workers` 个任务，每个任务最多执行一个 `process` 调用。回调完成条目及自己拥有的输出后再返回。worker 的取消归组或调用方负责。回调不得独立取消自己的 worker。
+下面的 Python 示例接收有限的非阻塞整数可迭代对象及正整数 worker 数量。它创建 `workers` 个任务，每个任务最多执行一个 `process` 调用。回调完成条目及自己拥有的输出后再返回。worker 的取消归组或调用方负责。回调不得独立取消自己的 worker。
 
 ```python
 import asyncio

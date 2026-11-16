@@ -1,6 +1,6 @@
 # Python 变更安全性
 
-检查 Python 函数内联时的求值保持。以下完整 Python 3.11+ 示例只调用一次 `read_value`，结果为读取值的两倍：
+检查 Python 函数内联时的求值保持。以下完整 Python 示例只调用一次 `read_value`，结果为读取值的两倍：
 
 ```python
 def run():

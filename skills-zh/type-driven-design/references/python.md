@@ -1,6 +1,6 @@
 # Python 类型模型
 
-选择 Python 表示及保证机制时使用本参考。除另有说明，示例使用 Python 3.11 或以上版本。遵循项目实际的 Python 最低版本、依赖及检查器配置。
+选择 Python 表示及保证机制时使用本参考。遵循项目实际的依赖及检查器配置。
 
 ## 按含义选择
 
@@ -10,17 +10,17 @@ Python 也支持 `tuple[str, int]` 这样的定长异构 tuple。保留真实位
 
 ### 具名记录
 
-使用 `dataclass` 表达具有具名字段、方法及普通类行为的记录。仅关键字字段让构造角色可见。生成的相等性通常在完全相同类的实例之间比较字段。注解向工具描述字段。生成的构造器直接赋值。它不检查注解类型。见 [dataclasses 文档](https://docs.python.org/3.11/library/dataclasses.html)。
+使用 `dataclass` 表达具有具名字段、方法及普通类行为的记录。仅关键字字段让构造角色可见。生成的相等性通常在完全相同类的实例之间比较字段。注解向工具描述字段。生成的构造器直接赋值。它不检查注解类型。见 [dataclasses 文档](https://docs.python.org/3.12/library/dataclasses.html)。
 
-具名访问需要与 tuple 操作共存时使用 `NamedTuple`。它保留迭代、位置解包以及与普通 tuple 按元素比较的相等性。增加字段会影响位置消费者。见 [NamedTuple](https://docs.python.org/3.11/library/typing.html#typing.NamedTuple) 及 [PEP 557](https://peps.python.org/pep-0557/#why-not-just-use-namedtuple) 中的演进取舍。
+具名访问需要与 tuple 操作共存时使用 `NamedTuple`。它保留迭代、位置解包以及与普通 tuple 按元素比较的相等性。增加字段会影响位置消费者。见 [NamedTuple](https://docs.python.org/3.12/library/typing.html#typing.NamedTuple) 及 [PEP 557](https://peps.python.org/pep-0557/#why-not-just-use-namedtuple) 中的演进取舍。
 
 调用者确实需要指定字符串键及对应值类型的字典接口时，使用 `TypedDict`。`dict[str, str | int]` 允许每个键的值取任一类型；`TypedDict` 可以为各字段关联独立类型。必需键和可空值表达不同事实。`NotRequired` 表达可以缺少的键。运行时值是普通字典。运行时键值校验由解析器或适配器负责。见 [TypedDict 规范](https://typing.python.org/en/latest/spec/typeddict.html) 及 [PEP 589](https://peps.python.org/pep-0589/#motivation) 的动机。
 
 ### 身份
 
-类型别名命名已有表达，与该表达保持等价。Python 3.11 使用赋值，可以加上 `TypeAlias` 注解。`type Name = ...` 语法需要 Python 3.12 或以上版本。
+类型别名命名已有类型表达，与该表达保持静态等价。使用 `type Name = ...` 语句定义别名，包括 `type Items[T] = tuple[T, ...]` 这样的泛型别名。
 
-`NewType` 为受检查的调用者提供独立静态子类型。运行时调用返回传入对象。它不建立值范围或被引用实体的存在性。两个同类型参数仍需用名称说明角色。见 [NewType](https://docs.python.org/3.11/library/typing.html#newtype)。
+`NewType` 为受检查的调用者提供独立静态子类型。运行时调用返回传入对象。它不建立值范围或被引用实体的存在性。两个同类型参数仍需用名称说明角色。见 [NewType](https://docs.python.org/3.12/library/typing.html#newtype)。
 
 ```python
 from typing import NewType
@@ -46,16 +46,13 @@ print(stock_key(warehouse=WarehouseId("north"), product=ProductId("bolt")))
 
 ### 类型关系
 
-输出必须保留输入类型时使用类型参数。以下完整 Python 3.11 示例保留元素类型：
+输出必须保留输入类型时使用类型参数。以下完整 Python 3.12+ 示例用内联类型参数保留元素类型：
 
 ```python
 from collections.abc import Sequence
-from typing import TypeVar
-
-T = TypeVar("T")
 
 
-def last_or_none(values: Sequence[T]) -> T | None:
+def last_or_none[T](values: Sequence[T]) -> T | None:
     if not values:
         return None
     return values[-1]
@@ -64,9 +61,9 @@ def last_or_none(values: Sequence[T]) -> T | None:
 print(last_or_none((2, 5)))
 ```
 
-输出为 `5`。检查器可以为此调用推断出 `int | None`。Python 3.12 或以上版本可以用内联类型参数表达同一关系。操作没有有效类型关系时，保留具体签名。
+输出为 `5`。检查器可以为此调用推断出 `int | None`。泛型函数和泛型类使用内联类型参数，例如 `class Box[T]:`。操作没有有效类型关系时，保留具体签名。
 
-使用 `Protocol` 表达消费者所需的结构能力。实现可以在没有继承关系时满足协议。顺序、错误和资源所有权等语义义务放在操作旁。只读 property 可以表达协议成员的读取能力。`@runtime_checkable` 通过有限的运行时语义检查属性存在性。它不检查成员签名。见 [Protocol 规范](https://typing.python.org/en/latest/spec/protocol.html) 及[运行时检查](https://docs.python.org/3.11/library/typing.html#typing.runtime_checkable)。
+使用 `Protocol` 表达消费者所需的结构能力。实现可以在没有继承关系时满足协议。顺序、错误和资源所有权等语义义务放在操作旁。只读 property 可以表达协议成员的读取能力。`@runtime_checkable` 通过有限的运行时语义检查属性存在性。它不检查成员签名。见 [Protocol 规范](https://typing.python.org/en/latest/spec/protocol.html) 及[运行时检查](https://docs.python.org/3.12/library/typing.html#typing.runtime_checkable)。
 
 ## 建立性质
 
@@ -115,7 +112,7 @@ stop precedes start
 
 ### 修改
 
-`frozen=True` 阻止普通字段重新赋值。冻结记录引用的 list 或 dict 仍可以修改。tuple 阻止元素引用变化，可变元素仍保留自身行为。`Mapping[K, V]` 通过该接口提供读取操作；其他别名仍可能更新底层字典。见[冻结 dataclass](https://docs.python.org/3.11/library/dataclasses.html#frozen-instances) 及[集合接口](https://docs.python.org/3.11/library/collections.abc.html)。
+`frozen=True` 阻止普通字段重新赋值。冻结记录引用的 list 或 dict 仍可以修改。tuple 阻止元素引用变化，可变元素仍保留自身行为。`Mapping[K, V]` 通过该接口提供读取操作；其他别名仍可能更新底层字典。见[冻结 dataclass](https://docs.python.org/3.12/library/dataclasses.html#frozen-instances) 及[集合接口](https://docs.python.org/3.12/library/collections.abc.html)。
 
 按操作需要选择借用读取、不可变值或复制快照。说明谁能修改共享值。需要快照隔离时再增加复制。存在性检查或并发敏感规则由控制这些事实的操作负责。
 

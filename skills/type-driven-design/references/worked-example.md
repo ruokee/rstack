@@ -1,6 +1,6 @@
 # Batch import example
 
-This constructed example derives a model from an operation, then uses that target to repair an existing implementation. All Python blocks on this page can be concatenated in order into one program using Python 3.11 or later. The blocks labeled as old code are executable diagnostic examples.
+This constructed example derives a model from an operation, then uses that target to repair an existing implementation. All Python blocks on this page can be concatenated in order into one program using Python 3.12 or later. The blocks labeled as old code are executable diagnostic examples.
 
 ## Contract
 
@@ -17,7 +17,7 @@ The catalog is a real mapping. Labels are also a real mapping. Rows and results 
 ```python
 from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
-from typing import Literal, NewType, TypeAlias, TypedDict, assert_never
+from typing import Literal, NewType, TypedDict, assert_never
 
 BatchId = NewType("BatchId", str)
 SourceId = NewType("SourceId", str)
@@ -50,7 +50,7 @@ class Rejected:
             raise ValueError("a rejection requires a reason")
 
 
-ImportResult: TypeAlias = Imported | Rejected
+type ImportResult = Imported | Rejected
 
 
 @dataclass(frozen=True, kw_only=True)

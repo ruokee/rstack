@@ -12,7 +12,7 @@ Use a direct constructor when it already exposes the required operation clearly.
 
 ## Select a constructor
 
-This Python 3.11 example creates a fresh streaming compressor for either `zlib` or `bzip2`. The caller supplies bytes and finishes each compressor once with `flush`. The protocol describes the capability used by the caller.
+This Python example creates a fresh streaming compressor for either `zlib` or `bzip2`. The caller supplies bytes and finishes each compressor once with `flush`. The protocol describes the capability used by the caller.
 
 ```python
 import bz2
