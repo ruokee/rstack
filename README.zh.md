@@ -14,8 +14,10 @@ Skill 分类、触发方式、个人适配及项目适配随具体收录项逐�
 
 ## Skills
 
-英文 Skill 位于 [`skills/`](./skills/)，中文 Skill 位于 [`skills-zh/`](./skills-zh/)。
+英文 Skill 位于 `./skills/`，中文 Skill 位于 `./skills-zh/`。
 
+- [use-rstack](./skills-zh/use-rstack/SKILL.md)：为当前请求选择 Skill 或 playbook，沿用有效安排，衔接活动，保留完成及接续工作所需的证据。
+- [create-playbook](./skills-zh/create-playbook/SKILL.md)：从实践、新需求或反馈形成可复用流程。确定维护归属，编写活动关系，将结果接入可发现的入口。
 - [writing-for-agents](./skills-zh/writing-for-agents/SKILL.md)：编写面向 Agent 的内容，适用于 Skill、`AGENTS.md`、Prompt、Tool/MCP 描述、subagent 指令等。组织执行步骤和参考资料，编写准确的技能触发条件，明确读取条件，定义可检查的完成标准。
 - [wellsaid](./skills-zh/wellsaid/SKILL.md)：自然、直接地表达，适用于回复、文档、代码注释和协作消息。清理套话、冗余和防御性表述。保留事实、原意及作者的声音，让文字贴合读者和使用场景。
 - [reflect](./skills-zh/reflect/SKILL.md)：复盘工作过程，提炼可复用的经验和具体改进建议。从判断、工具使用和发散思考三个视角检查记录，核对发现的证据、适用范围及已有规则。落实用户选定的改动。
@@ -35,6 +37,22 @@ Skill 分类、触发方式、个人适配及项目适配随具体收录项逐�
 - [ddd](./skills-zh/ddd/SKILL.md)：探索领域知识，形成共同语言，选择限界上下文及战略重点，表达不变量和领域操作，随新认识演进模型。专题参考覆盖身份、聚合、生命周期、事件、模型落地及验证。
 - [prototype](./skills-zh/prototype/SKILL.md)：通过低成本、可丢弃原型回答设计选择及可行性问题。在可比条件下比较有实质差异的候选，操作实际界面或运行程序，交接证据、取舍、建议及可运行产物。
 - [statechart](./skills-zh/statechart/SKILL.md)：建模状态行为，表达安全性和进展性质，绘制读者视角的状态图，将检查对应到实际实现。按问题选择轻量推演或完整的 TLA+/TLC 示例，由用户显式请求调用。
+
+## 使用
+
+Agent 需要选择专业 Skill 或 playbook、衔接活动或接续工作时，使用 [use-rstack](./skills-zh/use-rstack/SKILL.md)。活动已经明确时，直接读取相应的专业 Skill。
+
+使用 `use-rstack` 前，安装所选语言目录中的整套 Skill。保持各 Skill 目录同级，保留完整 `use-rstack` 包及其 `playbooks/` 子目录。入口链接其余全部 Skill，并说明各自的读取条件。
+
+### Playbooks
+
+Playbook 是用 Markdown 保存的可复用工作流程，说明活动、依赖、选择、反馈及完成条件。Agent 通过 `use-rstack` 查找并采用适用的 playbook，通过 [create-playbook](./skills-zh/create-playbook/SKILL.md) 创建或维护 playbook。将保存的流程接入已有项目、工作区或个人导航，供后续查找。
+
+公共 playbook 随 `use-rstack` 包分发，位于其 `playbooks/` 子目录。该目录初始包含 `.gitkeep`，具体流程随实际需要补充。
+
+私有流程沿用已有明确位置。其余情况将个人流程保存在 `~/.agent/rstack/playbooks/`，项目或工作区流程保存在相应根目录的 `.rstack/playbooks/`。首次保存流程时建立私有目录，将结果接入已有发现入口。
+
+rstack 的发布维护公共包内容。用户、项目及工作区在这些独立位置维护私有流程，并决定私有版本如何吸收公共变化。项目命令、选择判据及导航内容从使用流程的环境取得。
 
 ## 开发
 

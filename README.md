@@ -14,8 +14,10 @@ Skill categories, invocation choices, and personal or project adaptation are dev
 
 ## Skills
 
-English Skills are in [`skills/`](./skills/), and Chinese Skills are in [`skills-zh/`](./skills-zh/).
+English Skills are in `./skills/`, and Chinese Skills are in `./skills-zh/`.
 
+- [use-rstack](./skills/use-rstack/SKILL.md): Choose a Skill or playbook for the request, apply existing arrangements, connect activities, and preserve the evidence needed for completion or resumption.
+- [create-playbook](./skills/create-playbook/SKILL.md): Turn practice, new needs, or feedback into reusable workflows. Establish their maintenance ownership, write the activity relationships, and connect the result to a discoverable entry.
 - [writing-for-agents](./skills/writing-for-agents/SKILL.md): Write content for agents, including Skills, `AGENTS.md`, prompts, tool/MCP descriptions, and subagent instructions. Organize steps and reference material, write precise skill triggers, make reading conditions explicit, and define checkable completion criteria.
 - [wellsaid](./skills/wellsaid/SKILL.md): Write clear, natural text for replies, documents, code comments, and collaboration messages. Remove stock phrasing, filler, and defensive language. Preserve facts, meaning, and the author's voice while adapting the text to its readers and purpose.
 - [reflect](./skills/reflect/SKILL.md): Review work sessions for reusable lessons and concrete improvements. Examine the record through judgment, tooling, and divergent lenses, then check findings against the evidence, their scope, and existing guidance. Apply the changes the user selects.
@@ -35,6 +37,22 @@ English Skills are in [`skills/`](./skills/), and Chinese Skills are in [`skills
 - [ddd](./skills/ddd/SKILL.md): Explore domain knowledge, build a ubiquitous language, choose bounded contexts and strategic priorities, express invariants and domain operations, and evolve models as understanding changes. Use focused references for identity, aggregates, lifecycle, events, implementation, and validation.
 - [prototype](./skills/prototype/SKILL.md): Answer design choices and feasibility questions through low-cost, disposable prototypes. Compare meaningful alternatives under comparable conditions, observe the actual interface or runtime, and hand off evidence, tradeoffs, a recommendation, and a runnable artifact.
 - [statechart](./skills/statechart/SKILL.md): Model stateful behavior, express safety and progress properties, draw reader-facing statecharts, and connect checks to implementation. Use a lightweight walkthrough or the complete TLA+/TLC example according to the question. Invoked on an explicit user request.
+
+## Usage
+
+Use [use-rstack](./skills/use-rstack/SKILL.md) when the Agent needs to choose a specialist Skill or a playbook, connect activities, or resume work. When the activity is already clear, read the relevant specialist Skill directly.
+
+To use `use-rstack`, install the complete Skill set from the chosen language directory. Keep the Skill directories as siblings and preserve the whole `use-rstack` package, including `playbooks/`. Its navigation links to every other Skill and explains when to read it.
+
+### Playbooks
+
+A playbook is a reusable Markdown workflow that describes activities, dependencies, choices, feedback, and completion conditions. The Agent uses `use-rstack` to find and apply a suitable playbook, and [create-playbook](./skills/create-playbook/SKILL.md) to create or maintain one. Link saved playbooks from existing project, workspace, or user guidance so they can be found later.
+
+Public playbooks ship with `use-rstack` in its `playbooks/` subdirectory. This directory initially contains `.gitkeep`; concrete playbooks will be added as needs arise.
+
+Reuse an established explicit private location. Otherwise store personal workflows in `~/.agent/rstack/playbooks/` and project or workspace workflows in `.rstack/playbooks/` at the corresponding root. Create the private directory when first saving a workflow and connect the result to an existing discovery entry.
+
+rstack releases maintain the public package content. Users, projects, and workspaces maintain their private workflows in these independent locations and decide how private versions incorporate public changes. Project commands, selection criteria, and navigation content come from the environment where the workflow is used.
 
 ## Development
 
