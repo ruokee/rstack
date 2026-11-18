@@ -2,7 +2,7 @@
 name: engineering-principles
 description: 设计、实现、修改或审查代码、文档及配置等工程产物时使用。
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # 工程原则
@@ -24,6 +24,7 @@ metadata:
 - [KISS](../code-design/design-principles/kiss.md)：选择整体复杂度较低的方案。
 - [YAGNI](../code-design/design-principles/yagni.md)：让新增能力有实际需求依据。
 - [保持懒惰](./references/keep-laziness.md)：用最小必要改动解决问题。
+- [变更局部性](./references/change-locality.md)：确定改名范围，限制新增能力的影响，或消除代码和文档中的重复编辑。
 - [先减后加](./references/subtract-before-add.md)：先检查删除或简化能否解决问题。
 - [降低理解负担](./references/minimize-reader-load.md)：减少阅读时要追踪的层次和状态。
 - [渐进式披露](../writing-for-agents/SKILL.md#信息层级)：先呈现必要信息，细节按需展开。
