@@ -2,7 +2,7 @@
 name: use-rstack
 description: Use when choosing a Skill or playbook, connecting activities, or resuming work across activities. Read the relevant specialist Skill directly when the activity is already clear.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Use rstack
@@ -32,6 +32,7 @@ Select activities for the current request and its real dependencies. A specific 
 ### Investigate a question
 
 - [research](../research/SKILL.md): Gather, check, and synthesize sources systematically when the answer needs traceable evidence.
+- [feature-map](../feature-map/SKILL.md): Create or update a project map from user-visible behavior to implementation entry points.
 - [thinking-method](../thinking-method/SKILL.md): Work through how or why a mechanism works, an analogy, an open question, a model, first principles, hypotheses, or a reasoning difficulty.
 - [teach](../teach/SKILL.md): Help the user understand a concept, mechanism, or method, including confusion that remains after an explanation.
 - [diagnose](../diagnose/SKILL.md): Investigate the cause of a failure, regression, unexpected result, or conflicting observation.

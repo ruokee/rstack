@@ -2,7 +2,7 @@
 name: use-rstack
 description: 需要选择 Skill 或 playbook、衔接相关活动，或跨活动接续工作时使用。活动已明确时直接读取相应专业 Skill。
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # 使用 rstack
@@ -32,6 +32,7 @@ metadata:
 ### 调查问题
 
 - [research](../research/SKILL.md)：答案需要可追溯证据时，系统搜集、核验及综合来源。
+- [feature-map](../feature-map/SKILL.md)：为项目建立或修订从用户行为通往实现入口的功能地图。
 - [thinking-method](../thinking-method/SKILL.md)：处理机制如何运作或为何如此、类比、开放问题、建模、第一性原理、假设及推理困难。
 - [teach](../teach/SKILL.md)：帮助用户理解概念、机制或方法，包括解释后仍然存在的困惑。
 - [diagnose](../diagnose/SKILL.md)：调查失败、回归、意外结果或相互矛盾的观察的原因。
