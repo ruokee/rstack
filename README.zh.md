@@ -17,6 +17,7 @@ Skill 分类、触发方式、个人适配及项目适配随具体收录项逐�
 英文 Skill 位于 `./skills/`，中文 Skill 位于 `./skills-zh/`。
 
 - [use-rstack](./skills-zh/use-rstack/SKILL.md)：为当前请求选择 Skill 或 playbook，沿用有效安排，衔接活动，保留完成及接续工作所需的证据。
+- [plan-task](./skills-zh/plan-task/SKILL.md)：为一次任务制定或修订计划，指出可开始的工作、交接所需的产物、可并行的单元及整体验收方式。
 - [create-playbook](./skills-zh/create-playbook/SKILL.md)：从实践、新需求或反馈形成可复用流程。确定维护归属，编写活动关系，将结果接入可发现的入口。
 - [writing-for-agents](./skills-zh/writing-for-agents/SKILL.md)：编写面向 Agent 的内容，适用于 Skill、`AGENTS.md`、Prompt、Tool/MCP 描述、subagent 指令等。组织执行步骤和参考资料，编写准确的技能触发条件，明确读取条件，定义可检查的完成标准。
 - [wellsaid](./skills-zh/wellsaid/SKILL.md)：自然、直接地表达，适用于回复、文档、代码注释和协作消息。清理套话、冗余和防御性表述。保留事实、原意及作者的声音，让文字贴合读者和使用场景。

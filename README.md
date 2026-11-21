@@ -17,6 +17,7 @@ Skill categories, invocation choices, and personal or project adaptation are dev
 English Skills are in `./skills/`, and Chinese Skills are in `./skills-zh/`.
 
 - [use-rstack](./skills/use-rstack/SKILL.md): Choose a Skill or playbook for the request, apply existing arrangements, connect activities, and preserve the evidence needed for completion or resumption.
+- [plan-task](./skills/plan-task/SKILL.md): Create or revise a plan for one task. Identify what can start, what each handoff supplies, which units can run in parallel, and how to check the final result.
 - [create-playbook](./skills/create-playbook/SKILL.md): Turn practice, new needs, or feedback into reusable workflows. Establish their maintenance ownership, write the activity relationships, and connect the result to a discoverable entry.
 - [writing-for-agents](./skills/writing-for-agents/SKILL.md): Write content for agents, including Skills, `AGENTS.md`, prompts, tool/MCP descriptions, and subagent instructions. Organize steps and reference material, write precise skill triggers, make reading conditions explicit, and define checkable completion criteria.
 - [wellsaid](./skills/wellsaid/SKILL.md): Write clear, natural text for replies, documents, code comments, and collaboration messages. Remove stock phrasing, filler, and defensive language. Preserve facts, meaning, and the author's voice while adapting the text to its readers and purpose.
