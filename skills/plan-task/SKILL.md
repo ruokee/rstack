@@ -1,8 +1,8 @@
 ---
 name: plan-task
-description: Read before investigating or drafting a requested implementation plan, including a small change and its verification. Also use to plan a non-code task, revise an existing plan, judge a split, or identify independent work.
+description: Use when the user asks how to change something and how to verify it. Read before looking through the project, even for a one-setting change. Also use to make or revise a task plan, judge a split, or identify work that can proceed independently.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Plan a task
@@ -11,30 +11,31 @@ Give the person taking over a plan they can act on. Start with the requested out
 
 ## Find what can start
 
-Check facts that could change the arrangement. For a change to an existing system, follow the affected user operations to the decisions they share. Check which version, inputs, and public results the recipient can use to verify the change.
+For a change to an existing system, start a short list of the affected public operations. Fill in their acceptance cases as you trace them to the decisions they share or override. Consult a working usage example for the setup. Once each case can distinguish the requested change from a regression, hand over the plan. An inventory of files, implementation code, or a proposed test suite is rarely the missing part.
 
-Distinguish a missing result from a missing decision. If B needs a result that A knows how to deliver, plan both. Name what B consumes and whether B needs it to start, to check its work, or to release it. If an open choice changes the promised outcome, identify who can decide, what they need, and which work depends on the answer. Plan the settled work. When the assignment itself is to investigate feasibility, plan the investigation through the observation that will let its recipient choose a route.
+What can the recipient do with the materials already in hand? Read a settled rule where it lives. For every proposed wait, name the first action that would give a wrong result without the missing input. Put the wait there: starting, checking, and releasing can require different things. If an open decision changes the promised outcome, identify its owner and the work it holds up. Plan the settled work. If the task is to investigate feasibility, end the investigation at the observation that lets the recipient choose a route.
 
 ## Choose the units
 
 Try the whole task as one unit first. Read [Break down the work](./references/breakdown.md) when judging or changing a work boundary, including when the user asks whether to keep an existing split. If the question is just whether existing units can proceed independently, go straight to [Mark optional parallel work](./references/fan-out.md). Use that reference whenever marking such a group in a plan. For a local question, return the decision about those units and the reason.
 
-For each necessary handoff, say what will be ready, who needs it for what, and how they can tell it is usable. Place each prerequisite beside the action it limits. Work back from final use: if every unit passed its own checks, what could still fail when the results meet? Give that check a place in the plan.
+For each necessary handoff, name the result, its recipient, and how to tell it is usable. Walk back from final use: if a unit silently omitted an item or supplied the wrong one, how would the recipient notice? Check the finished result against the original inputs or another independent source of the expected result. A comparison with the handoff alone can reproduce its mistake.
 
 ## Hand over the check
 
-For an engineering plan, deliver short acceptance scenarios in prose. Give the implementer the starting state, the public operation on the changed build, and exactly what to observe. Fixture builders and assertion code are a separate deliverable when the user asks for them. A scenario that depends on a guessed command, field, or path is not ready to hand over. Look up the public contract or describe the operation in its own terms.
+For an engineering plan, hand over concrete cases in prose. Use public operation names, actual setting values, and observable outcomes. Keep shell scripts and output-parsing expressions for requests that need runnable code. Identify the build and the object under test before the first operation that uses them. For example: “Register a device named bench. Save the enrollment handle returned by registration. Suspend the device by that handle using the same build.” A display name identifies the example to the reader; subsequent actions take the identifier their interface accepts.
 
-Derive the cases from the promises. For each affected setting, distinguish its default behavior, a supported override, and any enforced boundary. Use inputs large enough for the default to matter. Change one setting at a time; exercise each independent limit just beyond its boundary. Check which observation would fail if that particular rule disappeared.
+- **State-changing operations:** Give each entry point its own row: starting state → preview if offered → actual change → state that stays fixed. Choose a starting state in which this entry must act. If it has to preserve selected items, put a protected item and a matching control in that row. Verify that both would be reached without protection. After the last setup step, record the before-state of everything the comparison uses. Derive each row's expected changes from that operation's contract, even when other entries share its implementation. An option that suppresses one effect may leave the others active.
+- **Settings change:** Use a row or sentence for each affected mode and setting: input, default result, result with an explicit override. Compare with a plausible wrong default. Hold other settings fixed. Where two limits can bind, use a separate input that crosses each one first; specify the exact items retained and omitted under the applicable unit of measurement. Check each hard limit just outside its range with the other arguments valid. An unchanged interacting setting supplies a check, not another design choice.
 
-Walk each affected entry point as if you were the recipient. Start with the **smallest reachable state** in which it actually does the promised work. Trace setup through the real inputs, identifiers, and selection rules. Drop setup left over from another case. Take the before-state **after the last setup change**. Follow the preview when offered, then the real operation. Name both the change that proves the operation took effect and the observation that proves the preserved behavior held. If a correct implementation would fail a check, or doing nothing would pass it, fix that scenario before handing it over.
+Before handing over shared implementation work, read the cases as the recipient would: can they obtain every input from that setup, reach the action, and tell a correct change from a wrong one or no change? For read-only checks, reuse one setup when it still supplies all the observations. Include further cases only when they distinguish a separate promise.
 
-A small plan can fit in one paragraph. For example, to show ten recent events by default in a viewer: change the default count and its help text together. Open the changed viewer on a history of twelve short, numbered events. Check that the default shows the newest ten, the existing explicit count of three shows the newest three, and the full-history view still shows all twelve.
+A small plan can fit in one paragraph. Suppose a queue's default batch grows to six and its bulk mode must keep taking twenty. With twenty-one labeled jobs, reset the queue before each observation. The default takes jobs 1–6, an explicit batch of two takes 1–2, and bulk takes 1–20. Trying bulk on just six jobs would also pass if both modes accidentally used the new default.
 
 ## Revise a plan
 
-Start with the old plan and the new fact. Identify the assumption that failed and the units that depend on it. Keep their original identifiers. Carry forward accepted outputs and the evidence that still applies. Change only the affected prerequisites, handoffs, checks, or parallel annotations. Say what can resume now and exactly what would release each wait.
+Write a patch to the old plan, using its unit names. Carry forward accepted results with their evidence. For each affected unit give the changed action, what can proceed now, and the fact that releases its wait. Retire or narrow any parallel annotation that depended on the old state.
 
-Read the revised plan against the original deliverable. What does one item in the finished result represent? Keep that meaning and the agreed completion test. Intermediate records may explain how to produce or check an item; they become deliverables only if the assignment calls for them. When the old plan cites a settled rule by name, carry it forward by name. A new input problem calls for the missing fact, not a new rule or a wider output.
+Keep the original deliverables, acceptance rules, and release conditions at every handoff. A new input problem justifies checking the missing fact at its source. It does not by itself create an extra release route, a deadline, or a new property that otherwise valid inputs must satisfy. Include a decision for the user only when the actual request or new evidence makes the original commitment undecidable. For the last handoff, check both directions: a complete result in the original format passes; a result missing an agreed item fails, even with extra calculations attached.
 
 Use the project's existing plan format and location. Finish when the recipient can identify the next action and judge the result of the whole task. Tickets, assignments, and releases follow the user's separate instructions.

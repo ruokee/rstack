@@ -16,19 +16,13 @@ If a common prerequisite is outstanding, name the point after which parallel wor
 
 Keep the plan's unit names or identifiers. Beside the relevant units, add one `fan-out (optional)` line naming the members, when they can start, and who takes their results. Refer back to the inputs, write boundaries, and checks already given. Omit the annotation if no group qualifies.
 
-For example, a plan to import orders might read:
+For example, two order formats already have a published contract and examples for each format:
 
-> A. Settle the order fields, error meanings, and examples for both formats.
+> **fan-out (optional): The CSV and JSON parsers can start now, together or one at a time. The import command takes both.**
 >
-> **fan-out (optional): Once A is settled, do B and C in parallel or one at a time. D takes both parsers and connects them to the import command.**
->
-> B. Implement the CSV parser in its own module and format-specific cases. Check orders and errors against A's examples.
->
-> C. Implement the JSON parser in its own module and format-specific cases. Check the same contract with separate mutable test data.
->
-> D. Register both formats in one place. Import equivalent examples through the command and read back the same stored order.
+> Each parser has its own module and test data. Check its orders and errors against its format's examples. One person registers both formats, imports equivalent examples through the command, and reads back the expected orders.
 
-B and C can each finish against a fixed A. D alone writes the registry. If both parsers have to rewrite one generated file to run their checks, the annotation no longer holds. Move generation and its check into one unit, or serialize the conflict, then reconsider the remaining overlap.
+If one CSV field has no defined meaning, identify the CSV work that needs the answer. JSON can still start and finish against its existing contract. If both parsers must rewrite the same generated file to check their results, give that write to one owner or serialize just the conflicting checks. Keep the other work available.
 
 ## Use the annotation
 
