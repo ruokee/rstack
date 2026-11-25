@@ -78,9 +78,9 @@ Repository instructions for Agents are in [AGENTS.md](./AGENTS.md).
 
 Original rstack content is available under the [MIT License](./LICENSE).
 
-Third-party material retains its applicable license. [THIRD-PARTY-NOTICES.md](./THIRD-PARTY-NOTICES.md) distinguishes expression reuse from concept references and records copyright holders, source versions, covered files or sections, and license terms.
+See [Third-party notices](./THIRD-PARTY-NOTICES.md) for the licenses and copyright notices that apply to third-party material.
 
-Keep the notices consistent with the content being distributed. Reused protected expression needs its applicable attribution, including translations and distinctive source examples or arrangements. Shared methods, technical facts, and terminology can support independent writing with concept references. Narrow or remove a reuse entry after the covered expression and its translations leave that version. Historical releases keep the notices they shipped with.
+When distributing a Skill separately, include the applicable copyright notices and full license texts with the files you distribute.
 
 ## Acknowledgments
 
