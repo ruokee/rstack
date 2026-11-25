@@ -2,7 +2,7 @@
 name: planning
 description: Use when turning an idea into a concrete task, planning implementation for a chosen approach, or revising an existing task agreement. Also use when the user wants to plan now and implement later, or leave the agreement and acceptance criteria for the next session.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Plan a task
@@ -23,7 +23,7 @@ Choose a method for the question still open:
 
 ## Draft the Spec
 
-Before drafting a Spec, read this package's [Spec template](./spec_template.md). Draft in the existing planning document or at the project's agreed location. Follow the template for sections, order, fields, and when to omit optional content. Keep all titles in English. Write the body in the language the user requests, or otherwise in the language they use. Set `Status` to `Draft` when drafting or revising.
+Before drafting a Spec, read this package's [Spec template](./spec_template.md). Draft in the existing planning document or at the project's agreed location. Follow the template's language instructions, section order, fields, and rules for omitting optional content. Set `Status` to `Draft` when drafting or revising.
 
 Read [plan-task](../plan-task/SKILL.md) to organize the `Implementation Plan`. One named unit is enough for a single change. Give the Builder a starting point, name the result and its recipient, and cite the corresponding named user journey (`UJ` in `User Journeys`) or a specific check in `Verification`. Keep unit IDs when revising the plan.
 

@@ -2,7 +2,7 @@
 name: planning
 description: 需要把一个想法定成具体任务、为已选方案安排实施步骤，或修订已有任务约定时使用。用户要先做计划、稍后执行，或把约定和验收方法留给下一次会话时，也使用此入口。
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # 规划任务
@@ -23,7 +23,7 @@ metadata:
 
 ## 起草 Spec
 
-起草 Spec 前，先读取本包的 [Spec 模板](./spec_template.md)，在任务已有的规划文档或项目约定的位置填写。章节、顺序、字段和可选内容的省略条件以模板为准。所有标题保留英文。正文使用用户要求的语言；用户未指定时，使用用户所用的语言。起草或修订时，将 `Status` 设为 `Draft`。
+起草 Spec 前，先读取本包的 [Spec 模板](./spec_template.md)，在任务已有的规划文档或项目约定的位置填写。语言、章节、顺序、字段和可选内容的省略条件以模板为准。起草或修订时，将 `Status` 设为 `Draft`。
 
 读取 [plan-task](../plan-task/SKILL.md) 编排 `Implementation Plan`。单一改动用一个具名单元即可。写明 Builder 从哪里开始、交付什么结果、由谁接手，并引用 `User Journeys` 中对应的具名旅程 `UJ` 或 `Verification` 中的具体验证项。修订计划时沿用已有单元标识。
 

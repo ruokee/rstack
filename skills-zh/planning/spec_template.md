@@ -1,3 +1,5 @@
+<!-- 二级和三级标题保留英文。一级标题和正文使用用户指定的语言；用户未指定时，使用用户当前使用的语言。 -->
+
 # [Spec Name]
 
 - **Project**: [项目名称]
@@ -11,9 +13,9 @@
 
 当且仅当下列关键词以此处所示的全大写形式出现时，按 BCP 14 [RFC2119] [RFC8174] 解释其含义："MUST"、"MUST NOT"、"REQUIRED"、"SHALL"、"SHALL NOT"、"SHOULD"、"SHOULD NOT"、"RECOMMENDED"、"NOT RECOMMENDED"、"MAY"、"OPTIONAL"。
 
-文档标题和章节标题的大小写遵循 [RFC7322] 第 3.4 节的约定。
+<!-- 如果当前正文使用中文，额外添加 [中文关键词使用 "必须"、"不得"、"应该"、"不该" 分别对应 MUST、MUST NOT、SHOULD、SHOULD NOT，并沿用各同义关键词在 RFC 2119 中的含义。] -->
 
-<!-- 标题保留英文。正文使用用户所要求或使用的语言。 -->
+文档标题和章节标题的大小写遵循 [RFC7322] 第 3.4 节的约定。
 
 ## Motivation
 

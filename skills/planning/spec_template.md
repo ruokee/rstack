@@ -1,3 +1,5 @@
+<!-- Keep level 2 and level 3 headings in English. Write the level 1 heading and body in the language the user requests. If they do not specify one, use the language they are using. -->
+
 # [Spec Name]
 
 - **Project**: [Project name]
@@ -11,9 +13,9 @@
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" have the meanings defined in BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all capitals as shown here.
 
-Document and section titles follow the capitalization conventions in Section 3.4 of [RFC7322].
+<!-- If the Spec body is in Chinese, add the following sentence to this section: [中文关键词使用 "必须"、"不得"、"应该"、"不该" 分别对应 MUST、MUST NOT、SHOULD、SHOULD NOT，并沿用各同义关键词在 RFC 2119 中的含义。] -->
 
-<!-- Keep the headings in English. Write the body in the language the user requests or uses. -->
+Document and section titles follow the capitalization conventions in Section 3.4 of [RFC7322].
 
 ## Motivation
 
