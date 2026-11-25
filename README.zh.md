@@ -27,6 +27,7 @@ Skill 分类、触发方式、个人适配及项目适配随具体收录项逐�
 ### 工作流
 
 - [use-rstack](./skills-zh/use-rstack/SKILL.md)：为当前请求选择 Skill 或 playbook，沿用有效安排，衔接活动，保留完成及接续工作所需的证据。
+- [planning](./skills-zh/planning/SKILL.md)：从想法或已选方案开始规划，把预期结果、实施步骤和验收标准写成一份任务说明。
 - [plan-task](./skills-zh/plan-task/SKILL.md)：为一次任务制定或修订计划，指出可开始的工作、交接所需的产物、可并行的单元及整体验收方式。
 - [create-playbook](./skills-zh/create-playbook/SKILL.md)：从实践、新需求或反馈形成可复用流程。确定维护归属，编写活动关系，将结果接入可发现的入口。
 - [improve](./skills-zh/improve/SKILL.md)：围绕约定目标，通过前后对照迭代改进已有成果。先确定基线、评价方法和必须保持的属性，再逐轮比较候选改动，作出保留、撤回或待定的判断。适用于代码、文档和 Agent 指引等对象。

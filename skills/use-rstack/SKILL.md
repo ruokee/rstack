@@ -2,7 +2,7 @@
 name: use-rstack
 description: Use when choosing a Skill or playbook, connecting activities, or resuming work across activities. Read the relevant specialist Skill directly when the activity is already clear.
 metadata:
-  version: "1.0.2"
+  version: "1.0.3"
 ---
 
 # Use rstack
@@ -37,9 +37,13 @@ Select activities for the current request and its real dependencies. A specific 
 - [teach](../teach/SKILL.md): Help the user understand a concept, mechanism, or method, including confusion that remains after an explanation.
 - [diagnose](../diagnose/SKILL.md): Investigate the cause of a failure, regression, unexpected result, or conflicting observation.
 
+### Plan a task
+
+- [planning](../planning/SKILL.md): Form or revise a Spec that someone can implement and check.
+- [plan-task](../plan-task/SKILL.md): Create or revise a plan for one task, judge a work boundary, or identify units that can run in parallel.
+
 ### Resolve a design question
 
-- [plan-task](../plan-task/SKILL.md): Create or revise a plan for one task, judge a work boundary, or identify units that can run in parallel.
 - [system-architecture](../system-architecture/SKILL.md): Decide system boundaries, responsibilities, interactions, operating structure, or system-level technology choices.
 - [ddd](../ddd/SKILL.md): Clarify domain meanings and business rules, choose bounded contexts, or design and evolve domain models.
 - [code-design](../code-design/SKILL.md): Design code structure or improve existing interfaces, modules, dependencies, and ownership.

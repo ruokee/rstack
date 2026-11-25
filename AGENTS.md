@@ -27,6 +27,7 @@ pnpm hooks:install
 - Use trunk-based development.
 - Ensure `main` maintains a linear history.
 - `main` is the long-lived branch. After the first commit, make subsequent changes on short-lived branches created from `main`.
+- Keep a new Skill at `1.0.0` until it first lands on `main`. When updating a Skill already on `main`, bump its version once for the entire branch. Use the same version in both language packages.
 - Write commit messages in English using Conventional Commits.
 - Use types from the standard set.
 - Commit hooks format staged files and validate commit messages.

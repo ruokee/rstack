@@ -27,6 +27,7 @@ English Skills are in `./skills/`, and Chinese Skills are in `./skills-zh/`.
 ### Workflows
 
 - [use-rstack](./skills/use-rstack/SKILL.md): Choose a Skill or playbook for the request, apply existing arrangements, connect activities, and preserve the evidence needed for completion or resumption.
+- [planning](./skills/planning/SKILL.md): Plan a task from an idea or a chosen approach. Write down the intended result, the implementation steps, and how to check that the work meets the goal.
 - [plan-task](./skills/plan-task/SKILL.md): Create or revise a plan for one task. Identify what can start, what each handoff supplies, which units can run in parallel, and how to check the final result.
 - [create-playbook](./skills/create-playbook/SKILL.md): Turn practice, new needs, or feedback into reusable workflows. Establish their maintenance ownership, write the activity relationships, and connect the result to a discoverable entry.
 - [improve](./skills/improve/SKILL.md): Improve existing work through evidence-based iterations against an agreed goal. Establish a baseline, comparison method, and properties to preserve, then compare candidates and decide whether to keep, revert, or leave each result inconclusive. Apply the process to code, documents, or agent-facing guidance.

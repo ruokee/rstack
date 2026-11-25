@@ -2,7 +2,7 @@
 name: use-rstack
 description: 需要选择 Skill 或 playbook、衔接相关活动，或跨活动接续工作时使用。活动已明确时直接读取相应专业 Skill。
 metadata:
-  version: "1.0.2"
+  version: "1.0.3"
 ---
 
 # 使用 rstack
@@ -37,9 +37,13 @@ metadata:
 - [teach](../teach/SKILL.md)：帮助用户理解概念、机制或方法，包括解释后仍然存在的困惑。
 - [diagnose](../diagnose/SKILL.md)：调查失败、回归、意外结果或相互矛盾的观察的原因。
 
+### 规划任务
+
+- [planning](../planning/SKILL.md)：形成或修订一份可以据以实施和验收的 Spec。
+- [plan-task](../plan-task/SKILL.md)：为一次任务制定或修订计划，判断工作边界，或标出可并行的单元。
+
 ### 解决设计问题
 
-- [plan-task](../plan-task/SKILL.md)：为一次任务制定或修订计划，判断工作边界，或标出可并行的单元。
 - [system-architecture](../system-architecture/SKILL.md)：确定系统边界、职责、交互、运行结构或系统级技术选择。
 - [ddd](../ddd/SKILL.md)：澄清领域含义和业务规则，选择限界上下文，设计及演进领域模型。
 - [code-design](../code-design/SKILL.md)：设计代码结构，或改进既有接口、模块、依赖及归属。
