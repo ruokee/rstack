@@ -16,28 +16,45 @@ Skill categories, invocation choices, and personal or project adaptation are dev
 
 English Skills are in `./skills/`, and Chinese Skills are in `./skills-zh/`.
 
+### General
+
+- [thinking-method](./skills/thinking-method/SKILL.md): Choose or combine eight methods for the question at hand: how, why, analogy, discussion, modeling, first-principle reasoning, hypothesis, and metacognition. Make important assumptions explicit in the current activity's document, then use them for planning, reflection, diagnosis, or hypothetical reasoning.
+- [research](./skills/research/SKILL.md): Gather and assess evidence to answer research questions with traceable findings. Follow claims to primary sources and distinguish facts, inferences, and unresolved disagreements. For durable delivery, preserve source material and open questions so another session can continue the work.
+- [teach](./skills/teach/SKILL.md): Explain concepts, mechanisms, and methods. Build on what the learner already knows, adapt explanations to feedback, and offer practice when requested. Default to teaching in the conversation; prepare durable learning materials for an explicit need.
+- [diagnose](./skills/diagnose/SKILL.md): Investigate problems and anomalies through evidence, competing explanations, and discriminating checks. Handle repeatable, intermittent, historical, and workflow problems, state the strength of causal conclusions, and carry findings into an authorized repair. Read software-specific methods when the problem requires them.
+- [engineering-principles](./skills/engineering-principles/SKILL.md): Select principles for code, documentation, and configuration changes. Consult references for their purpose, conditions, tradeoffs, and examples.
+
+### Workflows
+
 - [use-rstack](./skills/use-rstack/SKILL.md): Choose a Skill or playbook for the request, apply existing arrangements, connect activities, and preserve the evidence needed for completion or resumption.
 - [plan-task](./skills/plan-task/SKILL.md): Create or revise a plan for one task. Identify what can start, what each handoff supplies, which units can run in parallel, and how to check the final result.
 - [create-playbook](./skills/create-playbook/SKILL.md): Turn practice, new needs, or feedback into reusable workflows. Establish their maintenance ownership, write the activity relationships, and connect the result to a discoverable entry.
-- [writing-for-agents](./skills/writing-for-agents/SKILL.md): Write content for agents, including Skills, `AGENTS.md`, prompts, tool/MCP descriptions, and subagent instructions. Organize steps and reference material, write precise skill triggers, make reading conditions explicit, and define checkable completion criteria.
-- [wellsaid](./skills/wellsaid/SKILL.md): Write clear, natural text for replies, documents, code comments, and collaboration messages. Remove stock phrasing, filler, and defensive language. Preserve facts, meaning, and the author's voice while adapting the text to its readers and purpose.
-- [reflect](./skills/reflect/SKILL.md): Review work sessions for reusable lessons and concrete improvements. Examine the record through judgment, tooling, and divergent lenses, then check findings against the evidence, their scope, and existing guidance. Apply the changes the user selects.
-- [thinking-method](./skills/thinking-method/SKILL.md): Choose or combine eight methods for the question at hand: how, why, analogy, discussion, modeling, first-principle reasoning, hypothesis, and metacognition. Make important assumptions explicit in the current activity's document, then use them for planning, reflection, diagnosis, or hypothetical reasoning.
-- [research](./skills/research/SKILL.md): Gather and assess evidence to answer research questions with traceable findings. Follow claims to primary sources and distinguish facts, inferences, and unresolved disagreements. For durable delivery, preserve source material and open questions so another session can continue the work.
-- [feature-map](./skills/feature-map/SKILL.md): Build and maintain a project index from user-visible features to their entry points and implementation. Use the map to locate existing behavior during planning, implementation, and verification.
 - [improve](./skills/improve/SKILL.md): Improve existing work through evidence-based iterations against an agreed goal. Establish a baseline, comparison method, and properties to preserve, then compare candidates and decide whether to keep, revert, or leave each result inconclusive. Apply the process to code, documents, or agent-facing guidance.
-- [teach](./skills/teach/SKILL.md): Explain concepts, mechanisms, and methods. Build on what the learner already knows, adapt explanations to feedback, and offer practice when requested. Default to teaching in the conversation; prepare durable learning materials for an explicit need.
-- [diagnose](./skills/diagnose/SKILL.md): Investigate problems and anomalies through evidence, competing explanations, and discriminating checks. Handle repeatable, intermittent, historical, and workflow problems, state the strength of causal conclusions, and carry findings into an authorized repair. Read software-specific methods when the problem requires them.
-- [technical-writing](./skills/technical-writing/SKILL.md): Write, revise, or review technical documents for human readers, including READMEs, guides, references, and proposals. Organize content around readers' tasks, check technical facts and examples, and preserve conditions and implementation status.
-- [code-design](./skills/code-design/SKILL.md): Design types, interfaces, modules, dependencies, and state ownership from real caller usage. Improve existing structures and revisit assumptions exposed during implementation.
-- [type-driven-design](./skills/type-driven-design/SKILL.md): Design types from operations and meaning. Diagnose existing models, complete the target design, and migrate producers and consumers in coherent batches. Use Python guidance and a complete batch import example to examine representations, caller readability, and actual guarantees.
-- [code-quality](./skills/code-quality/SKILL.md): Analyze code, tests, and code designs, and select or configure formatting, lint, custom rules, and type checking. Independently judge correctness, structure, tests, and change safety against contracts and counterevidence. Report locations, effects, and repair directions.
-- [engineering-principles](./skills/engineering-principles/SKILL.md): Select principles for code, documentation, and configuration changes. Consult references for their purpose, conditions, tradeoffs, and examples.
-- [blast-radius](./skills/blast-radius/SKILL.md): Trace proposed or implemented software changes to affected consumers, historical data, and runtime behavior. Identify decisive premises, gather proportionate evidence, preserve excluded paths, and choose concrete checks and rollback conditions.
-- [create-verification](./skills/create-verification/SKILL.md): Create and maintain verification methods for specific objects. Agree on criteria and scope, select the necessary artifacts, build and exercise the method, and provide an entry point for later use.
+- [reflect](./skills/reflect/SKILL.md): Review work sessions for reusable lessons and concrete improvements. Examine the record through judgment, tooling, and divergent lenses, then check findings against the evidence, their scope, and existing guidance. Apply the changes the user selects.
+
+### Design
+
 - [system-architecture](./skills/system-architecture/SKILL.md): Analyze, design, evaluate, select, and evolve systems built from software, people, processes, facilities, or external organizations. Trace responsibilities, handoffs, resources, state, and failure through concrete scenarios. Use the general core with software references for data, distributed guarantees, migration, technology choices, and AI systems.
 - [ddd](./skills/ddd/SKILL.md): Explore domain knowledge, build a ubiquitous language, choose bounded contexts and strategic priorities, express invariants and domain operations, and evolve models as understanding changes. Use focused references for identity, aggregates, lifecycle, events, implementation, and validation.
+- [code-design](./skills/code-design/SKILL.md): Design types, interfaces, modules, dependencies, and state ownership from real caller usage. Improve existing structures and revisit assumptions exposed during implementation.
+- [type-driven-design](./skills/type-driven-design/SKILL.md): Design types from operations and meaning. Diagnose existing models, complete the target design, and migrate producers and consumers in coherent batches. Use Python guidance and a complete batch import example to examine representations, caller readability, and actual guarantees.
 - [prototype](./skills/prototype/SKILL.md): Answer design choices and feasibility questions through low-cost, disposable prototypes. Compare meaningful alternatives under comparable conditions, observe the actual interface or runtime, and hand off evidence, tradeoffs, a recommendation, and a runnable artifact.
+
+### Verification and review
+
+- [blast-radius](./skills/blast-radius/SKILL.md): Trace proposed or implemented software changes to affected consumers, historical data, and runtime behavior. Identify decisive premises, gather proportionate evidence, preserve excluded paths, and choose concrete checks and rollback conditions.
+- [code-quality](./skills/code-quality/SKILL.md): Analyze code, tests, and code designs, and select or configure formatting, lint, custom rules, and type checking. Independently judge correctness, structure, tests, and change safety against contracts and counterevidence. Report locations, effects, and repair directions.
+- [create-verification](./skills/create-verification/SKILL.md): Create and maintain verification methods for specific objects. Agree on criteria and scope, select the necessary artifacts, build and exercise the method, and provide an entry point for later use.
+
+### Writing
+
+- [wellsaid](./skills/wellsaid/SKILL.md): Write clear, natural text for replies, documents, code comments, and collaboration messages. Remove stock phrasing, filler, and defensive language. Preserve facts, meaning, and the author's voice while adapting the text to its readers and purpose.
+- [technical-writing](./skills/technical-writing/SKILL.md): Write, revise, or review technical documents for human readers, including READMEs, guides, references, and proposals. Organize content around readers' tasks, check technical facts and examples, and preserve conditions and implementation status.
+- [writing-for-agents](./skills/writing-for-agents/SKILL.md): Write content for agents, including Skills, `AGENTS.md`, prompts, tool/MCP descriptions, and subagent instructions. Organize steps and reference material, write precise skill triggers, make reading conditions explicit, and define checkable completion criteria.
+
+### Experimental skills
+
+- [feature-map](./skills/feature-map/SKILL.md): Build and maintain a project index from user-visible features to their entry points and implementation. Use the map to locate existing behavior during planning, implementation, and verification.
 - [statechart](./skills/statechart/SKILL.md): Model stateful behavior, express safety and progress properties, draw reader-facing statecharts, and connect checks to implementation. Use a lightweight walkthrough or the complete TLA+/TLC example according to the question. Invoked on an explicit user request.
 
 ## Usage
