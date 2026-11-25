@@ -2,7 +2,7 @@
 name: planning
 description: Use when turning an idea into a concrete task, planning implementation for a chosen approach, or revising an existing task agreement. Also use when the user wants to plan now and implement later, or leave the agreement and acceptance criteria for the next session.
 metadata:
-  version: "1.0.1"
+  version: "1.0.2"
 ---
 
 # Plan a task

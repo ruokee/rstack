@@ -66,20 +66,19 @@ Document and section titles follow the capitalization conventions in Section 3.4
 
 ## Alternatives Considered
 
-<!-- Name the decision in the heading and compare the options that address it. Omit this section if there are no alternatives. -->
+<!-- Name the decision in the heading. List only options you considered and set aside. Omit this section if there are none. -->
 
 ### Alternative [Title 1]
 
 - **Scope**: [Area this choice concerns]
 - **Options**:
-    - [Option 1]
+    - [Option set aside]
         - [Describe the option.]
-        - [Compare it with the chosen approach.]
         - [Explain why it was set aside.]
 
 ## Additional Resources
 
-<!-- List the resources someone taking over will need. Say how each relates to the task. Omit this section if there are no relevant resources. -->
+<!-- List the resources someone taking over will need and what to look up in each. Prefer relative paths for local files and identify their base, such as the Spec directory or the root of a named repository. Use an absolute path only when the resource must be located at a specific place on a machine. Omit this section if there are no relevant resources. -->
 
 - [Resource link or path]: [What to look up there]
 
@@ -91,7 +90,9 @@ Document and section titles follow the capitalization conventions in Section 3.4
 
 ### [Task ID] [Task Name]
 
-<!-- Name each task for the result it delivers. Keep its ID for later reference. State where to start, what to do, who receives the result, and which user journey or check shows the task is complete. -->
+<!-- Name each task for the result it delivers. Keep existing task IDs; prefer U01, U02, and so on for new IDs. Use these IDs for later references. State where to start, what to do, who receives the result, and which user journey or check shows the task is complete. -->
+
+---
 
 ## Verification
 
@@ -99,7 +100,7 @@ Document and section titles follow the capitalization conventions in Section 3.4
 
 ### Programmatic Verification
 
-<!-- List the applicable commands, test cases, and pass criteria. For metrics such as coverage, use the thresholds set by the project or its requirements. Omit this section if no programmatic check applies. -->
+<!-- List the applicable commands, test cases, and pass criteria. When the list is long, you can group checks by task or check type. For example, put **U01** above a list of that task's commands and expected results. For metrics such as coverage, use the thresholds set by the project or its requirements. Omit this section if no programmatic check applies. -->
 
 - [Task ID]: Run `[command]` for [test case]; expect [pass condition].
 
