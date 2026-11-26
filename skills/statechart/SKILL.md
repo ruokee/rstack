@@ -3,7 +3,7 @@ name: statechart
 description: Model stateful behavior, explain statecharts, check properties with TLA+/TLC, and relate counterexamples to implementation.
 disable-model-invocation: true
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Statechart
@@ -64,4 +64,4 @@ Proceed when the result has a supported classification and next necessary action
 
 Provide the question, subject, rule basis, environment assumptions, state model, properties, editable view, chosen check, result, counterexample, implementation relation, omitted scope, and unresolved decisions as applicable. Executed checks include artifacts, versions, commands, bounds, and original evidence. Keep persistent models and rerun instructions in the target project's established locations, separate from temporary runs.
 
-Finish when the next reader can find the evidence, understand the judgment, and continue the authorized work. Optional deeper guidance includes `ddd` for business rules, `system-architecture` for authority and guarantees, `code-design` for representation, and `code-quality` for quality judgment.
+Finish when the next reader can find the evidence, understand the judgment, and continue the authorized work. Optional deeper guidance includes `domain-driven-design` for business rules, `system-architecture` for authority and guarantees, `code-design` for representation, and `code-quality` for quality judgment.

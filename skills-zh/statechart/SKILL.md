@@ -3,7 +3,7 @@ name: statechart
 description: 建模状态行为，解释状态图，使用 TLA+/TLC 检查性质，将反例对应到实际实现。
 disable-model-invocation: true
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Statechart
@@ -64,4 +64,4 @@ metadata:
 
 按实际采用的方法提供问题、描述对象、规则依据、环境假设、状态模型、性质、可编辑视图、检查方法、结果、反例、实现对应、省略范围及未决决定。已执行的检查保留产物、版本、命令、边界及原始证据。持久模型和重跑说明使用目标项目的既有位置，与临时运行分开保存。
 
-完成标准：下一位读者能找到证据、理解判断并继续获准的工作。可选深入资料包括 `ddd` 的业务规则、`system-architecture` 的状态权威及保证机制、`code-design` 的表示方法，以及 `code-quality` 的质量判断。
+完成标准：下一位读者能找到证据、理解判断并继续获准的工作。可选深入资料包括 `domain-driven-design` 的业务规则、`system-architecture` 的状态权威及保证机制、`code-design` 的表示方法，以及 `code-quality` 的质量判断。

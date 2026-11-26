@@ -2,7 +2,7 @@
 name: engineering-principles
 description: Use when designing, implementing, changing, or reviewing engineering artifacts such as code, documentation, and configuration.
 metadata:
-  version: "1.0.1"
+  version: "1.0.2"
 ---
 
 # Engineering principles
@@ -30,7 +30,7 @@ Select and read relevant principles, then apply them within the task's constrain
 - [Reveal details progressively](../writing-for-agents/SKILL.md#information-hierarchy): Show essential information first, and reveal details as needed.
 - [Make foundational decisions first](./references/foundational-decisions.md): Establish data structures, dependency order, and shared state first.
 - [Redesign from first principles](./references/redesign-from-first-principles.md): Reconsider the structure against the full requirements.
-- [Model the domain](../ddd/modeling/implementation.md): Represent concepts and rules in the structure.
+- [Model the domain](../domain-driven-design/modeling/implementation.md): Represent concepts and rules in the structure.
 - [Type-system discipline](./references/type-system-discipline.md): Express constraints through types and construction.
 - [Boundary discipline](./references/boundary-discipline.md): Establish input contracts at system boundaries.
 - [Explicit ownership](../code-design/approaches/resource-lifecycle.md): Make ownership of state and resources clear.

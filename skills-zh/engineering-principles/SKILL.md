@@ -2,7 +2,7 @@
 name: engineering-principles
 description: 设计、实现、修改或审查代码、文档及配置等工程产物时使用。
 metadata:
-  version: "1.0.1"
+  version: "1.0.2"
 ---
 
 # 工程原则
@@ -30,7 +30,7 @@ metadata:
 - [渐进式披露](../writing-for-agents/SKILL.md#信息层级)：先呈现必要信息，细节按需展开。
 - [先做基础决策](./references/foundational-decisions.md)：先明确数据结构、依赖顺序及共享状态。
 - [从第一性原理重新设计](./references/redesign-from-first-principles.md)：从完整需求重新判断结构。
-- [领域建模](../ddd/modeling/implementation.md)：用结构承载概念和规则。
+- [领域建模](../domain-driven-design/modeling/implementation.md)：用结构承载概念和规则。
 - [类型系统纪律](./references/type-system-discipline.md)：用类型和构造过程表达约束。
 - [边界纪律](./references/boundary-discipline.md)：在系统边界建立输入契约。
 - [明确所有权](../code-design/approaches/resource-lifecycle.md)：明确状态和资源由谁管理。

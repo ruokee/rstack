@@ -2,7 +2,7 @@
 name: use-rstack
 description: 需要选择 Skill 或 playbook、衔接相关活动，或跨活动接续工作时使用。活动已明确时直接读取相应专业 Skill。
 metadata:
-  version: "1.0.3"
+  version: "1.0.4"
 ---
 
 # 使用 rstack
@@ -45,7 +45,7 @@ metadata:
 ### 解决设计问题
 
 - [system-architecture](../system-architecture/SKILL.md)：确定系统边界、职责、交互、运行结构或系统级技术选择。
-- [ddd](../ddd/SKILL.md)：澄清领域含义和业务规则，选择限界上下文，设计及演进领域模型。
+- [domain-driven-design](../domain-driven-design/SKILL.md)：澄清领域含义和业务规则，选择限界上下文，设计及演进领域模型。
 - [code-design](../code-design/SKILL.md)：设计代码结构，或改进既有接口、模块、依赖及归属。
 - [type-driven-design](../type-driven-design/SKILL.md)：设计、诊断或演进类型模型，处理数据形状、语义区别、状态及操作契约。
 - [prototype](../prototype/SKILL.md)：用可丢弃实现回答设计或可行性问题，比较方案，观察实际布局、交互、行为或时序。

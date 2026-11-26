@@ -36,7 +36,7 @@ Skill 分类、触发方式、个人适配及项目适配随具体收录项逐�
 ### 设计
 
 - [system-architecture](./skills-zh/system-architecture/SKILL.md)：分析、设计、评估、选择及演进由软件、人员、流程、设施或外部组织构成的系统。沿具体情景追踪责任、交接、资源、状态及失效。通用核心配合软件参考，处理数据、分布式保证、迁移、技术选择及 AI 系统。
-- [ddd](./skills-zh/ddd/SKILL.md)：探索领域知识，形成共同语言，选择限界上下文及战略重点，表达不变量和领域操作，随新认识演进模型。专题参考覆盖身份、聚合、生命周期、事件、模型落地及验证。
+- [domain-driven-design](./skills-zh/domain-driven-design/SKILL.md)：探索领域知识，形成共同语言，选择限界上下文及战略重点，表达不变量和领域操作，随新认识演进模型。专题参考覆盖身份、聚合、生命周期、事件、模型落地及验证。
 - [code-design](./skills-zh/code-design/SKILL.md)：从真实调用用法推导类型、接口、模块、依赖及状态归属，改进既有结构，重新审视实施中暴露的设计假设。
 - [type-driven-design](./skills-zh/type-driven-design/SKILL.md)：从操作和含义推导类型。诊断已有模型，完成整体目标设计，按连贯批次迁移生产者和消费者。结合 Python 指导及完整批量导入案例，判断表示取舍、调用可读性和实际保证。
 - [prototype](./skills-zh/prototype/SKILL.md)：通过低成本、可丢弃原型回答设计选择及可行性问题。在可比条件下比较有实质差异的候选，操作实际界面或运行程序，交接证据、取舍、建议及可运行产物。

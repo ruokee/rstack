@@ -2,7 +2,7 @@
 name: prototype
 description: Use when a design choice or feasibility question needs a disposable prototype to compare alternatives or observe layout, interaction, behavior, or timing.
 metadata:
-  version: "1.0.1"
+  version: "1.0.2"
 ---
 
 # Prototype
@@ -77,7 +77,7 @@ Provide the artifact's location and instructions for running it as a disposable 
 
 Stop when evidence sufficiently supports the target decision. If the choice remains unresolved, state the remaining question and next observation that could distinguish the candidates. Every additional variant needs a concrete decision purpose.
 
-Preserve the selected direction, behavior to retain, key observations, and remaining conditions in durable task materials. Identify scratch paths as temporary and subject to the host's retention rules. Hand the result to the authorized formal design or implementation workflow. Use `code-design`, `system-architecture`, or `ddd` when interpreting the findings needs their expertise. These references are optional; the prototype method here is complete.
+Preserve the selected direction, behavior to retain, key observations, and remaining conditions in durable task materials. Identify scratch paths as temporary and subject to the host's retention rules. Hand the result to the authorized formal design or implementation workflow. Use `code-design`, `system-architecture`, or `domain-driven-design` when interpreting the findings needs their expertise. These references are optional; the prototype method here is complete.
 
 Organize formal implementation under project constraints. Decide whether to reuse any prototype code in that implementation task. Retention and cleanup follow host rules, including permission for deletion.
 

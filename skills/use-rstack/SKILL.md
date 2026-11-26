@@ -2,7 +2,7 @@
 name: use-rstack
 description: Use when choosing a Skill or playbook, connecting activities, or resuming work across activities. Read the relevant specialist Skill directly when the activity is already clear.
 metadata:
-  version: "1.0.3"
+  version: "1.0.4"
 ---
 
 # Use rstack
@@ -45,7 +45,7 @@ Select activities for the current request and its real dependencies. A specific 
 ### Resolve a design question
 
 - [system-architecture](../system-architecture/SKILL.md): Decide system boundaries, responsibilities, interactions, operating structure, or system-level technology choices.
-- [ddd](../ddd/SKILL.md): Clarify domain meanings and business rules, choose bounded contexts, or design and evolve domain models.
+- [domain-driven-design](../domain-driven-design/SKILL.md): Clarify domain meanings and business rules, choose bounded contexts, or design and evolve domain models.
 - [code-design](../code-design/SKILL.md): Design code structure or improve existing interfaces, modules, dependencies, and ownership.
 - [type-driven-design](../type-driven-design/SKILL.md): Design, diagnose, or evolve type models for data shapes, semantic distinctions, states, and operation contracts.
 - [prototype](../prototype/SKILL.md): Answer a design or feasibility question with a disposable implementation that compares alternatives or exposes actual layout, interaction, behavior, or timing.

@@ -2,7 +2,7 @@
 name: planning
 description: Use when turning an idea into a concrete task, planning implementation for a chosen approach, or revising an existing task agreement. Also use when the user wants to plan now and implement later, or leave the agreement and acceptance criteria for the next session.
 metadata:
-  version: "1.0.2"
+  version: "1.0.3"
 ---
 
 # Plan a task
@@ -18,7 +18,7 @@ When the outcome is already settled, go straight to drafting. Otherwise, if a ch
 Choose a method for the question still open:
 
 - For missing external facts, read [research](../research/SKILL.md); for an unexplained fault, read [diagnose](../diagnose/SKILL.md).
-- For domain meanings, read [ddd](../ddd/SKILL.md); for system boundaries, [system-architecture](../system-architecture/SKILL.md); for code structure, [code-design](../code-design/SKILL.md); for type constraints, [type-driven-design](../type-driven-design/SKILL.md).
+- For domain meanings, read [domain-driven-design](../domain-driven-design/SKILL.md); for system boundaries, [system-architecture](../system-architecture/SKILL.md); for code structure, [code-design](../code-design/SKILL.md); for type constraints, [type-driven-design](../type-driven-design/SKILL.md).
 - When the choice depends on observing an alternative in use, read [prototype](../prototype/SKILL.md).
 
 ## Draft the Spec

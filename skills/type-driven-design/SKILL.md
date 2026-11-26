@@ -2,7 +2,7 @@
 name: type-driven-design
 description: Use when designing type models or diagnosing and evolving existing models, including data shapes, semantic distinctions, states, and operation contracts.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Type-driven design
@@ -88,7 +88,7 @@ Finish when the agreed scope is complete and a successor can explain the model, 
 
 Use these references when the question needs their detail. The type choices remain part of this process.
 
-- Conflicting concepts or business rules: `ddd`.
+- Conflicting concepts or business rules: `domain-driven-design`.
 - Module responsibilities, interfaces, or dependencies: `code-design`, especially `approaches/data-modeling.md` and `interfaces.md`.
 - Historical choices or continuing causes: `thinking-method` at `references/why.md`. Competing failure explanations: `diagnose`.
 - Consumers, stored data, deployment, or recovery impact: `blast-radius`.

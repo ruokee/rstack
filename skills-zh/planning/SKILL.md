@@ -2,7 +2,7 @@
 name: planning
 description: 需要把一个想法定成具体任务、为已选方案安排实施步骤，或修订已有任务约定时使用。用户要先做计划、稍后执行，或把约定和验收方法留给下一次会话时，也使用此入口。
 metadata:
-  version: "1.0.2"
+  version: "1.0.3"
 ---
 
 # 规划任务
@@ -18,7 +18,7 @@ metadata:
 只为尚待解决的问题选择方法：
 
 - 缺外部事实时读 [research](../research/SKILL.md)；故障原因不明时读 [diagnose](../diagnose/SKILL.md)。
-- 厘清领域含义读 [ddd](../ddd/SKILL.md)，确定系统边界读 [system-architecture](../system-architecture/SKILL.md)，设计代码结构读 [code-design](../code-design/SKILL.md)，确定类型约束读 [type-driven-design](../type-driven-design/SKILL.md)。
+- 厘清领域含义读 [domain-driven-design](../domain-driven-design/SKILL.md)，确定系统边界读 [system-architecture](../system-architecture/SKILL.md)，设计代码结构读 [code-design](../code-design/SKILL.md)，确定类型约束读 [type-driven-design](../type-driven-design/SKILL.md)。
 - 需要观察实际效果才能选定方案时，读 [prototype](../prototype/SKILL.md)。
 
 ## 起草 Spec

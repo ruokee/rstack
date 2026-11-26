@@ -2,7 +2,7 @@
 name: create-playbook
 description: 将已有实践整理成可复用流程、为新需求设计流程，或维护已有 playbook 时使用。日常执行已有流程时沿用该流程。
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # 创建流程
@@ -19,7 +19,7 @@ metadata:
 - 面向新需求时，从预期结果、可用能力和约束推导必要活动。设计假设、实际历史和已确认要求分别保存。
 - 维护流程时，读取当前正文和反馈，先定位受影响的判断、活动或使用路径。
 
-工作需要专业方法时再读取。系统搜集证据使用 `research`，待解的推理问题使用 `thinking-method`，领域含义及规则使用 `ddd`。`reflect` 可以从工作记录中提供改进线索，`improve` 支持围绕约定改进目标进行比较。
+工作需要专业方法时再读取。系统搜集证据使用 `research`，待解的推理问题使用 `thinking-method`，领域含义及规则使用 `domain-driven-design`。`reflect` 可以从工作记录中提供改进线索，`improve` 支持围绕约定改进目标进行比较。
 
 ## 形成使用约定
 

@@ -2,7 +2,7 @@
 name: type-driven-design
 description: 用于设计类型模型，或诊断和演进已有模型，涉及数据形状、语义区分、状态及操作合同。
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # 类型设计
@@ -88,7 +88,7 @@ metadata:
 
 问题需要详细知识时使用以下入口。类型选择继续由本流程负责。
 
-- 概念或业务规则存在冲突：`ddd`。
+- 概念或业务规则存在冲突：`domain-driven-design`。
 - 模块职责、接口或依赖：`code-design`，重点为 `approaches/data-modeling.md` 和 `interfaces.md`。
 - 历史选择或持续原因：`thinking-method` 的 `references/why.md`。竞争故障解释：`diagnose`。
 - 消费者、存量数据、部署或恢复影响：`blast-radius`。

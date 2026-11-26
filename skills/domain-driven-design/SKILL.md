@@ -1,8 +1,8 @@
 ---
-name: ddd
+name: domain-driven-design
 description: Use when clarifying domain concepts or business rules, defining bounded contexts, designing or assessing domain models, or evolving models as domain understanding changes.
 metadata:
-  version: "1.0.1"
+  version: "1.0.2"
 ---
 
 # Domain-driven design

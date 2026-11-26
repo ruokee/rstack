@@ -2,7 +2,7 @@
 name: create-playbook
 description: Use when turning existing practice into a reusable workflow, designing a workflow for a new need, or maintaining an existing playbook. Routine execution of a workflow follows that workflow.
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Create a playbook
@@ -19,7 +19,7 @@ Choose the relevant starting point:
 - For a new need, derive necessary activities from the intended result, available capabilities, and constraints. Record design assumptions separately from observed history and confirmed requirements.
 - For maintenance, read the current workflow and the feedback. Locate the affected decision, activity, or use path before changing it.
 
-Read specialist methods when the work needs them. Use `research` for systematic evidence gathering, `thinking-method` for an unresolved reasoning problem, or `ddd` for domain meanings and rules. `reflect` can supply lessons from work records; `improve` supports comparison against an agreed improvement goal.
+Read specialist methods when the work needs them. Use `research` for systematic evidence gathering, `thinking-method` for an unresolved reasoning problem, or `domain-driven-design` for domain meanings and rules. `reflect` can supply lessons from work records; `improve` supports comparison against an agreed improvement goal.
 
 ## Establish the working agreement
 
