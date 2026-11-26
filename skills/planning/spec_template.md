@@ -112,6 +112,18 @@ Document and section titles follow the capitalization conventions in Section 3.4
 
 ---
 
+## Revision History
+
+<!-- Omit this section until a settled agreement changes. For each revision, update the affected sections of this Spec, keep earlier entries and their numbers, and append a new entry. Number entries in order starting at 1. -->
+
+### Revision [N]
+
+- **Timestamp**: [YYYY-MM-DD HH:mm:ss]
+- **Summary**: [What changed in one sentence.]
+- **Previous agreement**: [What the Spec required or assumed before this change.]
+- **New agreement**: [What the Spec requires or assumes after this change.]
+- **Reason**: [Why the agreement changed.]
+
 [RFC2119]: https://www.rfc-editor.org/rfc/rfc2119
 [RFC8174]: https://www.rfc-editor.org/rfc/rfc8174
 [RFC7322]: https://www.rfc-editor.org/rfc/rfc7322

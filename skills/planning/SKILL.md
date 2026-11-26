@@ -2,7 +2,7 @@
 name: planning
 description: Use when turning an idea into a concrete task, planning implementation for a chosen approach, or revising an existing task agreement. Also use when the user wants to plan now and implement later, or leave the agreement and acceptance criteria for the next session.
 metadata:
-  version: "1.0.3"
+  version: "1.0.4"
 ---
 
 # Plan a task
@@ -23,7 +23,7 @@ Choose a method for the question still open:
 
 ## Draft the Spec
 
-Before drafting a Spec, read this package's [Spec template](./spec_template.md). Draft in the existing planning document or at the project's agreed location. Follow the template's language instructions, section order, fields, and rules for omitting optional content. Set `Status` to `Draft` when drafting or revising.
+Before drafting a Spec, read this package's [Spec template](./spec_template.md). Draft in the existing planning document or at the project's agreed location. Follow the template's language instructions, section order, fields, and rules for omitting optional content.
 
 Read [plan-task](../plan-task/SKILL.md) to organize the `Implementation Plan`. One named unit is enough for a single change. Give the Builder a starting point, name the result and its recipient, and cite the corresponding named user journey (`UJ` in `User Journeys`) or a specific check in `Verification`. Keep unit IDs when revising the plan.
 
@@ -31,10 +31,12 @@ Read [plan-task](../plan-task/SKILL.md) to organize the `Implementation Plan`. O
 
 Check the draft against the template, request, and confirmed decisions in the current session. Can the Builder start from a named unit? Can the Evaluator follow its reference and distinguish the intended result from a plausible mistake? For example, deleting archived notes would also hide them from the default view. Start with an active note and an archived note: the default shows the active one, and the archive still opens the other. Fix gaps or contradictions and recheck the affected parts.
 
-When the agreement is clear and the handoff passes your check, save the Spec with `Status` set to `Ready`. A request to implement later defers the Builder's work. Finish the Spec in this session, confirm the saved status, and give the user its location and the unit the Builder can start with. Stop at Plan until the user authorizes execution.
+Save `Status` with the Spec text. Use `Ready` when the agreement is clear and the handoff passes your check. Use `Draft` if you need to save a version before it is ready for handoff. When revising a `Ready` Spec, keep `Ready` if the version you are saving still meets the handoff criteria.
+
+A request to implement later defers the Builder's work. Finish the Spec in this session, confirm the saved status, and give the user its location and the unit the Builder can start with. Stop at Plan until the user authorizes execution.
 
 ## Revise the agreement
 
 Keep the settled Spec fixed during Execute and Verify. If an implementation differs from it, the Evaluator records the discrepancy and verdict in the verification record; the Builder repairs the implementation and records progress and fixes in the execution record.
 
-When the agreement itself changes, return to Plan. Update the body of the same Spec and append the time, previous agreement or state, and reason for the change. Keep earlier entries so past verdicts can be read against the terms in effect then. Check the revised handoff; subsequent candidates use the revised terms.
+When the agreement itself changes, return to Plan. Update the affected sections of the same Spec and append an entry to `Revision History`. Keep earlier entries so past verdicts can be read against the terms in effect then. Check the revised handoff; subsequent candidates use the revised terms.

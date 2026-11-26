@@ -112,6 +112,18 @@
 
 ---
 
+## Revision History
+
+<!-- 已定约定首次变更时加入本节。每次修订都更新这份 Spec 中受影响的正文，保留已有条目及其编号，并在末尾追加一条记录。顺序编号从 1 开始。 -->
+
+### Revision [N]
+
+- **Timestamp**: [YYYY-MM-DD HH:mm:ss]
+- **Summary**: [用一句话概括本次变更。]
+- **Previous agreement**: [变更前的约定或状态。]
+- **New agreement**: [变更后的约定或状态。]
+- **Reason**: [为什么要变更这项约定。]
+
 [RFC2119]: https://www.rfc-editor.org/rfc/rfc2119
 [RFC8174]: https://www.rfc-editor.org/rfc/rfc8174
 [RFC7322]: https://www.rfc-editor.org/rfc/rfc7322
