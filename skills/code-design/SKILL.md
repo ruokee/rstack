@@ -2,7 +2,7 @@
 name: code-design
 description: Use when designing new code or improving existing code structure.
 metadata:
-  version: "1.0.1"
+  version: "1.0.2"
 ---
 
 # Code design
@@ -36,6 +36,8 @@ Try to violate the proposed invariant through a public constructor, mutation, st
 ## Compare the remaining tradeoff
 
 Compare alternatives only where a consequential choice remains. Useful alternatives change responsibility or behavior: a borrowed writer versus an owned output session, a closed set of variants versus an extensible interface, or an atomic operation versus separate steps. Include keeping the current structure when it is viable.
+
+When a design fixes a caller's guarantee or lets an operator choose the scope of one operation, read [Leave room to change](../engineering-principles/references/leave-room-to-change.md).
 
 Use the same caller scenarios for each option. Compare required knowledge, enforcement of invariants, change scope, failure handling, resource costs, and verification. Choose one and state the cost being accepted. Resolve missing facts or priorities that would change that choice.
 
