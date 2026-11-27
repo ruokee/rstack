@@ -22,6 +22,7 @@ English Skills are in `./skills/`, and Chinese Skills are in `./skills-zh/`.
 - [research](./skills/research/SKILL.md): Gather and assess evidence to answer research questions with traceable findings. Follow claims to primary sources and distinguish facts, inferences, and unresolved disagreements. For durable delivery, preserve source material and open questions so another session can continue the work.
 - [teach](./skills/teach/SKILL.md): Explain concepts, mechanisms, and methods. Build on what the learner already knows, adapt explanations to feedback, and offer practice when requested. Default to teaching in the conversation; prepare durable learning materials for an explicit need.
 - [diagnose](./skills/diagnose/SKILL.md): Investigate problems and anomalies through evidence, competing explanations, and discriminating checks. Handle repeatable, intermittent, historical, and workflow problems, state the strength of causal conclusions, and carry findings into an authorized repair. Read software-specific methods when the problem requires them.
+- [agent-doctor](./skills/agent-doctor/SKILL.md): Review Agent assets, investigate recurring rework or a failed handoff, and weigh usage and context cost when deciding what to keep, prune, or correct.
 - [engineering-principles](./skills/engineering-principles/SKILL.md): Select principles for code, documentation, and configuration changes. Consult references for their purpose, conditions, tradeoffs, and examples.
 
 ### Workflows

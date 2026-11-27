@@ -22,6 +22,7 @@ Skill 分类、触发方式、个人适配及项目适配随具体收录项逐�
 - [research](./skills-zh/research/SKILL.md)：搜集和核对证据，围绕研究问题形成有出处的结论。追溯一手来源，区分事实、推断和待解分歧。需要保存成果时，将原始资料和待解问题一并整理，便于后续会话接续。
 - [teach](./skills-zh/teach/SKILL.md)：讲解概念、机制和方法。从学习者已有的认识出发，根据反馈调整讲法，按需安排练习。默认在会话中教学，持久学习材料按明确需要安排。
 - [diagnose](./skills-zh/diagnose/SKILL.md)：围绕具体问题及异常取得证据、比较解释、执行有区分力的检查。处理可重复、偶发、历史及流程问题，说明因果结论的证据强度，按授权衔接修复。软件问题按需读取专项方法。
+- [agent-doctor](./skills-zh/agent-doctor/SKILL.md)：检查 Agent 资产，追查反复返工或一次交接偏差，结合使用情况和上下文开销判断哪些内容值得保留、删减或修正。
 - [engineering-principles](./skills-zh/engineering-principles/SKILL.md)：为代码、文档及配置变更选择工程原则，按需读取目的、条件、取舍及例子。
 
 ### 工作流
