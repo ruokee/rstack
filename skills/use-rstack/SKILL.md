@@ -2,7 +2,7 @@
 name: use-rstack
 description: Use when choosing a Skill or playbook, connecting activities, or resuming work across activities. Read the relevant specialist Skill directly when the activity is already clear.
 metadata:
-  version: "1.0.4"
+  version: "1.0.5"
 ---
 
 # Use rstack
@@ -74,13 +74,13 @@ Select activities for the current request and its real dependencies. A specific 
 
 Start with paths explicitly supplied in the request. Then follow pointers in loaded context and established project, workspace, or user guidance. Also check these locations, using an established explicit alternative where one exists:
 
-- Project or workspace workflows in `.rstack/playbooks/` at the corresponding root.
-- Personal workflows in `~/.agent/rstack/playbooks/`.
+- Project or workspace workflows in `.agents/playbooks/` at the corresponding root.
+- Personal workflows in `~/.agents/playbooks/`.
 - Public rstack workflows in `./playbooks/`, relative to this entry in either the source or installed package.
 
 Bound the search to known sources and the current need. Private locations are maintained independently of the installed public package.
 
-A link to an ordinary readable Markdown workflow is enough to provide an entry. Existing navigation may describe several candidates and their applicability. Judge the content against the current request.
+Read the entry file linked by the index: `<name>.md` for a single-file workflow or `<name>/playbook.md` for a directory workflow. When given a workflow directory, open its `playbook.md` first. Follow the entry's relative links when their stated conditions apply. Existing navigation may describe several candidates and their applicability. Judge the content against the current request.
 
 Keep the name, maintaining source, body path, and applicability distinct. Public content is maintained by rstack; private content is maintained by its user, project, or workspace. A personal workflow may apply across projects. A workspace workflow may apply to just one project.
 

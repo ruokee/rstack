@@ -70,7 +70,7 @@ A playbook is a reusable Markdown workflow that describes activities, dependenci
 
 Public playbooks ship with `use-rstack` in its `playbooks/` subdirectory. This directory initially contains `.gitkeep`; concrete playbooks will be added as needs arise.
 
-Reuse an established explicit private location. Otherwise store personal workflows in `~/.agent/rstack/playbooks/` and project or workspace workflows in `.rstack/playbooks/` at the corresponding root. Create the private directory when first saving a workflow and connect the result to an existing discovery entry.
+Reuse an established explicit private location. Otherwise store personal workflows in `~/.agents/playbooks/` and project or workspace workflows in `.agents/playbooks/` at the corresponding root. Create the directory when first saving a workflow. Link directly to `<name>.md` or `<name>/playbook.md` from existing navigation. When given a workflow directory, start with its `playbook.md`.
 
 rstack releases maintain the public package content. Users, projects, and workspaces maintain their private workflows in these independent locations and decide how private versions incorporate public changes. Project commands, selection criteria, and navigation content come from the environment where the workflow is used.
 

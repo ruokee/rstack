@@ -70,7 +70,7 @@ Playbook 是用 Markdown 保存的可复用工作流程，说明活动、依赖�
 
 公共 playbook 随 `use-rstack` 包分发，位于其 `playbooks/` 子目录。该目录初始包含 `.gitkeep`，具体流程随实际需要补充。
 
-私有流程沿用已有明确位置。其余情况将个人流程保存在 `~/.agent/rstack/playbooks/`，项目或工作区流程保存在相应根目录的 `.rstack/playbooks/`。首次保存流程时建立私有目录，将结果接入已有发现入口。
+私有流程沿用已有明确位置。其余情况将个人流程保存在 `~/.agents/playbooks/`，项目或工作区流程保存在相应根目录的 `.agents/playbooks/`。首次保存时建立所需目录，并从已有导航直接链接 `<name>.md` 或 `<name>/playbook.md`。给出流程目录时，先读其中的 `playbook.md`。
 
 rstack 的发布维护公共包内容。用户、项目及工作区在这些独立位置维护私有流程，并决定私有版本如何吸收公共变化。项目命令、选择判据及导航内容从使用流程的环境取得。
 

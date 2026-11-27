@@ -2,7 +2,7 @@
 name: create-playbook
 description: Use when turning existing practice into a reusable workflow, designing a workflow for a new need, or maintaining an existing playbook. Routine execution of a workflow follows that workflow.
 metadata:
-  version: "1.0.1"
+  version: "1.0.2"
 ---
 
 # Create a playbook
@@ -27,8 +27,8 @@ Investigate who will use the workflow, where it applies, who maintains it, and h
 
 Choose the body location by its maintenance ownership. Reuse an established explicit location for private workflows. The default locations are:
 
-- Personal workflows: `~/.agent/rstack/playbooks/`.
-- Project or workspace workflows: `.rstack/playbooks/` at the corresponding root.
+- Personal workflows: `~/.agents/playbooks/`.
+- Project or workspace workflows: `.agents/playbooks/` at the corresponding root.
 - Public rstack workflows: `../use-rstack/playbooks/`, relative to this entry. Follow that repository's maintenance permission.
 
 Create the needed private directory when first saving a workflow. Keep it independent of installed Skill packages. rstack releases update the public content; private maintainers own private updates.
@@ -54,7 +54,7 @@ Keep professional methods in their Skills and project facts in their authoritati
 
 Write ordinary Markdown that a reader can use from its actual entry point. State applicability, starting inputs, necessary activities, choices, feedback, handoffs, and the finishing condition. Include enough context to interpret each decision and follow any required references.
 
-Use the structure the work needs. A simple workflow can fit in one file; a complex branch may justify a separate reference with an explicit reading condition. Choose headings, fields, step counts, roles, and scripts for this workflow. `writing-for-agents` helps organize agent instructions and reading pointers. `wellsaid` helps clean up their expression.
+Save a single-file workflow as `<name>.md`. When a workflow needs separate branch instructions or supporting files, use `<name>/playbook.md` as its entry. Link to the supporting files by relative path and say when to read them. Link directly to the entry file from navigation. Choose headings, fields, step counts, roles, and scripts for this workflow. `writing-for-agents` helps organize agent instructions and reading pointers. `wellsaid` helps clean up their expression.
 
 Separate stable workflow decisions from the current task's values, progress, and permission. Refer to authoritative project facts so readers can obtain the applicable commands and criteria. State which operations need permission at the point where that affects use. A request to design a workflow has its own completion condition. Running the workflow's business operations requires the corresponding execution scope and permission.
 
