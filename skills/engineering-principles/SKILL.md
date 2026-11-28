@@ -2,7 +2,7 @@
 name: engineering-principles
 description: Use when designing, implementing, changing, or reviewing engineering artifacts such as code, documentation, and configuration.
 metadata:
-  version: "1.0.3"
+  version: "1.0.4"
 ---
 
 # Engineering principles
@@ -24,7 +24,7 @@ Select and read relevant principles, then apply them within the task's constrain
 - [KISS](../code-design/design-principles/kiss.md): Prefer lower overall complexity.
 - [YAGNI](../code-design/design-principles/yagni.md): Ground added capabilities in actual requirements.
 - [Keep Laziness](./references/keep-laziness.md): Solve the problem with the smallest necessary change.
-- [Leave room to change](./references/leave-room-to-change.md): Decide which guarantees consumers need and who should retain the remaining choices.
+- [leave breathe](./references/leave-breathe.md): Decide which guarantees consumers need and who should retain the remaining choices.
 - [Change locality](./references/change-locality.md): Bound a rename, contain the next extension, or remove repeated edits across code and docs.
 - [Subtract before add](./references/subtract-before-add.md): First consider whether deletion or simplification solves the problem.
 - [Minimize reader load](./references/minimize-reader-load.md): Reduce the layers and state a reader must track.

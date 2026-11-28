@@ -1,4 +1,4 @@
-# Leave room to change
+# leave breathe
 
 Before a signature, stored value, or test makes a choice binding, ask: who relies on this today? If a maintainer changed it tomorrow, who else would have to act? Look at actual callers as well as written requirements. An undocumented dependency can still break.
 
